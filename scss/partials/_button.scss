@@ -1,0 +1,17 @@
+.btn_wrapper{
+    border-radius: 32px;
+    padding: 0px 28px;
+    height: 48px;
+    line-height: 48px;
+    box-shadow: inset 2px 0 8px 2px rgba(248, 248, 248, 0.2);
+    background: linear-gradient(180deg, #2c2c2c 0%, #282828 100%);
+    a{
+        font-weight: 600;
+        font-size: 14px;
+        text-align: center;
+        color: #fff;
+        img{
+            margin-right: 6px;
+        }
+    }
+}

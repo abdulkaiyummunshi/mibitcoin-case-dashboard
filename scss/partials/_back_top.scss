@@ -1,0 +1,29 @@
+.back_top{
+   
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: none;
+    z-index: 1000;
+    span{
+        display: block;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        @include border-radius(50%);
+        cursor: pointer;
+        background-color: $primary;
+        border: 1px solid transparent;
+        color: $white;
+        &:hover{
+            border: 1px solid $border;
+            color: $text_color;
+            @include transition(0.4s);
+            background-color: #ddd;
+        }
+    }
+}
+ .show {
+    display: block;
+}

@@ -1,0 +1,337 @@
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+
+@mixin transition($time) {
+  transition: all $time ease;
+}
+
+@mixin border-style($width, $height, $color) {
+  width: $width;
+  height: $height;
+  background-color: $color;
+}
+@mixin background_img($repeat, $position){
+  background-repeat: $repeat;
+  background-position: $position;
+}
+@mixin border-radius($radius) {
+  border-radius: $radius;
+  -moz-border-radius   : $radius;
+  -webkit-border-radius: $radius;
+  -ms-border-radius    : $radius;
+  -o-border-radius     : $radius;
+}
+@mixin transformY($translate){
+  transform: translateY($translate);
+  -webkit-transform: translateY($translate);
+  -moz-transform: translateY($translate);
+  -ms-transform: translateY($translate);
+  -o-transform: translateY($translate);
+}
+@mixin transformX($translate){
+  transform: translateX($translate);
+  -webkit-transform: translateX($translate);
+  -moz-transform: translateX($translate);
+  -ms-transform: translateX($translate);
+  -o-transform: translateX($translate);
+}
+
+@mixin transform($translateX, $translateY){
+  transform: translate($translateX, $translateY);
+  -webkit-transform: translate($translateX, $translateY);
+  -moz-transform: translate($translateX, $translateY);
+  -ms-transform: translate($translateX, $translateY);
+  -o-transform: translate($translateX, $translateY);
+}
+
+
+// Extra Small devices
+@mixin xxs {
+  @media only screen and (min-width: 0px) and (max-width:479px){
+      @content;
+  }
+}
+// Small devices
+@mixin xs {
+  @media only screen and (min-width: 0px) and (max-width:575px){
+      @content;
+  }
+}
+@mixin sm {
+  @media only screen and (min-width: 0px) and (max-width: 767px){
+      @content;
+  }
+}
+// Medium devices
+@mixin md {
+  @media only screen and (max-width: 991px) {
+      @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media only screen and (max-width: 1199px) {
+    @content;
+  }
+}
+
+// Extra large devices
+@mixin xl {
+  @media only screen  and (max-width: 1399px) {
+    @content;
+  }
+}
+// Extra double large devices
+@mixin xxl {
+  @media only screen  and (max-width: 1599px) {
+    @content;
+  }
+}
+@mixin xxxl {
+  @media only screen  and (max-width: 1699px) {
+    @content;
+  }
+}
+
+// Nest Hub Device
+@mixin nesthub() {
+  @media only screen and (min-width: 992px) and (max-width: 1024px) {
+    @content;
+  }
+}
+// Nest Hub Max Device
+@mixin nesthubmax() {
+  @media only screen and (min-width: 1025px) and (max-width: 1280px) {
+    @content;
+  }
+}
+
+
+
+@for $i from 1 through 365{
+  .mt-#{$i} {
+    margin-top: #{$i}px;
+  }
+  .mb-#{$i} {
+    margin-bottom: #{$i}px;
+  }
+  .ml-#{$i} {
+    margin-left: #{$i}px;
+  }
+  .mr-#{$i} {
+    margin-right: #{$i}px;
+  }
+  .pt-#{$i} {
+    padding-top: #{$i}px;
+  }
+  .pb-#{$i} {
+    padding-bottom: #{$i}px;
+  }
+  .pl-#{$i} {
+    padding-left: #{$i}px;
+  }
+  .pr-#{$i} {
+    padding-right: #{$i}px;
+  }
+
+
+
+  // Small Tablets (max-width: 768px)
+  @media (max-width: 768px) {
+    .mt-#{$i} {
+      margin-top: #{$i / 2}px !important;
+    }
+    .mb-#{$i} {
+      margin-bottom: #{$i / 2}px !important;
+    }
+    .ml-#{$i} {
+      margin-left: #{$i / 2}px !important;
+    }
+    .mr-#{$i} {
+      margin-right: #{$i / 2}px !important;
+    }
+    .pt-#{$i} {
+      padding-top: #{$i / 2}px !important;
+    }
+    .pb-#{$i} {
+      padding-bottom: #{$i / 2}px !important;
+    }
+    .pl-#{$i} {
+      padding-left: #{$i / 2}px !important;
+    }
+    .pr-#{$i} {
+      padding-right: #{$i / 2}px !important;
+    }
+  }
+
+  // Larger Tablets and Small Laptops (max-width: 1024px)
+  @media (max-width: 1024px) {
+    .mt-#{$i} {
+      margin-top: #{$i / 1.2}px;
+    }
+    .mb-#{$i} {
+      margin-bottom: #{$i / 1.2}px;
+    }
+    .ml-#{$i} {
+      margin-left: #{$i / 1.2}px;
+    }
+    .mr-#{$i} {
+      margin-right: #{$i / 1.2}px;
+    }
+    .pt-#{$i} {
+      padding-top: #{$i / 1.2}px;
+    }
+    .pb-#{$i} {
+      padding-bottom: #{$i / 1.2}px;
+    }
+    .pl-#{$i} {
+      padding-left: #{$i / 1.2}px;
+    }
+    .pr-#{$i} {
+      padding-right: #{$i / 1.2}px;
+    }
+  }
+
+  // Desktop Devices (min-width: 1025px) - No change
+}
+
+
+//Rb Breakpoint with Device
+@mixin breakpoint($point) {
+    @if $point==xxsmall {
+        @media (min-width: 375px) {
+            @content ;
+        }
+    }
+    @else if $point==max-xxsmall {
+        @media (max-width:374px) {
+            @content ;
+        }
+    }
+    @if $point==xsmall {
+        @media (min-width: 450px) {
+            @content ;
+        }
+    }
+    @else if $point==max-xsmall {
+        @media (max-width:449px) {
+            @content ;
+        }
+    }
+    @if $point==xxs {
+        @media (min-width: 470px) {
+            @content ;
+        }
+    }
+    @else if $point==max-xxs {
+        @media (max-width:469px) {
+            @content ;
+        }
+    }
+    @if $point==xs {
+        @media (min-width: 500px) {
+            @content ;
+        }
+    }
+    @else if $point==max-xs {
+        @media (max-width: 499px) {
+            @content ;
+        }
+    }
+    @if $point==sm {
+        @media (min-width: 576px) {
+            @content ;
+        }
+    }
+    @else if $point==max-sm {
+        @media (max-width: 575px) {
+            @content ;
+        }
+    }
+    @else if $point==md {
+        @media (min-width: 768px) {
+            @content ;
+        }
+    }
+    @else if $point==max-md {
+        @media (max-width: 767px) {
+            @content ;
+        }
+    }
+    @else if $point==lg {
+        @media (min-width: 992px) {
+            @content ;
+        }
+    }
+    @else if $point==max-lg {
+        @media (max-width: 991px) {
+            @content ;
+        }
+    }
+    @else if $point==xl {
+        @media (min-width: 1200px) {
+            @content ;
+        }
+    }
+    @else if $point==max-xl {
+        @media (max-width: 1199px) {
+            @content ;
+        }
+    }
+    @else if $point==xxl {
+        @media (min-width: 1400px) {
+            @content ;
+        }
+    }
+    @else if $point==max-xxl {
+        @media (max-width: 1399px) {
+            @content ;
+        }
+    }
+    @else if $point==xxxl {
+        @media (min-width: 1600px) {
+            @content ;
+        }
+    }
+    @else if $point==max-xxxl {
+        @media (max-width: 1599px) {
+            @content ;
+        }
+    }
+    @else if $point==xl2 {
+        @media (min-width: 1700px) {
+            @content ;
+        }
+    }
+    @else if $point==max-xl2 {
+        @media (max-width: 1699px) {
+            @content ;
+        }
+    }
+    @else if $point==xl3 {
+        @media (min-width: 1800px) {
+            @content ;
+        }
+    }
+    @else if $point==max-xl3 {
+        @media (max-width: 1799px) {
+            @content ;
+        }
+    }
+    @else if $point==xl4 {
+        @media (min-width: 1900px) {
+            @content ;
+        }
+    }
+    @else if $point==max-xl4 {
+        @media (max-width: 1899px) {
+            @content ;
+        }
+    }
+}
