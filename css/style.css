@@ -32301,6 +32301,18 @@ p {
   letter-spacing: 0%;
   padding-top: 10px;
 }
+.rb_social_login .rb_thumb img {
+  width: 100%;
+}
+.rb_social_login .rb_para {
+  color: #7B7B7B;
+  font-family: Inter;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
 .rb_social_login .rb_input_form {
   background: #FFFFFF;
   border: 1px solid rgba(114, 117, 248, 0.3019607843);
