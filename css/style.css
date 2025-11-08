@@ -32364,6 +32364,51 @@ p {
   text-decoration: underline;
 }
 
+.rb_switch_label .form-switch {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 0;
+}
+.rb_switch_label .form-switch .form-switch-input {
+  width: 44px;
+  height: 24px;
+  appearance: none;
+  background: #e5e5e5;
+  border-radius: 50px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.rb_switch_label .form-switch .form-switch-input::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #fff;
+  top: 3px;
+  left: 3px;
+  transition: all 0.4s ease;
+}
+.rb_switch_label .form-switch .form-switch-input:checked {
+  background: linear-gradient(271.8deg, #43CBFF -99.63%, #9708CC 212.68%);
+}
+.rb_switch_label .form-switch .form-switch-input:checked::before {
+  transform: translateX(20px);
+}
+.rb_switch_label .form-switch .form-switch-label {
+  color: #7B7B7B;
+  font-family: Inter;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0.25%;
+  margin-top: 3px;
+  cursor: pointer;
+}
+
 .common_input {
   position: relative;
 }
