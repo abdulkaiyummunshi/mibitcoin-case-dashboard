@@ -81,6 +81,74 @@
           padding: 12px 20px;
           border-radius: 100px;
         }
+        &.style_2 {
+          display: flex;
+          flex-direction: column;
+          h4 {
+            color: #192135;
+            font-family: Inter;
+            font-weight: 600;
+            font-style: Semi Bold;
+            font-size: 16px;
+            line-height: 32px;
+            letter-spacing: 0%;
+          }
+          p {
+            color: #7B7B7B;
+            font-family: Inter;
+            font-weight: 500;
+            font-style: Medium;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 0%;
+          }
+          h6 {
+            color: #192135;
+            font-family: Inter;
+            font-weight: 600;
+            font-style: Semi Bold;
+            font-size: 14px;
+            line-height: 22px;
+            letter-spacing: 0%;
+            vertical-align: middle;
+          }
+          .rb_list {
+            ul {
+              list-style-type: disc;
+              padding-left: 22px;
+              li {
+                color: #7B7B7B;
+                font-family: Inter;
+                font-weight: 600;
+                font-style: Semi Bold;
+                font-size: 14px;
+                line-height: 22px;
+                letter-spacing: 0%;
+                vertical-align: middle;
+                padding-bottom: 10px;
+                span {
+                  color: #192135;
+                }
+              }
+            }
+            &.style_1 {
+              ul {
+                list-style: none;
+                padding-left: 0;
+              }
+            }
+          }
+          .rb_para2 {
+            color: #7B7B7B;
+            font-family: Inter;
+            font-weight: 500;
+            font-style: Medium;
+            font-size: 14px;
+            line-height: 22px;
+            letter-spacing: 0%;
+            vertical-align: middle;
+          }
+        }
     }
 }
 
@@ -382,4 +450,32 @@
   font-size: 14px;
   cursor: pointer;
   line-height: 1;
+}
+
+.rb_input_file {
+  label {
+    color: #101010;
+    font-family: Inter;
+    font-weight: 600;
+    font-style: Semi Bold;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+  }
+  .form-control[type="file"] {
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  
+  .rb_text {
+    color: #727272;
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0%;
+  }
 }

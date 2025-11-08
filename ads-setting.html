@@ -414,34 +414,55 @@
             </nav>
             <div class="rb_social_login">
               <div class="rb_heading">
-                  <h3 class="fw-semibold mb-1">Google Analytics</h3>
-                  <p class="text-muted mb-4">Config Credentials for Google Analytics</p>
+                  <h3 class="fw-semibold mb-1">Ads Settings</h3>
+                  <p class="text-muted mb-4">Manage ads settings</p>
               </div>
-              
-              <!-- Enable Social login -->
-              <div class="rb_switch_label mb-4">
-                <div class="form-switch">
-                  <input class="form-switch-input" type="checkbox" id="enableWidgets" checked />
-                  <label class="form-switch-label" for="enableWidgets">
-                    Enable Dashboard Widgets
-                  </label>
+              <div class="alert_list style_2 mt-3">
+                <div class="d-flex gap-2">
+                  <img src="images/icon/alert-circle.svg" alt="icon">
+                  <h4>Mode Options:</h4>
+                </div>
+                <div class="rb_list">
+                  <ul>
+                    <li><span>Disabled:</span> No Google AdSense ads will be displayed on your site.</li>
+                    <li><span>Disabled:</span> No Google AdSense ads will be displayed on your site.</li>
+                    <li><span>Disabled:</span> No Google AdSense ads will be displayed on your site.</li>
+                  </ul>
                 </div>
               </div>
-
-              <div class="rb_section_border">
-                <div class="common_input">
-                  <div class="mb-0">
-                    <div class="form-group">
-                      <label for="name">Property ID for GA4</label>
-                      <input type="text" class="rounded-pill" id="name" name="name" placeholder="344382041" required="">
-                    </div>
-                    <p class="mt-2"><a href="#">https://</a></p>
-                  </div>
+              <div class="alert_list style_2 mt-3">
+                <div class="d-flex gap-2">
+                  <img src="images/icon/alert-circle.svg" alt="icon">
+                  <h4>What is ads.txt?</h4>
                 </div>
-              </div>  
-              <div class="alert_list style_1 mt-3">
-                <img src="images/icon/alert-circle.svg" alt="icon">
-                <h5>To add Google Analytics Tag ID to track your website traffic, visit Admin → Settings → Website Tracking.</h5>
+                <p>Authorized Digital Sellers (ads.txt) is an IAB Tech Lab initiative that helps ensure your digital ad inventory is only sold through sellers you've authorized. This helps prevent counterfeit inventory and protects your brand.</p>
+                <h6 class="mt-2">How to get your ads.txt content:</h6>
+                <div class="rb_list style_1">
+                  <ul>
+                    <li><span>1.</span> No Google AdSense ads will be displayed on your site.</li>
+                    <li><span>2.</span> No Google AdSense ads will be displayed on your site.</li>
+                    <li><span>3.</span> No Google AdSense ads will be displayed on your site.</li>
+                    <li><span>4.</span> No Google AdSense ads will be displayed on your site.</li>
+                    <li><span>5.</span> No Google AdSense ads will be displayed on your site.</li>
+                  </ul>
+                </div>
+                <h6 class="mt-1">Format example:</h6>
+                <p class="rb_para2">google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0</p>
+                <p class="rb_para2">Once uploaded, your ads.txt will be accessible at: yourdomain.com/ads.txt</p>
+              </div>
+              <div class="rb_input_file mt-3">
+                <label for="adsFile" class="form-label fw-semibold">
+                  Google AdSense ads.txt File
+                </label>
+                <input
+                  class="form-control form-control-lg rounded-pill"
+                  type="file"
+                  id="adsFile"
+                />
+                <div class="rb_text">
+                  The ads.txt file helps protect your ad revenue by declaring who is authorized
+                  to sell your ad inventory.
+                </div>
               </div>
             </div>
           </div>
