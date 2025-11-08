@@ -3,6 +3,8 @@
     border: 1.5px solid #FDFDFD;
     background: var(--Backgrounds-surface2, #FDFDFD);
     border-radius: 24px;
+    box-shadow: 0px 6px 4px -4px #0808080D;
+
     .rb_section_border {
         background: #F3F4F7;
         border: 1px solid #E2E2E2;
@@ -41,32 +43,80 @@
 
         }
     }
-    .rb_check_label {
-        label {
-            color: #101010;
-            font-family: Inter;
-            font-weight: 500;
-            font-style: Medium;
-            font-size: 16px;
-            line-height: 100%;
-            letter-spacing: 0.25%;
-
-        }
-        p {
-            color: #7B7B7B;
-            a {
-                color: #7275F8;
-            }
-
-        }
-    }
-
 }
 
 
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Checkbox Label
+.rb_checkbox_label {
+  .form-check {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .form-check-input {
+      width: 20px;
+      height: 20px;
+      border-radius: 4px;
+      appearance: none;
+      background: #fff;
+      border: 1px solid #D2D2D2;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      position: relative;
+      padding: 3px;
+
+      &:checked {
+        background: linear-gradient(271.8deg, #43CBFF -99.63%, #9708CC 212.68%);
+        border: none;
+      }
+
+      &:checked::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 15px;
+        height: 15px;
+        background: url("data:image/svg+xml;utf8,<svg width='12' height='12' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M20 6L9 17L4 12' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/></svg>")
+          no-repeat center center;
+        background-size: contain;
+        transform: translate(-50%, -50%);
+      }
+
+    }
+
+    label {
+      color: #101010;
+      font-family: Inter;
+      font-weight: 500;
+      font-style: normal;
+      font-size: 16px;
+      line-height: 100%;
+      letter-spacing: 0.25%;
+      margin-top: 5px;
+      cursor: pointer;
+    }
+  }
+
+  p {
+    color: #7B7B7B;
+    margin-top: 4px;
+
+    a {
+      color: #7275F8;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
 // Input Form
 .common_input {
     position: relative;
