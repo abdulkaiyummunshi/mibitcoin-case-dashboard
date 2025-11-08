@@ -32308,6 +32308,10 @@ p {
 .rb_social_login .alert_list h5 a {
   color: #D71E1E;
 }
+.rb_social_login .alert_list.style_1 {
+  padding: 12px 20px;
+  border-radius: 100px;
+}
 
 .rb_checkbox_label .form-check {
   display: flex;
