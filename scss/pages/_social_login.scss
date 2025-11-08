@@ -188,6 +188,15 @@
             line-height: 100%; 
             letter-spacing: 0.25%;
             margin-bottom: 13px;
+            &.style_1 {
+              font-size: 20px;
+              font-family: Inter;
+              font-weight: 600;
+              font-style: Semi Bold;
+              line-height: 100%;
+              letter-spacing: 0%;
+              vertical-align: middle;
+            }
         }
 
         input[type="text"],

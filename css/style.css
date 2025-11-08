@@ -32427,6 +32427,15 @@ p {
   letter-spacing: 0.25%;
   margin-bottom: 13px;
 }
+.common_input .form-group label.style_1 {
+  font-size: 20px;
+  font-family: Inter;
+  font-weight: 600;
+  font-style: Semi Bold;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
 .common_input .form-group input[type=text],
 .common_input .form-group input[type=number],
 .common_input .form-group input[type=tel],
