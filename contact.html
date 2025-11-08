@@ -421,13 +421,17 @@
               <div class="common_input">
                 <div class="mb-4">
                   <div class="form-group">
-                    <label class="style_1" for="name">Add Tags</label>
-                    <input type="text" class="rounded-pill" id="name" name="name" placeholder="Add tags...." required="">
+                    <label class="style_1" for="tagsInput">Add Tags</label>
+                    <input type="text" class="rounded-pill" id="tagsInput" name="name" placeholder="Add tags...." required="">
                   </div>
                 </div>
               </div>
               <div class="rb_section_border">
-                <h3>set here</h3>
+                  <h4 class="rb_title">Blacklisted keywords</h4>
+                  <div id="tagsContainer" class="d-flex flex-wrap gap-2"></div>
+                  <p class="rb_desc">
+                    Add contact requests to blacklist if those keywords are found in the content field (separated by comma).
+                  </p>
               </div>
               <div class="common_input my-4">
                 <div class="mb-0">
@@ -438,6 +442,7 @@
                   <p class="mt-2">Emails from contact forms will be sent to these addresses. To send emails to admin email addresses, leave this field blank.</p>
                 </div>
               </div>  
+
               <!-- Enable Social login -->
               <div class="rb_checkbox_label">
                 <div class="form-check">
@@ -467,5 +472,38 @@
     <script src="./js/scrollreveal.min.js"></script>
     <script src="./js/SplitText.min.js"></script>
     <script src="./js/custom.js"></script>
+
+    <script>
+      const tagsInput = document.getElementById("tagsInput");
+      const tagsContainer = document.getElementById("tagsContainer");
+
+      const defaultTags = ["General", "Design", "Fashion", "Branding", "Modern", "Branding", "Branding", "Branding", "Branding", "Modern", "Modern"];
+
+      // Function to create a tag element
+      function createTag(tagText) {
+        const tag = document.createElement("div");
+        tag.className = "rb_tag_item";
+        tag.innerHTML = `<span>${tagText}</span> <button type="button">&times;</button>`;
+        tag.querySelector("button").addEventListener("click", () => tag.remove());
+        tagsContainer.appendChild(tag);
+      }
+
+      // Load default tags
+      defaultTags.forEach((tag) => createTag(tag));
+
+      // Add new tag on Enter key
+      tagsInput.addEventListener("keypress", function (e) {
+        if (e.key === "Enter") {
+          e.preventDefault();
+          const tagText = tagsInput.value.trim();
+          if (tagText !== "") {
+            createTag(tagText);
+            tagsInput.value = "";
+          }
+        }
+      });
+    </script>
+
+
   </body>
 </html>

@@ -13,6 +13,27 @@
         &.style_1 {
             padding-bottom: 85px;
         }
+        .rb_title {
+          color: #101010;
+          font-family: Inter;
+          font-weight: 600;
+          font-style: Semi Bold;
+          font-size: 18px;
+          line-height: 100%;
+          letter-spacing: 0%;
+          vertical-align: middle;
+          padding-bottom: 15px;
+        }
+        .rb_desc {
+          color: #727272;
+          font-family: Inter;
+          font-weight: 400;
+          font-style: Regular;
+          font-size: 14px;
+          line-height: 22px;
+          letter-spacing: 0%;
+          padding-top: 10px;
+        }
     }
     .rb_input_form {
         background: #FFFFFF;
@@ -324,4 +345,27 @@
   }
 }
 
-    
+// Style for js tag item
+.rb_tag_item {
+  background: #FFF;
+  border-radius: 50px;
+  padding: 5px 12px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.rb_tag_item span {
+  color: #727272;
+  font-weight: 500;
+}
+
+.rb_tag_item button {
+  background: transparent;
+  border: none;
+  color: #101010;
+  font-size: 14px;
+  cursor: pointer;
+  line-height: 1;
+}
