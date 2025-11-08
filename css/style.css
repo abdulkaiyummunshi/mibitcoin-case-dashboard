@@ -32276,6 +32276,9 @@ p {
   border-radius: 14px;
   padding: 32px;
 }
+.rb_social_login .rb_section_border.style_1 {
+  padding-bottom: 85px;
+}
 .rb_social_login .rb_input_form {
   background: #FFFFFF;
   border: 1px solid rgba(114, 117, 248, 0.3019607843);
@@ -32312,6 +32315,12 @@ p {
   font-size: 16px;
   line-height: 100%;
   letter-spacing: 0.25%;
+}
+.rb_social_login .rb_check_label p {
+  color: #7B7B7B;
+}
+.rb_social_login .rb_check_label p a {
+  color: #7275F8;
 }
 
 .common_input {
@@ -32412,7 +32421,7 @@ p {
   border-radius: 10px;
   border: 1px solid rgba(13, 44, 80, 0.1);
   background: #FFF;
-  color: #031a26;
+  color: #727272;
   font-family: Inter;
   font-size: 16px;
   font-style: normal;

@@ -8,6 +8,9 @@
         border: 1px solid #E2E2E2;
         border-radius: 14px;
         padding: 32px;
+        &.style_1 {
+            padding-bottom: 85px;
+        }
     }
     .rb_input_form {
         background: #FFFFFF;
@@ -47,6 +50,13 @@
             font-size: 16px;
             line-height: 100%;
             letter-spacing: 0.25%;
+
+        }
+        p {
+            color: #7B7B7B;
+            a {
+                color: #7275F8;
+            }
 
         }
     }
@@ -136,7 +146,7 @@
             border: 1px solid rgba(13, 44, 80, 0.10);
             background: #FFF;
 
-            color: $text_color;
+            color: #727272;
             font-family: Inter;
             font-size: 16px;
             font-style: normal;

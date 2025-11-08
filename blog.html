@@ -414,238 +414,31 @@
             </nav>
             <div class="rb_social_login">
               <div class="rb_heading">
-                  <h3 class="fw-semibold mb-1">Social Login Settings</h3>
-                  <p class="text-muted mb-4">Configure social login options</p>
+                  <h3 class="fw-semibold mb-1">Blog</h3>
+                  <p class="text-muted mb-4">View and update blog settings</p>
               </div>
               <!-- Enable Social login -->
               <div class="rb_check_label mb-4">
                 <div class="form-check">
                   <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
                   <label class="form-check-label" for="invalidCheck">
-                    Enable Social login?
+                    Enable Schema for blog posts
                   </label>
                 </div>
+                <p>Learn more: <a href="#">https:</a> </p>
               </div>
-              <div class="rb_section_border">
-                <div class="mb-4">
-                    <!-- Enable Google login -->
-                  <div class="rb_check_label mb-4">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="validCheck" required>
-                      <label class="form-check-label" for="validCheck">
-                        Enable Google login
-                      </label>
-                      </div>
-                  </div>
-
-                  <div class="rb_input_form common_input">
-                    <div class="row g-3">
-                      <div class="col-md-12">
-                        <div class="row g-4">
-                          <div class="col-12">
-                            <div class="mb-3">
-                              <div class="form-group">
-                                <label for="name">App ID</label>
-                                <input type="text" id="name" name="name" placeholder="123456789" required="">
-                              </div>
-                            </div>
-                            <div class="mb-3">
-                              <div class="form-group">
-                                <label for="name">App Secret</label>
-                                <input type="text" id="name" name="name" placeholder="5f1b1b1c-7b1b-4b1b-8b1b-1b1b1b1b1b1b" required="">
-                              </div>
-                            </div>
-                            <div class="alert_list mb-3">
-                              <img src="images/icon/alert-circle.svg" alt="icon">
-                              <h5>Please go to https://developers.facebook.com to create new app update App ID, App Secret. Callback URL is <br> <a href="#">https://softerafty.com</a></h5>
-                            </div>
-                            <div class="alert_list mb-3">
-                              <img src="images/icon/alert-circle.svg" alt="icon">
-                              <h5>Set this URL as the Data Deletion Request URL in your Facebook app settings to allow users to request <br> <a href="#">https://softerafty.com</a></h5>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+              <div class="rb_section_border style_1">
+                <div class="common_input">
+                    <div class="form-group">
+                      <label for="name">Schema type</label>
+                      <select id="department" name="department" class="custom-select">
+                        <option value="" disabled="" selected="">News Article</option>
+                        <option value="department1">department 1</option>
+                        <option value="department2">department 2</option>
+                        <option value="department3">department 3</option>
+                      </select>
                     </div>
-                  </div>
                 </div>
-                <div class="mb-4">
-                    <!-- Enable Facebook login -->
-                  <div class="rb_check_label mb-4">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="validCheck" required>
-                      <label class="form-check-label" for="validCheck">
-                        Enable Facebook login
-                      </label>
-                      </div>
-                  </div>
-
-                  <div class="rb_input_form common_input">
-                    <div class="row g-3">
-                      <div class="col-md-12">
-                        <div class="row g-4">
-                          <div class="col-12">
-                            <div class="mb-3">
-                              <div class="form-group">
-                                <label for="name">App ID</label>
-                                <input type="text" id="name" name="name" placeholder="123456789" required="">
-                              </div>
-                            </div>
-                            <div class="mb-3">
-                              <div class="form-group">
-                                <label for="name">App Secret</label>
-                                <input type="text" id="name" name="name" placeholder="5f1b1b1c-7b1b-4b1b-8b1b-1b1b1b1b1b1b" required="">
-                              </div>
-                            </div>
-                            <div class="alert_list mb-3">
-                              <img src="images/icon/alert-circle.svg" alt="icon">
-                              <h5>Please go to https://developers.facebook.com to create new app update App ID, App Secret. Callback URL is <br> <a href="#">https://softerafty.com</a></h5>
-                            </div>
-                            <div class="alert_list mb-3">
-                              <img src="images/icon/alert-circle.svg" alt="icon">
-                              <h5>Set this URL as the Data Deletion Request URL in your Facebook app settings to allow users to request <br> <a href="#">https://softerafty.com</a></h5>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="mb-4">
-                    <!-- Enable GitHub login -->
-                  <div class="rb_check_label mb-4">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="validCheck" required>
-                      <label class="form-check-label" for="validCheck">
-                        Enable GitHub login
-                      </label>
-                      </div>
-                  </div>
-
-                  <div class="rb_input_form common_input">
-                    <div class="row g-3">
-                      <div class="col-md-12">
-                        <div class="row g-4">
-                          <div class="col-12">
-                            <div class="mb-3">
-                              <div class="form-group">
-                                <label for="name">App ID</label>
-                                <input type="text" id="name" name="name" placeholder="123456789" required="">
-                              </div>
-                            </div>
-                            <div class="mb-3">
-                              <div class="form-group">
-                                <label for="name">App Secret</label>
-                                <input type="text" id="name" name="name" placeholder="5f1b1b1c-7b1b-4b1b-8b1b-1b1b1b1b1b1b" required="">
-                              </div>
-                            </div>
-                            <div class="alert_list mb-3">
-                              <img src="images/icon/alert-circle.svg" alt="icon">
-                              <h5>Please go to https://developers.facebook.com to create new app update App ID, App Secret. Callback URL is <br> <a href="#">https://softerafty.com</a></h5>
-                            </div>
-                            <div class="alert_list mb-3">
-                              <img src="images/icon/alert-circle.svg" alt="icon">
-                              <h5>Set this URL as the Data Deletion Request URL in your Facebook app settings to allow users to request <br> <a href="#">https://softerafty.com</a></h5>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="mb-4">
-                    <!-- Enable Linkedin login -->
-                  <div class="rb_check_label mb-4">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="validCheck" required>
-                      <label class="form-check-label" for="validCheck">
-                        Enable Linkedin login
-                      </label>
-                      </div>
-                  </div>
-
-                  <div class="rb_input_form common_input">
-                    <div class="row g-3">
-                      <div class="col-md-12">
-                        <div class="row g-4">
-                          <div class="col-12">
-                            <div class="mb-3">
-                              <div class="form-group">
-                                <label for="name">App ID</label>
-                                <input type="text" id="name" name="name" placeholder="123456789" required="">
-                              </div>
-                            </div>
-                            <div class="mb-3">
-                              <div class="form-group">
-                                <label for="name">App Secret</label>
-                                <input type="text" id="name" name="name" placeholder="5f1b1b1c-7b1b-4b1b-8b1b-1b1b1b1b1b1b" required="">
-                              </div>
-                            </div>
-                            <div class="alert_list mb-3">
-                              <img src="images/icon/alert-circle.svg" alt="icon">
-                              <h5>Please go to https://developers.facebook.com to create new app update App ID, App Secret. Callback URL is <br> <a href="#">https://softerafty.com</a></h5>
-                            </div>
-                            <div class="alert_list mb-3">
-                              <img src="images/icon/alert-circle.svg" alt="icon">
-                              <h5>Set this URL as the Data Deletion Request URL in your Facebook app settings to allow users to request <br> <a href="#">https://softerafty.com</a></h5>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="mb-0">
-                    <!-- Enable Facebook login -->
-                  <div class="rb_check_label mb-4">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="validCheck" required>
-                      <label class="form-check-label" for="validCheck">
-                        Enable Linkedin using OpenID Connect login
-                      </label>
-                      </div>
-                  </div>
-
-                  <div class="rb_input_form common_input">
-                    <div class="row g-3">
-                      <div class="col-md-12">
-                        <div class="row g-4">
-                          <div class="col-12">
-                            <div class="mb-3">
-                              <div class="form-group">
-                                <label for="name">App ID</label>
-                                <input type="text" id="name" name="name" placeholder="123456789" required="">
-                              </div>
-                            </div>
-                            <div class="mb-3">
-                              <div class="form-group">
-                                <label for="name">App Secret</label>
-                                <input type="text" id="name" name="name" placeholder="5f1b1b1c-7b1b-4b1b-8b1b-1b1b1b1b1b1b" required="">
-                              </div>
-                            </div>
-                            <div class="alert_list mb-3">
-                              <img src="images/icon/alert-circle.svg" alt="icon">
-                              <h5>Please go to https://developers.facebook.com to create new app update App ID, App Secret. Callback URL is <br> <a href="#">https://softerafty.com</a></h5>
-                            </div>
-                            <div class="alert_list mb-3">
-                              <img src="images/icon/alert-circle.svg" alt="icon">
-                              <h5>Set this URL as the Data Deletion Request URL in your Facebook app settings to allow users to request <br> <a href="#">https://softerafty.com</a></h5>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Enable Google login -->
-              <div class="rb_check_label mt-4">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="validCheck" required>
-                  <label class="form-check-label" for="validCheck">
-                    Enable X (Twitter) login
-                  </label>
-                  </div>
               </div>
             </div>
           </div>
