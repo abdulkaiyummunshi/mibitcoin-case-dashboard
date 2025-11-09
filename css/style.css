@@ -32192,6 +32192,7 @@ p {
 .btn_wrapper {
   border-radius: 32px;
   padding: 0px 28px;
+  width: max-content;
   height: 48px;
   line-height: 48px;
   box-shadow: inset 2px 0 8px 2px rgba(248, 248, 248, 0.2);
@@ -32214,6 +32215,7 @@ p {
   background: #fff;
 }
 .tk_dashboard_area .tk_dashboard_sidebar ul li a {
+  border-radius: 12px;
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
@@ -32252,7 +32254,6 @@ p {
   margin-right: 12px;
 }
 .tk_dashboard_area .tk_dashboard_sidebar ul li .tk_side_dropdown {
-  background-color: pink;
   max-height: 0px;
   opacity: 0;
   visibility: hidden;
