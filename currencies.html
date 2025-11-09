@@ -452,7 +452,7 @@
 
                   <!-- API Provider Section -->
                   <div class="rb_radio_label mb-4">
-                    <label class="form-label fw-semibold mb-2">API provider</label>
+                    <label class="form-label mb-2">API provider</label>
                     <div class="d-flex align-items-center gap-4">
                       <div class="form-check">
                         <input class="form-check-input" type="radio" name="apiProvider" id="providerNone" value="none" checked>
@@ -469,8 +469,17 @@
                         <label class="form-check-label" for="providerOpenExchange">Open Exchange Rates</label>
                       </div>
                     </div>
-                  </div>                  
-
+                  </div>  
+                  <!-- Enable Social login -->
+                  <div class="rb_checkbox_label mb-4">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="invalidCheck3" required>
+                      <label class="form-check-label" for="invalidCheck3">
+                        Use exchange rate from API
+                      </label>
+                    </div>
+                    <p>Enable automatic currency exchange rate updates from the configured API provider. This ensures your prices are always up-to-date with current market rates.</p>
+                  </div>                               
               </div>
             </div>
             <div class="btn_wrapper mt-20 mb-20">
