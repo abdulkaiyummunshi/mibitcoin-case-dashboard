@@ -1,0 +1,482 @@
+.rb_ecommerce_area {
+    max-width: 1008px;  
+    padding: 32px;
+    border: 1.5px solid #FDFDFD;
+    background: var(--Backgrounds-surface2, #FDFDFD);
+    border-radius: 24px;
+    box-shadow: 0px 6px 4px -4px #0808080D;
+
+    .rb_section_border {
+      background: #F3F4F7;
+      border: 1px solid #E2E2E2;
+      border-radius: 14px;
+      padding: 32px;
+      &.style_1 {
+          padding-bottom: 85px;
+      }
+      .rb_title {
+        color: #101010;
+        font-family: Inter;
+        font-weight: 600;
+        font-style: Semi Bold;
+        font-size: 18px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        padding-bottom: 15px;
+      }
+      .rb_desc {
+        color: #727272;
+        font-family: Inter;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0%;
+        padding-top: 10px;
+      }
+    }
+    .rb_thumb {
+      img {
+        width: 100%;
+      }
+    }
+    .rb_para {
+      color: #7B7B7B;
+      font-family: Inter;
+      font-weight: 500;
+      font-style: Medium;
+      font-size: 16px;
+      line-height: 100%;
+      letter-spacing: 0%;
+    }
+    .rb_input_form {
+        background: #FFFFFF;
+        border: 1px solid #7275F84D;
+        padding: 32px;
+        border-radius: 14px;
+    }
+    .alert_list {
+        display: flex;
+        align-items: start;
+        gap: 10px;
+        padding: 20px;
+        border-radius: 14px;
+        background: #7275F80D;
+        border: 1px solid #7275F84D;
+        h5 {
+            color: #7B7B7B;
+            font-family: Inter;
+            font-weight: 500;
+            font-style: Medium;
+            font-size: 14px;
+            line-height: 26px;
+            letter-spacing: 0%;
+            vertical-align: middle;
+            a {
+                color: #D71E1E;
+            }
+
+        }
+        &.style_1 {
+          padding: 12px 20px;
+          border-radius: 100px;
+        }
+        &.style_2 {
+          display: flex;
+          flex-direction: column;
+          h4 {
+            color: #192135;
+            font-family: Inter;
+            font-weight: 600;
+            font-style: Semi Bold;
+            font-size: 16px;
+            line-height: 32px;
+            letter-spacing: 0%;
+          }
+          p {
+            color: #7B7B7B;
+            font-family: Inter;
+            font-weight: 500;
+            font-style: Medium;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 0%;
+          }
+          h6 {
+            color: #192135;
+            font-family: Inter;
+            font-weight: 600;
+            font-style: Semi Bold;
+            font-size: 14px;
+            line-height: 22px;
+            letter-spacing: 0%;
+            vertical-align: middle;
+          }
+          .rb_list {
+            ul {
+              list-style-type: disc;
+              padding-left: 22px;
+              li {
+                color: #7B7B7B;
+                font-family: Inter;
+                font-weight: 600;
+                font-style: Semi Bold;
+                font-size: 14px;
+                line-height: 22px;
+                letter-spacing: 0%;
+                vertical-align: middle;
+                padding-bottom: 10px;
+                span {
+                  color: #192135;
+                }
+              }
+            }
+            &.style_1 {
+              ul {
+                list-style: none;
+                padding-left: 0;
+              }
+            }
+          }
+          .rb_para2 {
+            color: #7B7B7B;
+            font-family: Inter;
+            font-weight: 500;
+            font-style: Medium;
+            font-size: 14px;
+            line-height: 22px;
+            letter-spacing: 0%;
+            vertical-align: middle;
+          }
+        }
+    }
+}
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Checkbox Label
+.rb_checkbox_label {
+  .form-check {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .form-check-input {
+      width: 20px;
+      height: 20px;
+      border-radius: 4px;
+      appearance: none;
+      background: #fff;
+      border: 1px solid #D2D2D2;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      position: relative;
+      padding: 3px;
+
+      &:checked {
+        background: linear-gradient(271.8deg, #43CBFF -99.63%, #9708CC 212.68%);
+        border: none;
+      }
+
+      &:checked::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 15px;
+        height: 15px;
+        background: url("data:image/svg+xml;utf8,<svg width='12' height='12' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M20 6L9 17L4 12' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/></svg>")
+          no-repeat center center;
+        background-size: contain;
+        transform: translate(-50%, -50%);
+      }
+
+    }
+
+    label {
+      color: #101010;
+      font-family: Inter;
+      font-weight: 500;
+      font-style: normal;
+      font-size: 16px;
+      line-height: 100%;
+      letter-spacing: 0.25%;
+      margin-top: 5px;
+      cursor: pointer;
+    }
+  }
+
+  p {
+    color: #7B7B7B;
+    margin-top: 4px;
+
+    a {
+      color: #7275F8;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+// Switch Label
+.rb_switch_label {
+  .form-switch {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 0;
+
+    .form-switch-input {
+      width: 44px;
+      height: 24px;
+      appearance: none;
+      background: #e5e5e5;
+      border-radius: 50px;
+      position: relative;
+      cursor: pointer;
+      transition: all 0.4s ease;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background: #fff;
+        top: 3px;
+        left: 3px;
+        transition: all 0.4s ease;
+      }
+
+      &:checked {
+        background: linear-gradient(271.8deg, #43CBFF -99.63%, #9708CC 212.68%);
+      }
+
+      &:checked::before {
+        transform: translateX(20px);
+      }
+    }
+
+    .form-switch-label {
+      color: #7B7B7B;
+      font-family: Inter;
+      font-weight: 500;
+      font-style: normal;
+      font-size: 14px;
+      line-height: 100%;
+      letter-spacing: 0.25%;
+      margin-top: 3px;
+      cursor: pointer;
+    }
+  }
+}
+
+// Input Form
+.common_input {
+    position: relative;
+    .form-group {
+        label {
+            display: block;
+            color: #101010;
+            font-family: Inter;
+            font-size: 16px;
+            font-style: Medium;
+            font-weight: 500;
+            line-height: 100%; 
+            letter-spacing: 0.25%;
+            margin-bottom: 13px;
+            &.style_1 {
+              font-size: 20px;
+              font-family: Inter;
+              font-weight: 600;
+              font-style: Semi Bold;
+              line-height: 100%;
+              letter-spacing: 0%;
+              vertical-align: middle;
+            }
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="tel"],
+        input[type="date"],
+        input[type="time"],
+        input[type="email"],
+        input[type="password"],
+        textarea {
+            width: 100%;
+            padding: 12px 20px;
+            height: 48px;
+            border-radius: 10px;
+            border: 1px solid var(--Stroke-Stroke2, #E2E2E2);
+            background: $white;
+
+            color: #727272;
+            font-family: Inter;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 22px; 
+            &::placeholder{
+                color: #727272;
+            }
+            &:focus {
+                outline: none;
+            }
+            @include xxs {
+                height: 46px;
+            }
+        }
+        textarea {
+            height: 166px;
+            resize: vertical;
+            @include xxs {
+                height: 134px;
+            }
+        }
+        input[type="date"] {
+            cursor: pointer;
+            &::-webkit-calendar-picker-indicator {
+                opacity: 0;
+                display: none;
+                -webkit-appearance: none;
+            }
+            &::-webkit-inner-spin-button,
+            &::-webkit-clear-button {
+                display: none;
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+        .nice-select,
+        select {
+            width: 100%;
+            padding: 14px 20px;
+            height: 54px;
+            border-radius: 10px;
+            border: 1px solid rgba(13, 44, 80, 0.10);
+            background: #FFF;
+
+            color: #727272;
+            font-family: Inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px; 
+            @include xxs {
+                height: 46px;
+                padding: 9px 20px;
+            }
+        }
+        .nice-select:after {
+            width: 9px;
+            height: 9px;
+            right: 20px;
+        }
+        select:focus {
+            outline: none;
+        }
+    }
+}
+
+// icon use into input field
+.input_icon_wrap {
+  position: relative;
+  .input_icon {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+  .input_textarea_icon {
+    position: absolute;
+    top: 10%;
+    left: 20px;
+    transform: translateY(-10%);
+    pointer-events: none;
+    @include xxs {
+        top: 12%;
+    }
+  }
+  .input_select_icon {
+    position: absolute;
+    left: 20px;
+    transform: translateY(50%);
+    pointer-events: none;
+  }
+
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  textarea
+  {
+    padding-left: 50px !important;
+  }
+  .nice-select,
+  select {
+    padding-left: 50px !important;
+  }
+}
+
+// Style for js tag item
+.rb_tag_item {
+  background: #FFF;
+  border-radius: 50px;
+  padding: 5px 12px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.rb_tag_item span {
+  color: #727272;
+  font-weight: 500;
+}
+
+.rb_tag_item button {
+  background: transparent;
+  border: none;
+  color: #101010;
+  font-size: 14px;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.rb_input_file {
+  label {
+    color: #101010;
+    font-family: Inter;
+    font-weight: 600;
+    font-style: Semi Bold;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+  }
+  .form-control[type="file"] {
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  
+  .rb_text {
+    color: #727272;
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0%;
+  }
+}
