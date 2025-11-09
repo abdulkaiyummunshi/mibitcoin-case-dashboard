@@ -32263,6 +32263,7 @@ p {
   visibility: visible;
   opacity: 1;
   max-height: 500px;
+  padding-left: 36px;
 }
 
 .rb_social_login {
