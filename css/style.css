@@ -32269,6 +32269,329 @@ p {
   padding-left: 36px;
 }
 
+.rb_checkbox_label .form-check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.rb_checkbox_label .form-check .form-check-input {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  appearance: none;
+  background: #fff;
+  border: 1px solid #D2D2D2;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  padding: 3px;
+}
+.rb_checkbox_label .form-check .form-check-input:checked {
+  background: linear-gradient(271.8deg, #43CBFF -99.63%, #9708CC 212.68%);
+  border: none;
+}
+.rb_checkbox_label .form-check .form-check-input:checked::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 15px;
+  height: 15px;
+  background: url("data:image/svg+xml;utf8,<svg width='12' height='12' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M20 6L9 17L4 12' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/></svg>") no-repeat center center;
+  background-size: contain;
+  transform: translate(-50%, -50%);
+}
+.rb_checkbox_label .form-check label {
+  color: #101010;
+  font-family: Inter;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0.25%;
+  margin-top: 5px;
+  cursor: pointer;
+}
+.rb_checkbox_label p {
+  color: #7B7B7B;
+  margin-top: 4px;
+}
+.rb_checkbox_label p a {
+  color: #7275F8;
+  text-decoration: none;
+}
+.rb_checkbox_label p a:hover {
+  text-decoration: underline;
+}
+
+.rb_switch_label .form-switch {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 0;
+}
+.rb_switch_label .form-switch .form-switch-input {
+  width: 44px;
+  height: 24px;
+  appearance: none;
+  background: #e5e5e5;
+  border-radius: 50px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.rb_switch_label .form-switch .form-switch-input::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #fff;
+  top: 3px;
+  left: 3px;
+  transition: all 0.4s ease;
+}
+.rb_switch_label .form-switch .form-switch-input:checked {
+  background: linear-gradient(271.8deg, #43CBFF -99.63%, #9708CC 212.68%);
+}
+.rb_switch_label .form-switch .form-switch-input:checked::before {
+  transform: translateX(20px);
+}
+.rb_switch_label .form-switch .form-switch-label {
+  color: #7B7B7B;
+  font-family: Inter;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0.25%;
+  margin-top: 3px;
+  cursor: pointer;
+}
+
+.rb_radio_label .form-check-input {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #CFCFCF;
+  cursor: pointer;
+  appearance: none;
+  position: relative;
+  transition: all 0.25s ease;
+}
+
+.rb_radio_label .form-check-input:checked {
+  border-color: #7275F8;
+  background-color: transparent;
+}
+
+.rb_radio_label .form-check-input:checked::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: #7275F8;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.rb_radio_label .form-check-label {
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #505050;
+  cursor: pointer;
+  user-select: none;
+}
+
+.rb_radio_label .form-label {
+  color: #101010;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.common_input {
+  position: relative;
+}
+.common_input .desc {
+  color: #727272;
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0%;
+  padding-top: 10px;
+}
+.common_input .form-group label {
+  display: block;
+  color: #101010;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: Medium;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0.25%;
+  margin-bottom: 13px;
+}
+.common_input .form-group label.style_1 {
+  font-size: 20px;
+  font-family: Inter;
+  font-weight: 600;
+  font-style: Semi Bold;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+.common_input .form-group input[type=text],
+.common_input .form-group input[type=number],
+.common_input .form-group input[type=tel],
+.common_input .form-group input[type=date],
+.common_input .form-group input[type=time],
+.common_input .form-group input[type=email],
+.common_input .form-group input[type=password],
+.common_input .form-group textarea {
+  width: 100%;
+  padding: 12px 20px;
+  height: 48px;
+  border-radius: 10px;
+  border: 1px solid var(--Stroke-Stroke2, #E2E2E2);
+  background: #fff;
+  color: #727272;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+.common_input .form-group input[type=text]::placeholder,
+.common_input .form-group input[type=number]::placeholder,
+.common_input .form-group input[type=tel]::placeholder,
+.common_input .form-group input[type=date]::placeholder,
+.common_input .form-group input[type=time]::placeholder,
+.common_input .form-group input[type=email]::placeholder,
+.common_input .form-group input[type=password]::placeholder,
+.common_input .form-group textarea::placeholder {
+  color: #727272;
+}
+.common_input .form-group input[type=text]:focus,
+.common_input .form-group input[type=number]:focus,
+.common_input .form-group input[type=tel]:focus,
+.common_input .form-group input[type=date]:focus,
+.common_input .form-group input[type=time]:focus,
+.common_input .form-group input[type=email]:focus,
+.common_input .form-group input[type=password]:focus,
+.common_input .form-group textarea:focus {
+  outline: none;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .common_input .form-group input[type=text],
+  .common_input .form-group input[type=number],
+  .common_input .form-group input[type=tel],
+  .common_input .form-group input[type=date],
+  .common_input .form-group input[type=time],
+  .common_input .form-group input[type=email],
+  .common_input .form-group input[type=password],
+  .common_input .form-group textarea {
+    height: 46px;
+  }
+}
+.common_input .form-group textarea {
+  height: 166px;
+  resize: vertical;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .common_input .form-group textarea {
+    height: 134px;
+  }
+}
+.common_input .form-group input[type=date] {
+  cursor: pointer;
+}
+.common_input .form-group input[type=date]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  display: none;
+  -webkit-appearance: none;
+}
+.common_input .form-group input[type=date]::-webkit-inner-spin-button, .common_input .form-group input[type=date]::-webkit-clear-button {
+  display: none;
+}
+.common_input .form-group input[type=date]:focus {
+  outline: none;
+}
+.common_input .form-group .nice-select,
+.common_input .form-group select {
+  width: 100%;
+  padding: 14px 20px;
+  height: 54px;
+  border-radius: 10px;
+  border: 1px solid rgba(13, 44, 80, 0.1);
+  background: #FFF;
+  color: #727272;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .common_input .form-group .nice-select,
+  .common_input .form-group select {
+    height: 46px;
+    padding: 9px 20px;
+  }
+}
+.common_input .form-group .nice-select:after {
+  width: 9px;
+  height: 9px;
+  right: 20px;
+}
+.common_input .form-group select:focus {
+  outline: none;
+}
+
+.input_icon_wrap {
+  position: relative;
+}
+.input_icon_wrap .input_icon {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+.input_icon_wrap .input_textarea_icon {
+  position: absolute;
+  top: 10%;
+  left: 20px;
+  transform: translateY(-10%);
+  pointer-events: none;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .input_icon_wrap .input_textarea_icon {
+    top: 12%;
+  }
+}
+.input_icon_wrap .input_select_icon {
+  position: absolute;
+  left: 20px;
+  transform: translateY(50%);
+  pointer-events: none;
+}
+.input_icon_wrap input[type=text],
+.input_icon_wrap input[type=tel],
+.input_icon_wrap input[type=email],
+.input_icon_wrap textarea {
+  padding-left: 50px !important;
+}
+.input_icon_wrap .nice-select,
+.input_icon_wrap select {
+  padding-left: 50px !important;
+}
+
 .rb_ecommerce_area {
   max-width: 1008px;
   padding: 32px;
@@ -32416,324 +32739,6 @@ p {
   vertical-align: middle;
 }
 
-.rb_checkbox_label .form-check {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.rb_checkbox_label .form-check .form-check-input {
-  width: 20px;
-  height: 20px;
-  border-radius: 4px;
-  appearance: none;
-  background: #fff;
-  border: 1px solid #D2D2D2;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-  padding: 3px;
-}
-.rb_checkbox_label .form-check .form-check-input:checked {
-  background: linear-gradient(271.8deg, #43CBFF -99.63%, #9708CC 212.68%);
-  border: none;
-}
-.rb_checkbox_label .form-check .form-check-input:checked::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 15px;
-  height: 15px;
-  background: url("data:image/svg+xml;utf8,<svg width='12' height='12' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M20 6L9 17L4 12' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/></svg>") no-repeat center center;
-  background-size: contain;
-  transform: translate(-50%, -50%);
-}
-.rb_checkbox_label .form-check label {
-  color: #101010;
-  font-family: Inter;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 16px;
-  line-height: 100%;
-  letter-spacing: 0.25%;
-  margin-top: 5px;
-  cursor: pointer;
-}
-.rb_checkbox_label p {
-  color: #7B7B7B;
-  margin-top: 4px;
-}
-.rb_checkbox_label p a {
-  color: #7275F8;
-  text-decoration: none;
-}
-.rb_checkbox_label p a:hover {
-  text-decoration: underline;
-}
-
-.rb_switch_label .form-switch {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding-left: 0;
-}
-.rb_switch_label .form-switch .form-switch-input {
-  width: 44px;
-  height: 24px;
-  appearance: none;
-  background: #e5e5e5;
-  border-radius: 50px;
-  position: relative;
-  cursor: pointer;
-  transition: all 0.4s ease;
-}
-.rb_switch_label .form-switch .form-switch-input::before {
-  content: "";
-  position: absolute;
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  background: #fff;
-  top: 3px;
-  left: 3px;
-  transition: all 0.4s ease;
-}
-.rb_switch_label .form-switch .form-switch-input:checked {
-  background: linear-gradient(271.8deg, #43CBFF -99.63%, #9708CC 212.68%);
-}
-.rb_switch_label .form-switch .form-switch-input:checked::before {
-  transform: translateX(20px);
-}
-.rb_switch_label .form-switch .form-switch-label {
-  color: #7B7B7B;
-  font-family: Inter;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 100%;
-  letter-spacing: 0.25%;
-  margin-top: 3px;
-  cursor: pointer;
-}
-
-.common_input {
-  position: relative;
-}
-.common_input .form-group label {
-  display: block;
-  color: #101010;
-  font-family: Inter;
-  font-size: 16px;
-  font-style: Medium;
-  font-weight: 500;
-  line-height: 100%;
-  letter-spacing: 0.25%;
-  margin-bottom: 13px;
-}
-.common_input .form-group label.style_1 {
-  font-size: 20px;
-  font-family: Inter;
-  font-weight: 600;
-  font-style: Semi Bold;
-  line-height: 100%;
-  letter-spacing: 0%;
-  vertical-align: middle;
-}
-.common_input .form-group input[type=text],
-.common_input .form-group input[type=number],
-.common_input .form-group input[type=tel],
-.common_input .form-group input[type=date],
-.common_input .form-group input[type=time],
-.common_input .form-group input[type=email],
-.common_input .form-group input[type=password],
-.common_input .form-group textarea {
-  width: 100%;
-  padding: 12px 20px;
-  height: 48px;
-  border-radius: 10px;
-  border: 1px solid var(--Stroke-Stroke2, #E2E2E2);
-  background: #fff;
-  color: #727272;
-  font-family: Inter;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 22px;
-}
-.common_input .form-group input[type=text]::placeholder,
-.common_input .form-group input[type=number]::placeholder,
-.common_input .form-group input[type=tel]::placeholder,
-.common_input .form-group input[type=date]::placeholder,
-.common_input .form-group input[type=time]::placeholder,
-.common_input .form-group input[type=email]::placeholder,
-.common_input .form-group input[type=password]::placeholder,
-.common_input .form-group textarea::placeholder {
-  color: #727272;
-}
-.common_input .form-group input[type=text]:focus,
-.common_input .form-group input[type=number]:focus,
-.common_input .form-group input[type=tel]:focus,
-.common_input .form-group input[type=date]:focus,
-.common_input .form-group input[type=time]:focus,
-.common_input .form-group input[type=email]:focus,
-.common_input .form-group input[type=password]:focus,
-.common_input .form-group textarea:focus {
-  outline: none;
-}
-@media only screen and (min-width: 0px) and (max-width: 479px) {
-  .common_input .form-group input[type=text],
-  .common_input .form-group input[type=number],
-  .common_input .form-group input[type=tel],
-  .common_input .form-group input[type=date],
-  .common_input .form-group input[type=time],
-  .common_input .form-group input[type=email],
-  .common_input .form-group input[type=password],
-  .common_input .form-group textarea {
-    height: 46px;
-  }
-}
-.common_input .form-group textarea {
-  height: 166px;
-  resize: vertical;
-}
-@media only screen and (min-width: 0px) and (max-width: 479px) {
-  .common_input .form-group textarea {
-    height: 134px;
-  }
-}
-.common_input .form-group input[type=date] {
-  cursor: pointer;
-}
-.common_input .form-group input[type=date]::-webkit-calendar-picker-indicator {
-  opacity: 0;
-  display: none;
-  -webkit-appearance: none;
-}
-.common_input .form-group input[type=date]::-webkit-inner-spin-button, .common_input .form-group input[type=date]::-webkit-clear-button {
-  display: none;
-}
-.common_input .form-group input[type=date]:focus {
-  outline: none;
-}
-.common_input .form-group .nice-select,
-.common_input .form-group select {
-  width: 100%;
-  padding: 14px 20px;
-  height: 54px;
-  border-radius: 10px;
-  border: 1px solid rgba(13, 44, 80, 0.1);
-  background: #FFF;
-  color: #727272;
-  font-family: Inter;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 26px;
-}
-@media only screen and (min-width: 0px) and (max-width: 479px) {
-  .common_input .form-group .nice-select,
-  .common_input .form-group select {
-    height: 46px;
-    padding: 9px 20px;
-  }
-}
-.common_input .form-group .nice-select:after {
-  width: 9px;
-  height: 9px;
-  right: 20px;
-}
-.common_input .form-group select:focus {
-  outline: none;
-}
-
-.input_icon_wrap {
-  position: relative;
-}
-.input_icon_wrap .input_icon {
-  position: absolute;
-  top: 50%;
-  left: 20px;
-  transform: translateY(-50%);
-  pointer-events: none;
-}
-.input_icon_wrap .input_textarea_icon {
-  position: absolute;
-  top: 10%;
-  left: 20px;
-  transform: translateY(-10%);
-  pointer-events: none;
-}
-@media only screen and (min-width: 0px) and (max-width: 479px) {
-  .input_icon_wrap .input_textarea_icon {
-    top: 12%;
-  }
-}
-.input_icon_wrap .input_select_icon {
-  position: absolute;
-  left: 20px;
-  transform: translateY(50%);
-  pointer-events: none;
-}
-.input_icon_wrap input[type=text],
-.input_icon_wrap input[type=tel],
-.input_icon_wrap input[type=email],
-.input_icon_wrap textarea {
-  padding-left: 50px !important;
-}
-.input_icon_wrap .nice-select,
-.input_icon_wrap select {
-  padding-left: 50px !important;
-}
-
-.rb_tag_item {
-  background: #FFF;
-  border-radius: 50px;
-  padding: 5px 12px;
-  font-size: 14px;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-
-.rb_tag_item span {
-  color: #727272;
-  font-weight: 500;
-}
-
-.rb_tag_item button {
-  background: transparent;
-  border: none;
-  color: #101010;
-  font-size: 14px;
-  cursor: pointer;
-  line-height: 1;
-}
-
-.rb_input_file label {
-  color: #101010;
-  font-family: Inter;
-  font-weight: 600;
-  font-style: Semi Bold;
-  font-size: 16px;
-  line-height: 22px;
-  letter-spacing: 0%;
-  vertical-align: middle;
-}
-.rb_input_file .form-control[type=file] {
-  padding: 10px 20px;
-  border-radius: 50px;
-  cursor: pointer;
-}
-.rb_input_file .rb_text {
-  color: #727272;
-  font-family: Inter;
-  font-weight: 400;
-  font-style: Regular;
-  font-size: 14px;
-  line-height: 22px;
-  letter-spacing: 0%;
-}
-
 .rb_social_login {
   padding: 32px;
   border: 1.5px solid #FDFDFD;
@@ -32878,275 +32883,6 @@ p {
   line-height: 22px;
   letter-spacing: 0%;
   vertical-align: middle;
-}
-
-.rb_checkbox_label .form-check {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.rb_checkbox_label .form-check .form-check-input {
-  width: 20px;
-  height: 20px;
-  border-radius: 4px;
-  appearance: none;
-  background: #fff;
-  border: 1px solid #D2D2D2;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-  padding: 3px;
-}
-.rb_checkbox_label .form-check .form-check-input:checked {
-  background: linear-gradient(271.8deg, #43CBFF -99.63%, #9708CC 212.68%);
-  border: none;
-}
-.rb_checkbox_label .form-check .form-check-input:checked::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 15px;
-  height: 15px;
-  background: url("data:image/svg+xml;utf8,<svg width='12' height='12' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M20 6L9 17L4 12' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/></svg>") no-repeat center center;
-  background-size: contain;
-  transform: translate(-50%, -50%);
-}
-.rb_checkbox_label .form-check label {
-  color: #101010;
-  font-family: Inter;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 16px;
-  line-height: 100%;
-  letter-spacing: 0.25%;
-  margin-top: 5px;
-  cursor: pointer;
-}
-.rb_checkbox_label p {
-  color: #7B7B7B;
-  margin-top: 4px;
-}
-.rb_checkbox_label p a {
-  color: #7275F8;
-  text-decoration: none;
-}
-.rb_checkbox_label p a:hover {
-  text-decoration: underline;
-}
-
-.rb_switch_label .form-switch {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding-left: 0;
-}
-.rb_switch_label .form-switch .form-switch-input {
-  width: 44px;
-  height: 24px;
-  appearance: none;
-  background: #e5e5e5;
-  border-radius: 50px;
-  position: relative;
-  cursor: pointer;
-  transition: all 0.4s ease;
-}
-.rb_switch_label .form-switch .form-switch-input::before {
-  content: "";
-  position: absolute;
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  background: #fff;
-  top: 3px;
-  left: 3px;
-  transition: all 0.4s ease;
-}
-.rb_switch_label .form-switch .form-switch-input:checked {
-  background: linear-gradient(271.8deg, #43CBFF -99.63%, #9708CC 212.68%);
-}
-.rb_switch_label .form-switch .form-switch-input:checked::before {
-  transform: translateX(20px);
-}
-.rb_switch_label .form-switch .form-switch-label {
-  color: #7B7B7B;
-  font-family: Inter;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 100%;
-  letter-spacing: 0.25%;
-  margin-top: 3px;
-  cursor: pointer;
-}
-
-.common_input {
-  position: relative;
-}
-.common_input .form-group label {
-  display: block;
-  color: #101010;
-  font-family: Inter;
-  font-size: 16px;
-  font-style: Medium;
-  font-weight: 500;
-  line-height: 100%;
-  letter-spacing: 0.25%;
-  margin-bottom: 13px;
-}
-.common_input .form-group label.style_1 {
-  font-size: 20px;
-  font-family: Inter;
-  font-weight: 600;
-  font-style: Semi Bold;
-  line-height: 100%;
-  letter-spacing: 0%;
-  vertical-align: middle;
-}
-.common_input .form-group input[type=text],
-.common_input .form-group input[type=number],
-.common_input .form-group input[type=tel],
-.common_input .form-group input[type=date],
-.common_input .form-group input[type=time],
-.common_input .form-group input[type=email],
-.common_input .form-group input[type=password],
-.common_input .form-group textarea {
-  width: 100%;
-  padding: 12px 20px;
-  height: 48px;
-  border-radius: 10px;
-  border: 1px solid var(--Stroke-Stroke2, #E2E2E2);
-  background: #fff;
-  color: #727272;
-  font-family: Inter;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 22px;
-}
-.common_input .form-group input[type=text]::placeholder,
-.common_input .form-group input[type=number]::placeholder,
-.common_input .form-group input[type=tel]::placeholder,
-.common_input .form-group input[type=date]::placeholder,
-.common_input .form-group input[type=time]::placeholder,
-.common_input .form-group input[type=email]::placeholder,
-.common_input .form-group input[type=password]::placeholder,
-.common_input .form-group textarea::placeholder {
-  color: #727272;
-}
-.common_input .form-group input[type=text]:focus,
-.common_input .form-group input[type=number]:focus,
-.common_input .form-group input[type=tel]:focus,
-.common_input .form-group input[type=date]:focus,
-.common_input .form-group input[type=time]:focus,
-.common_input .form-group input[type=email]:focus,
-.common_input .form-group input[type=password]:focus,
-.common_input .form-group textarea:focus {
-  outline: none;
-}
-@media only screen and (min-width: 0px) and (max-width: 479px) {
-  .common_input .form-group input[type=text],
-  .common_input .form-group input[type=number],
-  .common_input .form-group input[type=tel],
-  .common_input .form-group input[type=date],
-  .common_input .form-group input[type=time],
-  .common_input .form-group input[type=email],
-  .common_input .form-group input[type=password],
-  .common_input .form-group textarea {
-    height: 46px;
-  }
-}
-.common_input .form-group textarea {
-  height: 166px;
-  resize: vertical;
-}
-@media only screen and (min-width: 0px) and (max-width: 479px) {
-  .common_input .form-group textarea {
-    height: 134px;
-  }
-}
-.common_input .form-group input[type=date] {
-  cursor: pointer;
-}
-.common_input .form-group input[type=date]::-webkit-calendar-picker-indicator {
-  opacity: 0;
-  display: none;
-  -webkit-appearance: none;
-}
-.common_input .form-group input[type=date]::-webkit-inner-spin-button, .common_input .form-group input[type=date]::-webkit-clear-button {
-  display: none;
-}
-.common_input .form-group input[type=date]:focus {
-  outline: none;
-}
-.common_input .form-group .nice-select,
-.common_input .form-group select {
-  width: 100%;
-  padding: 14px 20px;
-  height: 54px;
-  border-radius: 10px;
-  border: 1px solid rgba(13, 44, 80, 0.1);
-  background: #FFF;
-  color: #727272;
-  font-family: Inter;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 26px;
-}
-@media only screen and (min-width: 0px) and (max-width: 479px) {
-  .common_input .form-group .nice-select,
-  .common_input .form-group select {
-    height: 46px;
-    padding: 9px 20px;
-  }
-}
-.common_input .form-group .nice-select:after {
-  width: 9px;
-  height: 9px;
-  right: 20px;
-}
-.common_input .form-group select:focus {
-  outline: none;
-}
-
-.input_icon_wrap {
-  position: relative;
-}
-.input_icon_wrap .input_icon {
-  position: absolute;
-  top: 50%;
-  left: 20px;
-  transform: translateY(-50%);
-  pointer-events: none;
-}
-.input_icon_wrap .input_textarea_icon {
-  position: absolute;
-  top: 10%;
-  left: 20px;
-  transform: translateY(-10%);
-  pointer-events: none;
-}
-@media only screen and (min-width: 0px) and (max-width: 479px) {
-  .input_icon_wrap .input_textarea_icon {
-    top: 12%;
-  }
-}
-.input_icon_wrap .input_select_icon {
-  position: absolute;
-  left: 20px;
-  transform: translateY(50%);
-  pointer-events: none;
-}
-.input_icon_wrap input[type=text],
-.input_icon_wrap input[type=tel],
-.input_icon_wrap input[type=email],
-.input_icon_wrap textarea {
-  padding-left: 50px !important;
-}
-.input_icon_wrap .nice-select,
-.input_icon_wrap select {
-  padding-left: 50px !important;
 }
 
 .rb_tag_item {
