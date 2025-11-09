@@ -1,12 +1,12 @@
-.tk_dashboard_area{
-    .tk_dashboard_sidebar{
+.tk_dashboard_area {
+    .tk_dashboard_sidebar {
         border-radius: 24px;
         padding: 8px 16px 16px;
         width: 100%;
         background: #fff;
-        ul{
-            li{
-                a{
+        ul {
+            li {
+                a {
                     border-radius: 12px;
                     font-weight: 500;
                     font-size: 16px;
@@ -14,11 +14,16 @@
                     color: #727272;
                     padding: 12px;
                     display: block;
-                    &.active{
+                    &.active {
                         background: linear-gradient(271.8deg, #43CBFF -99.63%, #9708CC 212.68%);
-                        color: #fff;
+                        color: #FFF;
+                        &.menu-item-has-children {
+                            &::after {
+                                color: #FFF;
+                            }                           
+                        }
                     }
-                     &.menu-item-has-children{
+                     &.menu-item-has-children {
 						position: relative;
 						&::after{
 							content: "\f107";
@@ -33,20 +38,18 @@
 							@include md {
 								font-size: 12px;
 							}
-						}
-						
-						
+						}					
 					}
-                    img{
+                    img {
                         margin-right: 12px;
                     }
                 }
-                .tk_side_dropdown{
+                .tk_side_dropdown {
                     max-height: 0px;
                     opacity: 0;
                     visibility: hidden;
                     overflow: hidden;
-                    &.active{
+                    &.active {
                         visibility: visible;
                         opacity: 1;
                         max-height: 500px;
@@ -57,6 +60,5 @@
             }
         }
     }
-
 
 }

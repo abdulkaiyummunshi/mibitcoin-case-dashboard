@@ -32225,7 +32225,10 @@ p {
 }
 .tk_dashboard_area .tk_dashboard_sidebar ul li a.active {
   background: linear-gradient(271.8deg, #43CBFF -99.63%, #9708CC 212.68%);
-  color: #fff;
+  color: #FFF;
+}
+.tk_dashboard_area .tk_dashboard_sidebar ul li a.active.menu-item-has-children::after {
+  color: #FFF;
 }
 .tk_dashboard_area .tk_dashboard_sidebar ul li a.menu-item-has-children {
   position: relative;
