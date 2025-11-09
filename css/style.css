@@ -32745,6 +32745,104 @@ p {
   vertical-align: middle;
 }
 
+.rb_table .currency-box {
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  overflow: hidden;
+}
+.rb_table .currency-header {
+  background-color: #f3f4f6;
+  padding: 12px 20px;
+  font-weight: 600;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.5fr 1.5fr 1.5fr 1fr 0.5fr;
+  align-items: center;
+  color: #7B7B7B;
+  border-bottom: 1px solid #e5e7eb;
+  font-family: Inter;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.25%;
+  text-transform: uppercase;
+}
+.rb_table .currency-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.5fr 1.5fr 1.5fr 1fr 0.5fr;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid #f0f0f0;
+}
+.rb_table .currency-row .code {
+  width: 48px;
+  height: 31px;
+}
+.rb_table .currency-row .symbol {
+  width: 72px;
+  height: 31px;
+}
+.rb_table .currency-row .decimal {
+  width: 170px;
+  height: 31px;
+}
+.rb_table .currency-row .edate {
+  width: 120px;
+  height: 31px;
+}
+.rb_table .currency-row:last-child {
+  border-bottom: none;
+}
+.rb_table .currency-row input,
+.rb_table .currency-row select {
+  background: #fff;
+  border: 1px solid #E2E2E2;
+  border-radius: 6px;
+  padding: 6px 6px;
+  color: #7B7B7B;
+  font-family: Inter;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.25%;
+}
+.rb_table .currency-row input:focus,
+.rb_table .currency-row select:focus {
+  outline: none;
+  border-color: #a855f7;
+  box-shadow: 0 0 0 0.15rem rgba(168, 85, 247, 0.25);
+}
+.rb_table .radio-gradient input[type=radio] {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  padding: 6px 6px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  background: linear-gradient(white, white) padding-box, linear-gradient(271.8deg, #43CBFF -99.63%, #9708CC 212.68%) border-box;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+.rb_table .radio-gradient input[type=radio]:checked {
+  background: linear-gradient(271.8deg, #43CBFF -99.63%, #9708CC 212.68%);
+  border: 3px solid white;
+  box-shadow: 0 0 0 2px rgba(151, 8, 204, 0.5);
+}
+.rb_table .btn-delete {
+  width: 34px;
+  height: 34px;
+  gap: 12px;
+  opacity: 1;
+  border-radius: 4px;
+  background: #FE0000;
+  border: none;
+}
+.rb_table .btn-delete:hover {
+  background-color: #cc0000;
+}
+
 .rb_social_login {
   padding: 32px;
   border: 1.5px solid #FDFDFD;
