@@ -33045,6 +33045,18 @@ p {
   border-radius: 24px;
   box-shadow: 0px 6px 4px -4px rgba(8, 8, 8, 0.0509803922);
 }
+.rb_setting_listing .rb_setting_title {
+  padding-bottom: 20px;
+}
+.rb_setting_listing .rb_setting_title h3 {
+  color: #101010;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
 .rb_setting_listing .setting_item {
   display: flex;
   align-items: center;
@@ -33055,6 +33067,7 @@ p {
   border-radius: 50px;
   padding-right: 12px;
   padding-left: 16px;
+  transition: background 0.4s ease;
 }
 .rb_setting_listing .setting_item .setting_icon {
   width: 48;
@@ -33064,6 +33077,10 @@ p {
   border-radius: 64px;
   padding: 12px;
   background: #FFFFFF;
+}
+.rb_setting_listing .setting_item .setting_info {
+  flex: 1;
+  min-width: 0;
 }
 .rb_setting_listing .setting_item .setting_info h4 {
   color: #101010;
@@ -33080,8 +33097,23 @@ p {
   color: #7B7B7B;
   font-family: Inter;
   font-weight: 500;
-  font-style: Medium;
   font-size: 14px;
   line-height: 150%;
   letter-spacing: 0.25%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  width: 100%;
+  margin: 0;
+}
+.rb_setting_listing .setting_item:hover {
+  background: linear-gradient(271.8deg, #43CBFF -99.63%, #9708CC 212.68%);
+  transition: background 0.4s ease;
+}
+.rb_setting_listing .setting_item:hover .setting_info h4 {
+  color: #FFFFFF;
+}
+.rb_setting_listing .setting_item:hover .setting_info p {
+  color: rgba(255, 255, 255, 0.6980392157);
 }/*# sourceMappingURL=style.css.map */
