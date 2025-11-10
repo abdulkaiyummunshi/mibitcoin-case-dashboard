@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="./css/magnific-popup.min.css">
     <link rel="stylesheet" href="./css/animate.min.css">
     <link rel="stylesheet" href="./css/meanmenu.min.css">
-    <link rel="stylesheet" href="./css/nice-select.min.css">
+    <!-- <link rel="stylesheet" href="./css/nice-select.min.css"> -->
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
@@ -358,7 +358,7 @@
 
     <div class="tk_dashboard_area">
       <div class="container-fluid">
-        <div class="row mt-0 g-3">
+        <div class="row mt-0 g-4">
           <div class="col-lg-2">
             <div class="tk_dashboard_sidebar">
               <ul>
@@ -387,21 +387,160 @@
                 <li><a href="#"><img src="./images/sidebar/grid-1.png" alt="">Appearance</a></li>
                 <li><a href="#"><img src="./images/sidebar/element-4.png" alt="">Plugins</a></li>
                 <li><a href="#"><img src="./images/sidebar/brush.png" alt="">Tools</a></li>
-                <li><a href="setting-list.html"><img src="./images/sidebar/setting-2.png" alt="">Settings</a></li>
+                <li><a href="#"><img src="./images/sidebar/setting-2.png" alt="">Settings</a></li>
                 <li><a href="#"><img src="./images/sidebar/user-square.png" alt="">Platform Administration</a></li>
               </ul>
             </div>
           </div>
+          <div class="col-lg-10">
+            
+            <!-- Breadcrumb -->
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb mb-4">
+                <li class="breadcrumb-item"><a href="#">Dashboard </a></li>
+                <li class="breadcrumb-item active" aria-current="page">
+                   Settings
+                </li>
+              </ol>
+            </nav>
+            <div class="rb_ecommerce_area">
+              <div class="rb_heading">
+                  <h3 class="fw-semibold mb-1">Product settings</h3>
+                  <p class="text-muted mb-4">Configure rules for product</p>
+              </div>
+              <!-- API Provider Section -->
+              <div class="rb_radio_label mb-4">
+                <label class="form-label mb-2">Rich Editor</label>
+                <div class="d-flex align-items-center gap-4">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="apiProvider" id="providerNone" value="none" checked>
+                    <label class="form-check-label" for="providerNone">CKEditor</label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="apiProvider" id="providerApiLayer" value="apiLayer">
+                    <label class="form-check-label" for="providerApiLayer">TinyMCE</label>
+                  </div>
+                </div>
+                <p>When enabled, a sitemap.xml file will be automatically generated and accessible at https:// to help search engines better index your site.</p>
+              </div>  
+              <div class="rb_checkbox_label mb-4">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck" checked required>
+                  <label class="form-check-label" for="invalidCheck">
+                    Show number of products in the product single
+                  </label>
+                </div>
+                <p>Display the total number of products on the product detail page.</p>
+              </div>              
+              <div class="rb_checkbox_label mb-4">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck" checked required>
+                  <label class="form-check-label" for="invalidCheck">
+                    Show out of stock products
+                  </label>
+                </div>
+                <p>If enabled, out of stock products will be displayed on the product listing page.</p>
+              </div>              
+              <div class="rb_checkbox_label mb-4">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck" checked required>
+                  <label class="form-check-label" for="invalidCheck">
+                    Enable cross sale products
+                  </label>
+                </div>
+                <p>Allow products to have customizable options like size, color, etc.</p>
+              </div>              
+              <div class="rb_checkbox_label mb-4">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck" checked required>
+                  <label class="form-check-label" for="invalidCheck">
+                    Enable cross sale products
+                  </label>
+                </div>
+                <p>Display cross-sale product suggestions to encourage additional purchases.</p>
+              </div>              
+              <div class="rb_checkbox_label mb-4">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck" checked required>
+                  <label class="form-check-label" for="invalidCheck">
+                    Enable related products
+                  </label>
+                </div>
+                <p>Show related products based on category, or selected by admin in product form.</p>
+              </div>              
+              <div class="common_input">
+                  <div class="mb-24">
+                    <div class="form-group">
+                      <label for="comma">Thousands separator</label>
+                      <select id="comma" name="comma" class="custom-select">
+                        <option value="" disabled="" selected="">Comma (,)</option>
+                        <option value="department1">Warning</option>
+                        <option value="department2">Error</option>
+                      </select>
+                    </div>
+                    <p class="desc">Choose the character to separate thousands in price display (e.g., 1,000 or 1.000 or 1 000).</p>
+                  </div>
+                  <div class="mb-24">
+                    <div class="form-group">
+                      <label for="comma">Decimal separator</label>
+                      <select id="comma" name="comma" class="custom-select">
+                        <option value="" disabled="" selected="">Period (.)</option>
+                        <option value="department1">Warning</option>
+                        <option value="department2">Error</option>
+                      </select>
+                    </div>
+                    <p class="desc">Choose the character to separate decimal values in prices (e.g., 10.99 or 10,99).</p>
+                  </div>
+
+                  <!-- API Provider Section -->
+                  <div class="rb_radio_label mb-4">
+                    <label class="form-label mb-2">API provider</label>
+                    <div class="d-flex align-items-center gap-4">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="apiProvider" id="providerNone" value="none" checked>
+                        <label class="form-check-label" for="providerNone">None</label>
+                      </div>
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="apiProvider" id="providerApiLayer" value="apiLayer">
+                        <label class="form-check-label" for="providerApiLayer">API Layer</label>
+                      </div>
+
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="apiProvider" id="providerOpenExchange" value="openExchange">
+                        <label class="form-check-label" for="providerOpenExchange">Open Exchange Rates</label>
+                      </div>
+                    </div>
+                  </div>  
+                  <!-- Enable Social login -->
+                  <div class="rb_checkbox_label mb-4">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="invalidCheck3" required>
+                      <label class="form-check-label" for="invalidCheck3">
+                        Use exchange rate from API
+                      </label>
+                    </div>
+                    <p>Enable automatic currency exchange rate updates from the configured API provider. This ensures your prices are always up-to-date with current market rates.</p>
+                  </div>                    
+                  
+              </div>
+            </div>
+            <div class="btn_wrapper mt-20 mb-20">
+              <a  href="#"><img src="./images/icon/save.png" alt=""> Save settings</a>
+            </div>                           
+          </div>
         </div>
       </div>
     </div>
+
     
     <script src="./js/jquery-3.7.1.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/jquery.meanmenu.min.js"></script>
     <script src="./js/jquery.magnific-popup.min.js"></script>
     <script src="./js/slick.min.js"></script>
-    <script src="./js/jquery.nice-select.js"></script>
+    <!-- <script src="./js/jquery.nice-select.js"></script> -->
     <script src="./js/gsap.min.js"></script>
     <script src="./js/ScrollTrigger.min.js"></script>
     <script src="./js/ScrollSmoother.min.js"></script>
