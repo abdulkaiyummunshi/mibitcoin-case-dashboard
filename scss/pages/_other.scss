@@ -1,0 +1,206 @@
+.rb_social_login {
+    padding: 32px;
+    border: 1.5px solid #FDFDFD;
+    background: var(--Backgrounds-surface2, #FDFDFD);
+    border-radius: 24px;
+    box-shadow: 0px 6px 4px -4px #0808080D;
+
+    .rb_section_border {
+        background: #F3F4F7;
+        border: 1px solid #E2E2E2;
+        border-radius: 14px;
+        padding: 32px;
+        &.style_1 {
+            padding-bottom: 85px;
+        }
+        .rb_title {
+          color: #101010;
+          font-family: Inter;
+          font-weight: 600;
+          font-style: Semi Bold;
+          font-size: 18px;
+          line-height: 100%;
+          letter-spacing: 0%;
+          vertical-align: middle;
+          padding-bottom: 15px;
+        }
+        .rb_desc {
+          color: #727272;
+          font-family: Inter;
+          font-weight: 400;
+          font-style: Regular;
+          font-size: 14px;
+          line-height: 22px;
+          letter-spacing: 0%;
+          padding-top: 10px;
+        }
+    }
+    .rb_thumb {
+      img {
+        width: 100%;
+      }
+    }
+    .rb_para {
+      color: #7B7B7B;
+      font-family: Inter;
+      font-weight: 500;
+      font-style: Medium;
+      font-size: 16px;
+      line-height: 100%;
+      letter-spacing: 0%;
+    }
+    .rb_input_form {
+        background: #FFFFFF;
+        border: 1px solid #7275F84D;
+        padding: 32px;
+        border-radius: 14px;
+    }
+    .alert_list {
+        display: flex;
+        align-items: start;
+        gap: 10px;
+        padding: 20px;
+        border-radius: 14px;
+        background: #7275F80D;
+        border: 1px solid #7275F84D;
+        h5 {
+            color: #7B7B7B;
+            font-family: Inter;
+            font-weight: 500;
+            font-style: Medium;
+            font-size: 14px;
+            line-height: 26px;
+            letter-spacing: 0%;
+            vertical-align: middle;
+            a {
+                color: #D71E1E;
+            }
+
+        }
+        &.style_1 {
+          padding: 12px 20px;
+          border-radius: 100px;
+        }
+        &.style_2 {
+          display: flex;
+          flex-direction: column;
+          h4 {
+            color: #192135;
+            font-family: Inter;
+            font-weight: 600;
+            font-style: Semi Bold;
+            font-size: 16px;
+            line-height: 32px;
+            letter-spacing: 0%;
+          }
+          p {
+            color: #7B7B7B;
+            font-family: Inter;
+            font-weight: 500;
+            font-style: Medium;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 0%;
+          }
+          h6 {
+            color: #192135;
+            font-family: Inter;
+            font-weight: 600;
+            font-style: Semi Bold;
+            font-size: 14px;
+            line-height: 22px;
+            letter-spacing: 0%;
+            vertical-align: middle;
+          }
+          .rb_list {
+            ul {
+              list-style-type: disc;
+              padding-left: 22px;
+              li {
+                color: #7B7B7B;
+                font-family: Inter;
+                font-weight: 600;
+                font-style: Semi Bold;
+                font-size: 14px;
+                line-height: 22px;
+                letter-spacing: 0%;
+                vertical-align: middle;
+                padding-bottom: 10px;
+                span {
+                  color: #192135;
+                }
+              }
+            }
+            &.style_1 {
+              ul {
+                list-style: none;
+                padding-left: 0;
+              }
+            }
+          }
+          .rb_para2 {
+            color: #7B7B7B;
+            font-family: Inter;
+            font-weight: 500;
+            font-style: Medium;
+            font-size: 14px;
+            line-height: 22px;
+            letter-spacing: 0%;
+            vertical-align: middle;
+          }
+        }
+    }
+}
+
+// Style for js tag item
+.rb_tag_item {
+  background: #FFF;
+  border-radius: 50px;
+  padding: 5px 12px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.rb_tag_item span {
+  color: #727272;
+  font-weight: 500;
+}
+
+.rb_tag_item button {
+  background: transparent;
+  border: none;
+  color: #101010;
+  font-size: 14px;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.rb_input_file {
+  label {
+    color: #101010;
+    font-family: Inter;
+    font-weight: 600;
+    font-style: Semi Bold;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+  }
+  .form-control[type="file"] {
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  
+  .rb_text {
+    color: #727272;
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0%;
+  }
+}

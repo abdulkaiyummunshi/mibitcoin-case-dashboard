@@ -358,7 +358,7 @@
 
     <div class="tk_dashboard_area">
       <div class="container-fluid">
-        <div class="row mt-0 g-3">
+        <div class="row mt-0 g-4">
           <div class="col-lg-2">
             <div class="tk_dashboard_sidebar">
               <ul>
@@ -392,9 +392,64 @@
               </ul>
             </div>
           </div>
+          <div class="col-lg-10">
+            
+            <!-- Breadcrumb -->
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb mb-4">
+                <li class="breadcrumb-item"><a href="#">Settings</a></li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Social Login Settings
+                </li>
+              </ol>
+            </nav>
+            <div class="rb_social_login">
+              <div class="rb_heading">
+                  <h3 class="fw-semibold mb-1">Contact</h3>
+                  <p class="text-muted mb-4">Settings for contact plugin</p>
+              </div>
+
+              <div class="common_input">
+                <div class="mb-4">
+                  <div class="form-group">
+                    <label class="style_1" for="tagsInput">Add Tags</label>
+                    <input type="text" class="rounded-pill" id="tagsInput" name="name" placeholder="Add tags...." required="">
+                  </div>
+                </div>
+              </div>
+              <div class="rb_section_border">
+                  <h4 class="rb_title">Blacklisted keywords</h4>
+                  <div id="tagsContainer" class="d-flex flex-wrap gap-2"></div>
+                  <p class="rb_desc">
+                    Add contact requests to blacklist if those keywords are found in the content field (separated by comma).
+                  </p>
+              </div>
+              <div class="common_input my-4">
+                <div class="mb-0">
+                  <div class="form-group">
+                    <label class="style_1" for="name">Receiver emails</label>
+                    <input type="email" class="rounded-pill" id="name" name="name" placeholder="https://" required="">
+                  </div>
+                  <p class="mt-2">Emails from contact forms will be sent to these addresses. To send emails to admin email addresses, leave this field blank.</p>
+                </div>
+              </div>  
+
+              <!-- Enable Social login -->
+              <div class="rb_checkbox_label">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="enableSchema" checked required>
+                  <label class="form-check-label" for="enableSchema">
+                    Show Terms and Privacy Policy checkbox
+                  </label>
+                </div>
+                <p>Enable to show the "I agree to the Terms and Privacy Policy" checkbox in the contact form.</p>
+              </div>                          
+            </div>
+          </div>
         </div>
       </div>
     </div>
+
     
     <script src="./js/jquery-3.7.1.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
@@ -408,5 +463,38 @@
     <script src="./js/scrollreveal.min.js"></script>
     <script src="./js/SplitText.min.js"></script>
     <script src="./js/custom.js"></script>
+
+    <script>
+      const tagsInput = document.getElementById("tagsInput");
+      const tagsContainer = document.getElementById("tagsContainer");
+
+      const defaultTags = ["General", "Design", "Fashion", "Branding", "Modern", "Branding", "Branding", "Branding", "Branding", "Modern", "Modern"];
+
+      // Function to create a tag element
+      function createTag(tagText) {
+        const tag = document.createElement("div");
+        tag.className = "rb_tag_item";
+        tag.innerHTML = `<span>${tagText}</span> <button type="button">&times;</button>`;
+        tag.querySelector("button").addEventListener("click", () => tag.remove());
+        tagsContainer.appendChild(tag);
+      }
+
+      // Load default tags
+      defaultTags.forEach((tag) => createTag(tag));
+
+      // Add new tag on Enter key
+      tagsInput.addEventListener("keypress", function (e) {
+        if (e.key === "Enter") {
+          e.preventDefault();
+          const tagText = tagsInput.value.trim();
+          if (tagText !== "") {
+            createTag(tagText);
+            tagsInput.value = "";
+          }
+        }
+      });
+    </script>
+
+
   </body>
 </html>

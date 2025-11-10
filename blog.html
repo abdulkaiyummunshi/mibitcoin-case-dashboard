@@ -358,7 +358,7 @@
 
     <div class="tk_dashboard_area">
       <div class="container-fluid">
-        <div class="row mt-0 g-3">
+        <div class="row mt-0 g-4">
           <div class="col-lg-2">
             <div class="tk_dashboard_sidebar">
               <ul>
@@ -392,9 +392,52 @@
               </ul>
             </div>
           </div>
+          <div class="col-lg-10">
+            
+            <!-- Breadcrumb -->
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb mb-4">
+                <li class="breadcrumb-item"><a href="#">Settings</a></li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Social Login Settings
+                </li>
+              </ol>
+            </nav>
+            <div class="rb_social_login">
+              <div class="rb_heading">
+                  <h3 class="fw-semibold mb-1">Blog</h3>
+                  <p class="text-muted mb-4">View and update blog settings</p>
+              </div>
+              <!-- Enable Social login -->
+              <div class="rb_checkbox_label mb-4">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="enableSchema" required>
+                  <label class="form-check-label" for="enableSchema">
+                    Enable Schema for blog posts
+                  </label>
+                </div>
+                <p>Learn more: <a href="#">https://</a></p>
+              </div>
+
+              <div class="rb_section_border style_1">
+                <div class="common_input">
+                    <div class="form-group">
+                      <label for="name">Schema type</label>
+                      <select id="department" name="department" class="custom-select">
+                        <option value="" disabled="" selected="">News Article</option>
+                        <option value="department1">department 1</option>
+                        <option value="department2">department 2</option>
+                        <option value="department3">department 3</option>
+                      </select>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+
     
     <script src="./js/jquery-3.7.1.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>

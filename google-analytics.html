@@ -358,7 +358,7 @@
 
     <div class="tk_dashboard_area">
       <div class="container-fluid">
-        <div class="row mt-0 g-3">
+        <div class="row mt-0 g-4">
           <div class="col-lg-2">
             <div class="tk_dashboard_sidebar">
               <ul>
@@ -392,9 +392,54 @@
               </ul>
             </div>
           </div>
+          <div class="col-lg-10">
+            
+            <!-- Breadcrumb -->
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb mb-4">
+                <li class="breadcrumb-item"><a href="#">Settings</a></li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Social Login Settings
+                </li>
+              </ol>
+            </nav>
+            <div class="rb_social_login">
+              <div class="rb_heading">
+                  <h3 class="fw-semibold mb-1">Google Analytics</h3>
+                  <p class="text-muted mb-4">Config Credentials for Google Analytics</p>
+              </div>
+              
+              <!-- Enable Social login -->
+              <div class="rb_switch_label mb-4">
+                <div class="form-switch">
+                  <input class="form-switch-input" type="checkbox" id="enableWidgets" checked />
+                  <label class="form-switch-label" for="enableWidgets">
+                    Enable Dashboard Widgets
+                  </label>
+                </div>
+              </div>
+
+              <div class="rb_section_border">
+                <div class="common_input">
+                  <div class="mb-0">
+                    <div class="form-group">
+                      <label for="name">Property ID for GA4</label>
+                      <input type="text" class="rounded-pill" id="name" name="name" placeholder="344382041" required="">
+                    </div>
+                    <p class="mt-2"><a href="#">https://</a></p>
+                  </div>
+                </div>
+              </div>  
+              <div class="alert_list style_1 mt-3">
+                <img src="images/icon/alert-circle.svg" alt="icon">
+                <h5>To add Google Analytics Tag ID to track your website traffic, visit Admin → Settings → Website Tracking.</h5>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+
     
     <script src="./js/jquery-3.7.1.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>

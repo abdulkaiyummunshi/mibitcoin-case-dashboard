@@ -358,7 +358,7 @@
 
     <div class="tk_dashboard_area">
       <div class="container-fluid">
-        <div class="row mt-0 g-3">
+        <div class="row mt-0 g-4">
           <div class="col-lg-2">
             <div class="tk_dashboard_sidebar">
               <ul>
@@ -392,9 +392,106 @@
               </ul>
             </div>
           </div>
+          <div class="col-lg-10">
+            
+            <!-- Breadcrumb -->
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb mb-4">
+                <li class="breadcrumb-item"><a href="#">Dashboard </a></li>
+                <li class="breadcrumb-item active" aria-current="page">
+                   Settings
+                </li>
+              </ol>
+            </nav>
+            <div class="rb_ecommerce_area">
+              <div class="rb_heading">
+                  <h3 class="fw-semibold mb-1">General</h3>
+                  <p class="text-muted mb-4">This address will appear on your invoice and will be used to calculate your shipping price.</p>
+              </div>
+              <div class="rb_form common_input">
+                <div class="row g-4">
+                  <!-- Shop Name -->
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="shop_name">Shop name</label>
+                      <input type="text" class="form-control rounded-pill" id="shop_name" name="shop_name" placeholder="Nest" required>
+                    </div>
+                  </div>
+
+                  <!-- Company -->
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="company">Company</label>
+                      <input type="text" class="form-control rounded-pill" id="company" name="company" placeholder="Last Name" required>
+                    </div>
+                  </div>
+
+                  <!-- Phone -->
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="phone">Phone</label>
+                      <input type="text" class="form-control rounded-pill" id="phone" name="phone" placeholder="18006268" required>
+                    </div>
+                  </div>
+
+                  <!-- Email -->
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="email">Email</label>
+                      <input type="email" class="form-control rounded-pill" id="email" name="email" placeholder="example@email.com" required>
+                    </div>
+                  </div>
+
+                  <!-- Country -->
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="country">Country</label>
+                      <input type="text" class="form-control rounded-pill" id="country" name="country" placeholder="Singapore" required>
+                    </div>
+                  </div>
+
+                  <!-- State -->
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="state">State</label>
+                      <input type="text" class="form-control rounded-pill" id="state" name="state" placeholder="Singapore" required>
+                    </div>
+                  </div>
+
+                  <!-- City -->
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="city">City</label>
+                      <input type="text" class="form-control rounded-pill" id="city" name="city" placeholder="Singapore" required>
+                    </div>
+                  </div>
+
+                  <!-- Address -->
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="address">Address</label>
+                      <input type="text" class="form-control rounded-pill" id="address" name="address" placeholder="North Link Building, 10 Admiralty Street" required>
+                    </div>
+                  </div>
+
+                  <!-- Tax ID -->
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="tax_id">Tax ID</label>
+                      <input type="text" class="form-control rounded-pill" id="tax_id" name="tax_id" placeholder="123-456-789" required>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+            </div>
+            <div class="btn_wrapper mt-20 mb-20">
+              <a  href="#"><img src="./images/icon/save.png" alt=""> Save settings</a>
+            </div>                           
+          </div>
         </div>
       </div>
     </div>
+
     
     <script src="./js/jquery-3.7.1.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>

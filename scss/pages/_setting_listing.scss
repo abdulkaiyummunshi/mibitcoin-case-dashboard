@@ -1,0 +1,51 @@
+.rb_setting_listing {
+    padding: 32px;
+    border: 1.5px solid #FDFDFD;
+    background: var(--Backgrounds-surface2, #FDFDFD);
+    border-radius: 24px;
+    box-shadow: 0px 6px 4px -4px #0808080D;
+    .setting_item {
+        display: flex;
+        align-items: center;
+        background: #F3F4F7;
+        height: 80px;
+        gap: 10px;
+        opacity: 1;
+        border-radius: 50px;
+        padding-right: 12px;
+        padding-left: 16px;
+
+        .setting_icon {
+            width: 48;
+            height: 48;
+            gap: 10px;
+            opacity: 1;
+            border-radius: 64px;
+            padding: 12px;
+            background: #FFFFFF;
+        }
+        .setting_info {
+            h4 {
+                color: #101010;
+                font-family: Inter;
+                font-weight: 600;
+                font-style: Semi Bold;
+                font-size: 16px;
+                line-height: 22px;
+                letter-spacing: 0%;
+                vertical-align: middle;
+                padding-bottom: 3px;
+            }
+            p {
+                color: #7B7B7B;
+                font-family: Inter;
+                font-weight: 500;
+                font-style: Medium;
+                font-size: 14px;
+                line-height: 150%;
+                letter-spacing: 0.25%;
+
+            }
+        }
+    }
+}

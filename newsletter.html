@@ -358,7 +358,7 @@
 
     <div class="tk_dashboard_area">
       <div class="container-fluid">
-        <div class="row mt-0 g-3">
+        <div class="row mt-0 g-4">
           <div class="col-lg-2">
             <div class="tk_dashboard_sidebar">
               <ul>
@@ -392,9 +392,65 @@
               </ul>
             </div>
           </div>
+          <div class="col-lg-10">
+            
+            <!-- Breadcrumb -->
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb mb-4">
+                <li class="breadcrumb-item"><a href="#">Settings</a></li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Social Login Settings
+                </li>
+              </ol>
+            </nav>
+            <div class="rb_social_login">
+              <div class="rb_heading">
+                  <h3 class="fw-semibold mb-1">Newsletter</h3>
+                  <p class="text-muted mb-4">Settings for newsletter (auto send newsletter email to SendGrid, Mailchimp... when someone register newsletter on website).</p>
+              </div>
+              <!-- Enable Social login -->
+              <div class="rb_checkbox_label mb-4">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck" checked required>
+                  <label class="form-check-label" for="invalidCheck">
+                    Mailchimp API Key
+                  </label>
+                </div>
+              </div>
+              <div class="rb_section_border">
+                <div class="common_input">
+                  <div class="mb-3">
+                    <div class="form-group">
+                      <label for="name">Mailchimp API Key</label>
+                      <input type="text" id="name" name="name" placeholder="Mailchimp API Key" required="">
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <div class="form-group">
+                      <label for="name">Mailchimp List ID</label>
+                      <input type="text" id="name" name="name" placeholder="Mailchimp List ID" required="">
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <div class="form-group">
+                      <label for="name">Sendgrid API Key</label>
+                      <input type="text" id="name" name="name" placeholder="Sendgrid API Key" required="">
+                    </div>
+                  </div>
+                  <div class="mb-0">
+                    <div class="form-group">
+                      <label for="name">Sendgrid List ID</label>
+                      <input type="text" id="name" name="name" placeholder="Sendgrid List ID" required="">
+                    </div>
+                  </div>
+                </div>
+              </div>  
+            </div>
+          </div>
         </div>
       </div>
     </div>
+
     
     <script src="./js/jquery-3.7.1.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
