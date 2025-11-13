@@ -53,7 +53,7 @@
 
   p {
     color: #7B7B7B;
-    margin-top: 4px;
+    margin-top: 6px;
 
     a {
       color: #7275F8;
@@ -170,6 +170,18 @@
         line-height: 22px;
         letter-spacing: 0%;
         vertical-align: middle;
+    }
+    .desc {
+      color: #727272;
+      font-family: Inter;
+      font-weight: 400;
+      font-style: Regular;
+      font-size: 14px;
+      line-height: 22px;
+      letter-spacing: 0%;
+      a {
+        color: #7275F8;
+      }
     }    
 }
 
