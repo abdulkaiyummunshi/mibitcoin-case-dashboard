@@ -32899,17 +32899,61 @@ p {
 }
 
 .rb_social_login {
+  max-width: 1008px;
   padding: 32px;
   border: 1.5px solid #FDFDFD;
   background: var(--Backgrounds-surface2, #FDFDFD);
   border-radius: 24px;
   box-shadow: 0px 6px 4px -4px rgba(8, 8, 8, 0.0509803922);
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .rb_social_login {
+    padding: 20px;
+    border-radius: 20px;
+  }
+}
+.rb_social_login .rb_heading {
+  padding-bottom: 20px;
+}
+.rb_social_login .rb_heading h3 {
+  color: var(--Text-Primary, #101010);
+  font-family: Inter;
+  font-weight: 600;
+  font-style: Semi Bold;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  padding-bottom: 10px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .rb_social_login .rb_heading h3 {
+    font-size: 20px;
+  }
+}
+.rb_social_login .rb_heading p {
+  color: #7B7B7B;
+  font-family: Inter;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .rb_social_login .rb_heading p {
+    font-size: 14px;
+  }
+}
 .rb_social_login .rb_section_border {
   background: #F3F4F7;
   border: 1px solid #E2E2E2;
   border-radius: 14px;
   padding: 32px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .rb_social_login .rb_section_border {
+    padding: 20px;
+  }
 }
 .rb_social_login .rb_section_border.style_1 {
   padding-bottom: 85px;
@@ -32952,6 +32996,11 @@ p {
   border: 1px solid rgba(114, 117, 248, 0.3019607843);
   padding: 32px;
   border-radius: 14px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .rb_social_login .rb_input_form {
+    padding: 16px;
+  }
 }
 .rb_social_login .alert_list {
   display: flex;
