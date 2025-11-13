@@ -399,146 +399,141 @@
               <ol class="breadcrumb mb-24">
                 <li class="breadcrumb-item"><a href="#">Dashboard </a></li>
                 <li class="breadcrumb-item active" aria-current="page">
-                   Product settings
+                   Product search
                 </li>
               </ol>
             </nav>
             <div class="rb_ecommerce_area">
               <div class="rb_heading">
-                  <h3>Product settings</h3>
-                  <p>Configure rules for product</p>
+                  <h3>Product search</h3>
+                  <p>Configure rules for product search</p>
               </div>
               <!-- API Provider Section -->
-              <div class="rb_radio_label mb-20">
-                <label class="form-label mb-8">Rich Editor</label>
-                <div class="d-flex align-items-center gap-4">
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="apiProvider" id="providerNone" value="none" checked>
-                    <label class="form-check-label" for="providerNone">CKEditor</label>
-                  </div>
-
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="apiProvider" id="providerApiLayer" value="apiLayer">
-                    <label class="form-check-label" for="providerApiLayer">TinyMCE</label>
-                  </div>
-                </div>
-                <p class="desc pt-15">When enabled, a sitemap.xml file will be automatically generated and accessible at <a href="#">https://</a> to help search engines better index your site.</p>
-              </div>  
               <div class="rb_checkbox_label mb-20">
                 <div class="form-check">
                   <input class="form-check-input" type="checkbox" value="" id="invalidCheck" checked required>
                   <label class="form-check-label" for="invalidCheck">
-                    Show number of products in the product single
+                    Search for an exact phrase
                   </label>
                 </div>
-                <p>Display the total number of products on the product detail page.</p>
+              </div> 
+              <div class="rb_section_border mb-20">
+               <div class="rb_checkbox_label mb-20">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" checked required>
+                    <label class="form-check-label" for="invalidCheck">
+                      Name
+                    </label>
+                  </div>
+                </div> 
+               <div class="rb_checkbox_label mb-20">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                      SKU
+                    </label>
+                  </div>
+                </div> 
+               <div class="rb_checkbox_label mb-20">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                      Variation SKU
+                    </label>
+                  </div>
+                </div> 
+               <div class="rb_checkbox_label mb-20">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" checked required>
+                    <label class="form-check-label" for="invalidCheck">
+                     Description
+                    </label>
+                  </div>
+                </div> 
+               <div class="rb_checkbox_label mb-20">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                     Brand
+                    </label>
+                  </div>
+                </div> 
+               <div class="rb_checkbox_label">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                     Tags
+                    </label>
+                  </div>
+                </div> 
+              </div>                                
+              <div class="rb_checkbox_label mb-20">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck" checked required>
+                  <label class="form-check-label" for="invalidCheck">
+                    Enable filter products by categories
+                  </label>
+                </div>
               </div>              
               <div class="rb_checkbox_label mb-20">
                 <div class="form-check">
                   <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" checked required>
                   <label class="form-check-label" for="invalidCheck2">
-                    Show out of stock products
+                    Enable filter products by brands
                   </label>
                 </div>
-                <p>If enabled, out of stock products will be displayed on the product listing page.</p>
               </div>              
               <div class="rb_checkbox_label mb-20">
                 <div class="form-check">
                   <input class="form-check-input" type="checkbox" value="" id="invalidCheck3" checked required>
                   <label class="form-check-label" for="invalidCheck3">
-                    Enable product options
+                    Enable filter products by tags
                   </label>
                 </div>
-                <p>Allow products to have customizable options like size, color, etc.</p>
               </div>              
-              <div class="rb_checkbox_label mb-20">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck4" checked required>
-                  <label class="form-check-label" for="invalidCheck4">
-                    Enable cross sale products
-                  </label>
-                </div>
-                <p>Display cross-sale product suggestions to encourage additional purchases.</p>
-              </div>              
-              <div class="rb_checkbox_label mb-20">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck5" checked required>
-                  <label class="form-check-label" for="invalidCheck5">
-                    Enable related products
-                  </label>
-                </div>
-                <p>Show related products based on category, or selected by admin in product form.</p>
-              </div>
               <div class="rb_section_border mb-20">
-                <div class="rb_radio_label">
-                  <label class="form-label mb-8">Rich Editor</label>
-                  <div class="d-flex align-items-center gap-4">
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="apiProvider" id="CKEditor" value="none" checked>
-                      <label class="form-check-label" for="CKEditor">CKEditor</label>
-                    </div>
-
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="apiProvider" id="TinyMCE" value="apiLayer">
-                      <label class="form-check-label" for="TinyMCE">TinyMCE</label>
-                    </div>
+                <div class="common_input">
+                  <div class="form-group">
+                    <label for="name">Number of popular tags for filter</label>
+                    <select id="name" name="name" class="custom-select">
+                      <option value="" disabled="" selected="">10</option>
+                      <option value="11">11</option>
+                      <option value="12">12</option>
+                    </select>
                   </div>
-                  <p class="desc mt-10">When admin doesn't select related products in product form, show related products based on this source.</p>
+                  <p class="desc">The name that will appear in the From field of emails sent by the system</p>
                 </div>  
               </div>     
-              <div class="common_input mb-20">
-                <div class="form-group">
-                  <label for="name">Sender name</label>
-                  <select id="name" name="name" class="custom-select">
-                    <option value="" disabled="" selected="">Name</option>
-                    <option value="department1">Warning</option>
-                    <option value="department2">Error</option>
-                  </select>
-                </div>
-                <p class="desc">The name that will appear in the From field of emails sent by the system</p>
-              </div>    
               <div class="rb_checkbox_label mb-20">
                 <div class="form-check">
                   <input class="form-check-input" type="checkbox" value="" id="invalidCheck6" checked required>
                   <label class="form-check-label" for="invalidCheck6">
-                    Enable product specification
+                    Enable filter products by attributes
                   </label>
                 </div>
-                <p>If enabled, the product specification table will be displayed on the product detail page.</p>
               </div>                 
               <div class="rb_checkbox_label mb-20">
                 <div class="form-check">
                   <input class="form-check-input" type="checkbox" value="" id="invalidCheck7" checked required>
                   <label class="form-check-label" for="invalidCheck7">
-                    Auto generate SKU when creating product
+                    Enable filter products by price
                   </label>
                 </div>
-                <p>Automatically generate unique SKUs for new products based on the format below.</p>
               </div>                 
               
 
               <div class="rb_section_border mb-20">
                 <div class="common_input">
                   <div class="form-group">
-                    <label for="name">Sender name</label>
+                    <label for="name">Max product price for filter</label>
                     <select id="name" name="name" class="custom-select">
-                      <option value="" disabled="" selected="">Name</option>
-                      <option value="department1">Warning</option>
-                      <option value="department2">Error</option>
+                      <option value="" disabled="" selected="">10</option>
+                      <option value="11">11</option>
+                      <option value="12">12</option>
                     </select>
                   </div>
-                  <p class="desc">The name that will appear in the From field of emails sent by the system</p>
+                  <p class="desc">You can set a fixed price for this or it will dynamically get the max product price from your existing products. Currently it is $2,488.00.</p>
                 </div>  
-              </div>  
-              <!-- Enable Social login -->
-              <div class="rb_checkbox_label mb-4">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck8" required>
-                  <label class="form-check-label" for="invalidCheck8">
-                    Enable Index Now?
-                  </label>
-                </div>
-                <p>Automatically notify search engines (Bing, Yandex, Seznam, Naver) when your content is updated using the modern IndexNow protocol for instant indexing.</p>
               </div>  
             </div>
             <div class="btn_wrapper mt-20 mb-20">
