@@ -32691,6 +32691,16 @@ p {
   letter-spacing: 0%;
   padding-top: 10px;
 }
+.rb_ecommerce_area .rb_section_border .rb_section_border2 {
+  border: 1px solid #E2E2E2;
+  border-radius: 14px;
+  padding: 20px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .rb_ecommerce_area .rb_section_border .rb_section_border2 {
+    padding: 16px;
+  }
+}
 .rb_ecommerce_area .rb_thumb img {
   width: 100%;
 }

@@ -70,6 +70,14 @@
         letter-spacing: 0%;
         padding-top: 10px;
       }
+      .rb_section_border2 {
+        border: 1px solid #E2E2E2;
+        border-radius: 14px;
+        padding: 20px;
+        @include sm {
+          padding: 16px;
+        }        
+      }
     }
     .rb_thumb {
       img {
