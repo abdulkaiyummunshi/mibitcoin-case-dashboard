@@ -33028,6 +33028,11 @@ p {
   padding: 12px 20px;
   border-radius: 100px;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .rb_social_login .alert_list.style_1 {
+    border-radius: 14px;
+  }
+}
 .rb_social_login .alert_list.style_2 {
   display: flex;
   flex-direction: column;
@@ -33129,7 +33134,19 @@ p {
 }
 .rb_input_file .form-control[type=file] {
   padding: 10px 20px;
-  border-radius: 50px;
+  font-family: Inter;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  height: 48px;
+  border-radius: 35px;
+  border-width: 1px;
+  opacity: 1;
+  padding-top: 12px;
+  padding-bottom: 12px;
   cursor: pointer;
 }
 .rb_input_file .rb_text {

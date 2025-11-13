@@ -121,6 +121,9 @@
         &.style_1 {
           padding: 12px 20px;
           border-radius: 100px;
+          @include sm {
+            border-radius: 14px;            
+          }
         }
         &.style_2 {
           display: flex;
@@ -231,7 +234,19 @@
   }
   .form-control[type="file"] {
     padding: 10px 20px;
-    border-radius: 50px;
+    font-family: Inter;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    height: 48px;
+    border-radius: 35px;
+    border-width: 1px;
+    opacity: 1;
+    padding-top: 12px;
+    padding-bottom: 12px;
     cursor: pointer;
   }
   
