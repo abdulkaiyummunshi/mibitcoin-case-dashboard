@@ -345,3 +345,8 @@
     padding-left: 50px !important;
   }
 }
+
+.fix-scroll {
+    max-height: 420px;
+    overflow-y: auto;
+}

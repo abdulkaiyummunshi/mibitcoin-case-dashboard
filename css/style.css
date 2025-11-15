@@ -32610,6 +32610,11 @@ p {
   padding-left: 50px !important;
 }
 
+.fix-scroll {
+  max-height: 420px;
+  overflow-y: auto;
+}
+
 .rb_ecommerce_area {
   max-width: 1008px;
   padding: 32px;
@@ -32677,6 +32682,17 @@ p {
   font-style: Semi Bold;
   font-size: 18px;
   line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  padding-bottom: 15px;
+}
+.rb_ecommerce_area .rb_section_border .rb_title2 {
+  color: #101010;
+  font-family: Inter;
+  font-weight: 600;
+  font-style: Semi Bold;
+  font-size: 16px;
+  line-height: 22px;
   letter-spacing: 0%;
   vertical-align: middle;
   padding-bottom: 15px;
