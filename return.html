@@ -417,140 +417,29 @@
                   </label>
                 </div>
               </div> 
-              <div class="rb_section_border mb-20">
-               <div class="rb_checkbox_label mb-20">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck3" required>
-                    <label class="form-check-label" for="invalidCheck3">
-                      Destroy cart on logout
-                    </label>
-                  </div>
-                  <p>The cart will be destroyed when the customer logs out.</p>
-                </div> 
-               <div class="rb_checkbox_label mb-20">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck3" checked required>
-                    <label class="form-check-label" for="invalidCheck3">
-                      Enable order tracking
-                    </label>
-                  </div>
-                  <p>Customers can track their orders by entering the order code and email on <a href="#">https://</a></p>
-                </div> 
-                <div class="rb_section_border3 mb-16">
-                  <div class="rb_radio_label">
-                    <label class="form-label mb-8">Order tracking method</label>
-                    <div class="d-flex align-items-center flex-wrap gap-2 md-gap-4">
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="apiProvider" id="providerNone" value="none" checked>
-                        <label class="form-check-label" for="providerNone">Order ID + Email</label>
-                      </div>
 
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="apiProvider" id="providerApiLayer" value="apiLayer">
-                        <label class="form-check-label" for="providerApiLayer">Order ID + Phone number</label>
-                      </div>
-                    </div>
-                    <p class="desc pt-15">Choose how customers will track their orders: using Order ID + Email or Order ID + Phone number.</p>
-                  </div>  
-                </div>
-               <div class="rb_checkbox_label mb-20">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck3" checked required>
-                    <label class="form-check-label" for="invalidCheck3">
-                      Enable payment proof upload
-                    </label>
-                  </div>
-                  <p>Allow customers to upload payment proof for their orders. This is useful for manual payment methods.</p>
-                </div> 
-                <div class="rb_section_border3 mb-16">
-                  <div class="rb_radio_label">
-                    <label class="form-label mb-8">Allow guest customers to upload payment proof</label>
-                    <p class="desc pt-15">When enabled, guest customers can upload payment proof using their order token without logging in. They will receive the upload link in their order confirmation email.</p>
-                  </div>  
-                </div>
-               <div class="rb_checkbox_label mb-20">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck5" checked required>
-                    <label class="form-check-label" for="invalidCheck5">
-                      Enable quick buy button
-                    </label>
-                  </div>
-                  <p>It will show a Buy Now button on the product listing and detail page. When customers click on this button, the product will be added to the cart and redirect to the cart/checkout page.</p>
-                </div> 
-
-                <div class="rb_radio_label mb-20">
-                  <label class="form-label mb-8">Order tracking method</label>
-                  <div class="d-flex align-items-center md-gap-4 flex-wrap gap-2">
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="apiProvider" id="providerNone" value="none" checked>
-                      <label class="form-check-label" for="providerNone">Order ID + Email</label>
-                    </div>
-
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="apiProvider" id="providerApiLayer" value="apiLayer">
-                      <label class="form-check-label" for="providerApiLayer">Order ID + Phone number</label>
-                    </div>
-                  </div>
-                </div>                 
-              
-               <div class="rb_checkbox_label">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck8" required>
-                    <label class="form-check-label" for="invalidCheck8">
-                     Auto confirm order
-                    </label>
-                  </div>
-                  <p>If enabled, the order will be automatically confirmed after the customer places an order.</p>
-                </div>                
-              </div>   
-              <div class="rb_checkbox_label mb-20">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck8" required>
-                  <label class="form-check-label" for="invalidCheck8">
-                    Hide product price
-                  </label>
-                </div>
-                <p>This option just work if you disable shopping cart, turning your site into a catalog-only display. If enabled, the product price will be hidden. It is useful when you want to hide the price and require customers to contact you for the price.</p>
-              </div>                                            
-              <div class="rb_checkbox_label mb-20">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck8" checked required>
-                  <label class="form-check-label" for="invalidCheck8">
-                    Enable Wishlist
-                  </label>
-                </div>
-                <p>If disabled, the wishlist button will be removed from the site.</p>
-              </div>  
-              <div class="rb_section_border mb-20">
+              <div class="rb_section_border">
                 <div class="rb_checkbox_label mb-20">
                   <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="invalidCheck9" required>
                     <label class="form-check-label" for="invalidCheck9">
-                      Hide product price
+                      Allow partial return
                     </label>
                   </div>
+                  <p>Customer can return a few products, do not need to return all products in an order.</p>
                 </div>                  
                 <div class="common_input">
                   <div class="form-group">
-                    <label for="name">Shared wishlist lifetime (days)</label>
+                    <label for="name">Returnable days</label>
                     <select id="name" name="name" class="custom-select">
-                      <option value="" disabled="" selected="">10</option>
-                      <option value="11">11</option>
-                      <option value="12">12</option>
+                      <option value="" disabled="" selected="">30</option>
+                      <option value="11">31</option>
+                      <option value="12">32</option>
                     </select>
                   </div>
-                  <p class="desc">The lifetime of the shared wishlist in days. After this time, the shared wishlist will be deleted.</p>
+                  <p class="desc">Number of days a customer can request a return after the order is completed.</p>
                 </div>  
               </div>    
-              <div class="rb_checkbox_label mb-0">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck11" checked required>
-                  <label class="form-check-label" for="invalidCheck11">
-                    Enable compare
-                  </label>
-                </div>
-                <p>If disabled, the compare button will be removed from the site.</p>
-              </div>                                                        
             </div>
             <div class="btn_wrapper mt-20 mb-20">
               <a  href="#"><img src="./images/icon/save.png" alt=""> Save settings</a>
