@@ -78,6 +78,15 @@
           padding: 16px;
         }        
       }
+      .rb_section_border3 {
+        background: #FFFFFF;
+        border: 1px solid #7275F84D;
+        border-radius: 14px;
+        padding: 20px;
+        @include sm {
+          padding: 16px;
+        }        
+      }
     }
     .rb_thumb {
       img {
