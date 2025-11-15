@@ -515,55 +515,162 @@
                     </div>
                     <div class="desc">After changing this option, you need to update all addresses again. You should set it once. Then you need to go to Tools -> Import/Export Data to import location data.</div>
                   </div>  
-                  <!-- Enable Social login -->
-                  <div class="rb_checkbox_label mb-24">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="invalidCheck3" required>
-                      <label class="form-check-label" for="invalidCheck3">
-                        Use exchange rate from API
-                      </label>
-                    </div>
-                    <p>Enable automatic currency exchange rate updates from the configured API provider. This ensures your prices are always up-to-date with current market rates.</p>
-                  </div>                   
+
+                  <div class="rb_section_border mb-20">
+                    <div class="rb_heading">
+                        <h3>Available countries</h3>
+                        <p>If you uncheck all countries, it will apply for all countries.</p>
+                    </div>                    
+                    <div class="rb_checkbox_label mb-20">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck8" checked required>
+                        <label class="form-check-label" for="invalidCheck8">
+                          All
+                        </label>
+                      </div>
+                    </div>    
+                    <div class="rb_section_border2 mb-20">
+                      <div class="rb_checkbox_label mb-15">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck8" checked required>
+                          <label class="form-check-label" for="invalidCheck8">
+                            Afghanistan
+                          </label>
+                        </div>
+                      </div>                        
+                      <div class="rb_checkbox_label mb-15">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck8" checked required>
+                          <label class="form-check-label" for="invalidCheck8">
+                            Åland Islands
+                          </label>
+                        </div>
+                      </div>                        
+                      <div class="rb_checkbox_label mb-15">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck8" checked required>
+                          <label class="form-check-label" for="invalidCheck8">
+                            Albania
+                          </label>
+                        </div>
+                      </div>                        
+                      <div class="rb_checkbox_label mb-15">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck8" checked required>
+                          <label class="form-check-label" for="invalidCheck8">
+                            Algeria
+                          </label>
+                        </div>
+                      </div>                        
+                      <div class="rb_checkbox_label mb-15">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck8" checked required>
+                          <label class="form-check-label" for="invalidCheck8">
+                            American Samoa
+                          </label>
+                        </div>
+                      </div>                        
+                      <div class="rb_checkbox_label mb-15">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck8" checked required>
+                          <label class="form-check-label" for="invalidCheck8">
+                            Andorra
+                          </label>
+                        </div>
+                      </div>                        
+                      <div class="rb_checkbox_label mb-15">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck8" checked required>
+                          <label class="form-check-label" for="invalidCheck8">
+                            Angola
+                          </label>
+                        </div>
+                      </div>                        
+                      <div class="rb_checkbox_label mb-15">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck8" checked required>
+                          <label class="form-check-label" for="invalidCheck8">
+                            Anguilla
+                          </label>
+                        </div>
+                      </div>                        
+                      <div class="rb_checkbox_label mb-15">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck8" checked required>
+                          <label class="form-check-label" for="invalidCheck8">
+                            Antarctica
+                          </label>
+                        </div>
+                      </div>                        
+                      <div class="rb_checkbox_label mb-15">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck8" checked required>
+                          <label class="form-check-label" for="invalidCheck8">
+                            Antigua and Barbuda
+                          </label>
+                        </div>
+                      </div>                        
+                      <div class="rb_checkbox_label mb-15">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck8" checked required>
+                          <label class="form-check-label" for="invalidCheck8">
+                            Argentina
+                          </label>
+                        </div>
+                      </div>                        
+                    </div>                 
+                    <div class="common_input">
+                      <div class="form-group">
+                        <label for="name">Default country at the checkout page</label>
+                        <select id="name" name="name" class="custom-select">
+                          <option value="" disabled="" selected="">Select a country</option>
+                          <option value="bangladesh">Bangladesh</option>
+                          <option value="india">India</option>
+                        </select>
+                      </div>
+                      <p class="desc">If set to 0, there will be no limit.</p>
+                    </div>  
+                  </div>           
+
                   <div class="rb_checkbox_label mb-20">
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" value="" id="invalidCheck8" checked required>
                       <label class="form-check-label" for="invalidCheck8">
-                        Enable Wishlist
+                        Enable customer recently viewed products
                       </label>
                     </div>
-                    <p>If disabled, the wishlist button will be removed from the site.</p>
+                    <p>Track and display products that customers have recently viewed. This helps customers easily find products they were interested in.</p>
                   </div>  
                   <div class="rb_section_border mb-20">
                     <div class="common_input">
                       <div class="form-group">
-                        <label for="name">Shared wishlist lifetime (days)</label>
+                        <label for="name">Maximum number of customer recently viewed products</label>
                         <select id="name" name="name" class="custom-select">
-                          <option value="" disabled="" selected="">10</option>
-                          <option value="11">11</option>
-                          <option value="12">12</option>
+                          <option value="" disabled="" selected="">24</option>
+                          <option value="25">25</option>
+                          <option value="26">26</option>
                         </select>
                       </div>
-                      <p class="desc">The lifetime of the shared wishlist in days. After this time, the shared wishlist will be deleted.</p>
+                      <p class="desc">If set to 0, there will be no limit.</p>
                     </div>  
                   </div>    
                   <div class="rb_checkbox_label mb-20">
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" value="" id="invalidCheck11" checked required>
                       <label class="form-check-label" for="invalidCheck11">
-                        Enable compare
+                        Allow customers to change product quantity at the checkout page
                       </label>
                     </div>
-                    <p>If disabled, the compare button will be removed from the site.</p>
+                    <p>When enabled, customers can modify the quantity of products directly on the checkout page without returning to the cart.</p>
                   </div>                   
                   <div class="rb_checkbox_label mb-0">
                     <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="invalidCheck11" checked required>
+                      <input class="form-check-input" type="checkbox" value="" id="invalidCheck11" required>
                       <label class="form-check-label" for="invalidCheck11">
-                        Enable compare
+                        Hide customer info at checkout
                       </label>
                     </div>
-                    <p>If disabled, the compare button will be removed from the site.</p>
+                    <p>Hide the customer account information and logout button from the checkout page. When enabled, logged-in customers will not see their account details displayed.</p>
                   </div>                   
                </div>
             </div>
