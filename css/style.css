@@ -32935,6 +32935,18 @@ p {
   background-color: #cc0000;
 }
 
+.upload-box {
+  width: 100%;
+  height: 220px;
+  border-radius: 12px;
+  background-color: #f5f6fa;
+  cursor: pointer;
+}
+.upload-box .camera_icon i {
+  font-size: 24px;
+  color: #727272;
+}
+
 .rb_social_login {
   max-width: 1008px;
   padding: 32px;
