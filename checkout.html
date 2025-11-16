@@ -399,146 +399,451 @@
               <ol class="breadcrumb mb-24">
                 <li class="breadcrumb-item"><a href="#">Dashboard </a></li>
                 <li class="breadcrumb-item active" aria-current="page">
-                   Currencies
+                   Checkout
                 </li>
               </ol>
             </nav>
             <div class="rb_ecommerce_area">
               <div class="rb_heading">
-                  <h3>Currencies</h3>
-                  <p>View and update currencies using on website</p>
+                  <h3>Checkout</h3>
+                  <p>Configure rules for checkout settings</p>
               </div>
-              <div class="rb_checkbox_label mb-24">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                  <label class="form-check-label" for="invalidCheck">
-                    Enable auto-detect visitor currency
-                  </label>
-                </div>
-                <p>Automatically detect and display prices in the visitor's local currency based on their location. This provides a more personalized shopping experience.</p>
-              </div>              
               <div class="rb_checkbox_label mb-24">
                 <div class="form-check">
                   <input class="form-check-input" type="checkbox" value="" id="invalidCheck" checked required>
                   <label class="form-check-label" for="invalidCheck">
-                    Add a space between price and currency
+                    Enable guest checkout
                   </label>
                 </div>
-                <p>When enabled, adds a space between the price value and currency symbol (e.g., "100 USD" instead of "100USD").</p>
+                <p>If enabled, customers can place an order without creating an account.</p>
               </div>              
               <div class="common_input">
                   <div class="mb-24">
                     <div class="form-group">
-                      <label for="comma">Thousands separator</label>
-                      <select id="comma" name="comma" class="custom-select">
-                        <option value="" disabled="" selected="">Comma (,)</option>
-                        <option value="department1">Warning</option>
-                        <option value="department2">Error</option>
+                      <label for="amount">Minimum order amount to place an order (USD).</label>
+                      <select id="amount" name="amount" class="custom-select rounded-pill">
+                        <option value="" disabled="" selected="">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
                       </select>
                     </div>
-                    <p class="desc">Choose the character to separate thousands in price display (e.g., 1,000 or 1.000 or 1 000).</p>
+                    <p class="desc">Set the minimum total amount required for an order to be processed. Orders below this amount will not be accepted.</p>
                   </div>
                   <div class="mb-24">
                     <div class="form-group">
-                      <label for="comma">Decimal separator</label>
-                      <select id="comma" name="comma" class="custom-select">
-                        <option value="" disabled="" selected="">Period (.)</option>
-                        <option value="department1">Warning</option>
-                        <option value="department2">Error</option>
+                      <label for="amount">Minimum order quantity</label>
+                      <select id="amount" name="amount" class="custom-select rounded-pill">
+                        <option value="" disabled="" selected="">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
                       </select>
                     </div>
-                    <p class="desc">Choose the character to separate decimal values in prices (e.g., 10.99 or 10,99).</p>
+                    <p class="desc">Maximum quantity to place an order. Let it is 0 if you do not want to set it.</p>
+                  </div>
+                  <div class="mb-24">
+                    <div class="form-group">
+                      <label for="amount">Maximum order quantity</label>
+                      <select id="amount" name="amount" class="custom-select rounded-pill">
+                        <option value="" disabled="" selected="">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                      </select>
+                    </div>
+                    <p class="desc">Maximum quantity to place an order. Let it is 0 if you do not want to set it.</p>
                   </div>
 
-                  <!-- API Provider Section -->
-                  <div class="rb_radio_label mb-24">
-                    <label class="form-label mb-8">API provider</label>
-                    <div class="d-flex align-items-center gap-2 gap-md-4 flex-wrap">
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="apiProvider" id="providerNone" value="none" checked>
-                        <label class="form-check-label" for="providerNone">None</label>
-                      </div>
-
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="apiProvider" id="providerApiLayer" value="apiLayer">
-                        <label class="form-check-label" for="providerApiLayer">API Layer</label>
-                      </div>
-
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="apiProvider" id="providerOpenExchange" value="openExchange">
-                        <label class="form-check-label" for="providerOpenExchange">Open Exchange Rates</label>
-                      </div>
+                  <div class="rb_section_border mb-10">
+                    <h3 class="rb_title2">Mandatory fields at the checkout page:</h3>
+                    <div class="d-flex flex-wrap gap-4">
+                      <div class="rb_checkbox_label">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck100" checked required>
+                          <label class="form-check-label" for="invalidCheck100">
+                            Phone
+                          </label>
+                        </div>
+                      </div>  
+                      <div class="rb_checkbox_label">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck1001" checked required>
+                          <label class="form-check-label" for="invalidCheck1001">
+                            Email
+                          </label>
+                        </div>
+                      </div>  
+                      <div class="rb_checkbox_label">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck1002" checked required>
+                          <label class="form-check-label" for="invalidCheck1002">
+                            Country
+                          </label>
+                        </div>
+                      </div>  
+                      <div class="rb_checkbox_label">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck1003" checked required>
+                          <label class="form-check-label" for="invalidCheck1003">
+                            State
+                          </label>
+                        </div>
+                      </div>  
+                      <div class="rb_checkbox_label">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck1004" checked required>
+                          <label class="form-check-label" for="invalidCheck1004">
+                            City
+                          </label>
+                        </div>
+                      </div>  
+                      <div class="rb_checkbox_label">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck1005" checked required>
+                          <label class="form-check-label" for="invalidCheck1005">
+                            Address
+                          </label>
+                        </div>
+                      </div>  
                     </div>
-                  </div>  
+
+                  </div>
+                  <p class="desc mb-10">Maximum quantity to place an order. Let it is 0 if you do not want to set it.</p>
+                  <div class="rb_section_border mb-10">
+                    <h3 class="rb_title2">Hide customer fields at checkout page:</h3>
+                    <div class="d-flex flex-wrap gap-4">
+                      <div class="rb_checkbox_label">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck200"  required>
+                          <label class="form-check-label" for="invalidCheck200">
+                            Phone
+                          </label>
+                        </div>
+                      </div>  
+                      <div class="rb_checkbox_label">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck2001"  required>
+                          <label class="form-check-label" for="invalidCheck2001">
+                            Email
+                          </label>
+                        </div>
+                      </div>  
+                      <div class="rb_checkbox_label">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck2002"  required>
+                          <label class="form-check-label" for="invalidCheck2002">
+                            Country
+                          </label>
+                        </div>
+                      </div>  
+                      <div class="rb_checkbox_label">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck2003"  required>
+                          <label class="form-check-label" for="invalidCheck2003">
+                            State
+                          </label>
+                        </div>
+                      </div>  
+                      <div class="rb_checkbox_label">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck2004"  required>
+                          <label class="form-check-label" for="invalidCheck2004">
+                            City
+                          </label>
+                        </div>
+                      </div>  
+                      <div class="rb_checkbox_label">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck2005"  required>
+                          <label class="form-check-label" for="invalidCheck2005">
+                            Address
+                          </label>
+                        </div>
+                      </div>  
+                    </div>
+                  </div>
+                  <p class="desc mb-10">Maximum quantity to place an order. Let it is 0 if you do not want to set it.</p>
+
                   <!-- Enable Social login -->
                   <div class="rb_checkbox_label mb-24">
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" value="" id="invalidCheck3" required>
                       <label class="form-check-label" for="invalidCheck3">
-                        Use exchange rate from API
+                        Enable zipcode
                       </label>
                     </div>
-                    <p>Enable automatic currency exchange rate updates from the configured API provider. This ensures your prices are always up-to-date with current market rates.</p>
+                    <p>Enable or disable the zipcode/postal code field in the shipping address form.</p>
                   </div>                    
-                  
-                  <div class="rb_table mt-4">
-                    <h5 class="fw-semibold mb-3">Ecommerce</h5>
+                  <div class="rb_checkbox_label mb-24">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="invalidCheck23" checked required>
+                      <label class="form-check-label" for="invalidCheck23">
+                        Enable billing address
+                      </label>
+                    </div>
+                    <p>Allow customers to enter a separate billing address that differs from their shipping address.</p>
+                  </div>                    
+                  <div class="rb_checkbox_label mb-24">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="invalidCheck33" checked required>
+                      <label class="form-check-label" for="invalidCheck33">
+                        Display tax information fields at the checkout page
+                      </label>
+                    </div>
+                    <p>If enabled, tax information fields will be displayed for entering company tax details to receive an invoice.</p>
+                  </div>                    
+                  <div class="rb_checkbox_label mb-24">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="invalidCheck43" required>
+                      <label class="form-check-label" for="invalidCheck43">
+                        Show terms and policy checkbox
+                      </label>
+                    </div>
+                    <p>If enabled, customers must agree to the terms and policy before placing an order. Please setup Terms and Privacy Policy URL in Appearance -> Theme options first.</p>
+                  </div>                    
+                  <div class="rb_checkbox_label mb-24">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="invalidCheck53" required>
+                      <label class="form-check-label" for="invalidCheck53">
+                        Show checkout acceptance message
+                      </label>
+                    </div>
+                    <p>Display an informational message that informs customers about the terms they are agreeing to by placing an order.</p>
+                  </div>                    
 
-                    <div class="currency-box">
-                      <!-- Header -->
-                      <div class="currency-header">
-                        <div>CODE</div>
-                        <div>SYMBOL</div>
-                        <div>NUMBER OF DECIMALS</div>
-                        <div>EXCHANGE RATE</div>
-                        <div>POSITION OF SYMBOL</div>
-                        <div>IS DEFAULT?</div>
-                        <div>REMOVE</div>
+                  <!-- API Provider Section -->
+                  <div class="rb_radio_label mb-24">
+                    <label class="form-label mb-8">Load countries, states, cities from plugin location</label>
+                    <div class="d-flex align-items-center gap-2 gap-md-4 flex-wrap">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="apiProvider" id="providerNone" value="none" checked>
+                        <label class="form-check-label" for="providerNone">No</label>
                       </div>
 
-                      <!-- Row 1 -->
-                      <div class="currency-row">
-                        <input class="code" type="text" value="USD">
-                        <input class="symbol" type="text" value="$">
-                        <input class="decimal" type="number" value="2">
-                        <input class="edate" type="number" value="1">
-                        <select>
-                          <option selected>Before number</option>
-                          <option>After number</option>
-                        </select>
-                        <div class="radio-gradient d-flex justify-content-center">
-                          <input type="radio" name="default" checked>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="apiProvider" id="providerApiLayer" value="apiLayer">
+                        <label class="form-check-label" for="providerApiLayer">Yes</label>
+                      </div>
+                    </div>
+                    <div class="desc">After changing this option, you need to update all addresses again. You should set it once. Then you need to go to Tools -> Import/Export Data to import location data.</div>
+                  </div>  
+
+                  <div class="rb_section_border mb-20">
+                    <div class="rb_heading">
+                        <h3>Available countries</h3>
+                        <p>If you uncheck all countries, it will apply for all countries.</p>
+                    </div>                    
+                    <div class="rb_checkbox_label mb-20">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck8" checked required>
+                        <label class="form-check-label" for="invalidCheck8">
+                          All
+                        </label>
+                      </div>
+                    </div>    
+                    <div class="rb_section_border2 mb-20 fix-scroll">
+
+                      <div class="rb_checkbox_label mb-15">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="country1" checked>
+                          <label class="form-check-label" for="country1">Afghanistan</label>
                         </div>
-                        <button class="btn-delete">
-                          <img src="images/icon/trash-icon.svg" alt="icon">
-                        </button>
                       </div>
 
-                      <!-- Row 2 -->
-                      <div class="currency-row">
-                        <input class="code" type="text" value="EUR">
-                        <input class="symbol" type="text" value="€">
-                        <input class="decimal" type="number" value="2">
-                        <input class="edate" type="number" value="0.84">
-                        <select>
-                          <option>Before number</option>
-                          <option selected>After number</option>
-                        </select>
-                        <div class="radio-gradient d-flex justify-content-center">
-                          <input class="radio" type="radio" name="default">
+                      <div class="rb_checkbox_label mb-15">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="country2" checked>
+                          <label class="form-check-label" for="country2">Åland Islands</label>
                         </div>
-                        <button class="btn-delete">
-                          <img src="images/icon/trash-icon.svg" alt="icon">
-                        </button>
                       </div>
 
+                      <div class="rb_checkbox_label mb-15">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="country3" checked>
+                          <label class="form-check-label" for="country3">Albania</label>
+                        </div>
+                      </div>
 
+                      <div class="rb_checkbox_label mb-15">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="country4" checked>
+                          <label class="form-check-label" for="country4">Algeria</label>
+                        </div>
+                      </div>
 
+                      <div class="rb_checkbox_label mb-15">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="country5" checked>
+                          <label class="form-check-label" for="country5">American Samoa</label>
+                        </div>
+                      </div>
+
+                      <div class="rb_checkbox_label mb-15">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="country6" checked>
+                          <label class="form-check-label" for="country6">Andorra</label>
+                        </div>
+                      </div>
+
+                      <div class="rb_checkbox_label mb-15">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="country7" checked>
+                          <label class="form-check-label" for="country7">Angola</label>
+                        </div>
+                      </div>
+
+                      <div class="rb_checkbox_label mb-15">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="country8" checked>
+                          <label class="form-check-label" for="country8">Anguilla</label>
+                        </div>
+                      </div>
+
+                      <div class="rb_checkbox_label mb-15">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="country9" checked>
+                          <label class="form-check-label" for="country9">Antarctica</label>
+                        </div>
+                      </div>
+
+                      <div class="rb_checkbox_label mb-15">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="country10" checked>
+                          <label class="form-check-label" for="country10">Antigua and Barbuda</label>
+                        </div>
+                      </div>
+
+                      <div class="rb_checkbox_label mb-15">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="country11" checked>
+                          <label class="form-check-label" for="country11">Argentina</label>
+                        </div>
+                      </div>
+
+                      <div class="rb_checkbox_label mb-15">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="country12" checked>
+                          <label class="form-check-label" for="country12">Armenia</label>
+                        </div>
+                      </div>
+
+                      <div class="rb_checkbox_label mb-15">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="country13" checked>
+                          <label class="form-check-label" for="country13">Aruba</label>
+                        </div>
+                      </div>
+
+                      <div class="rb_checkbox_label mb-15">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="country14" checked>
+                          <label class="form-check-label" for="country14">Australia</label>
+                        </div>
+                      </div>
+
+                      <div class="rb_checkbox_label mb-15">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="country15" checked>
+                          <label class="form-check-label" for="country15">Austria</label>
+                        </div>
+                      </div>
+
+                      <div class="rb_checkbox_label mb-15">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="country16" checked>
+                          <label class="form-check-label" for="country16">Azerbaijan</label>
+                        </div>
+                      </div>
+
+                      <div class="rb_checkbox_label mb-15">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="country17" checked>
+                          <label class="form-check-label" for="country17">Bahamas</label>
+                        </div>
+                      </div>
+
+                      <div class="rb_checkbox_label mb-15">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="country18" checked>
+                          <label class="form-check-label" for="country18">Bahrain</label>
+                        </div>
+                      </div>
+
+                      <div class="rb_checkbox_label mb-15">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="country19" checked>
+                          <label class="form-check-label" for="country19">Bangladesh</label>
+                        </div>
+                      </div>
+
+                      <div class="rb_checkbox_label mb-15">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="country20" checked>
+                          <label class="form-check-label" for="country20">Barbados</label>
+                        </div>
+                      </div>
+
+                      <div class="rb_checkbox_label mb-15">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="country21" checked>
+                          <label class="form-check-label" for="country21">Belarus</label>
+                        </div>
+                      </div>
 
                     </div>
-                  </div>     
+              
+                    <div class="common_input">
+                      <div class="form-group">
+                        <label for="name">Default country at the checkout page</label>
+                        <select id="name" name="name" class="custom-select">
+                          <option value="" disabled="" selected="">Select a country</option>
+                          <option value="bangladesh">Bangladesh</option>
+                          <option value="india">India</option>
+                        </select>
+                      </div>
+                      <p class="desc">If set to 0, there will be no limit.</p>
+                    </div>  
+                  </div>           
 
-              </div>
+                  <div class="rb_checkbox_label mb-20">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="invalidCheck88" checked required>
+                      <label class="form-check-label" for="invalidCheck88">
+                        Enable customer recently viewed products
+                      </label>
+                    </div>
+                    <p>Track and display products that customers have recently viewed. This helps customers easily find products they were interested in.</p>
+                  </div>  
+                  <div class="rb_section_border mb-20">
+                    <div class="common_input">
+                      <div class="form-group">
+                        <label for="name">Maximum number of customer recently viewed products</label>
+                        <select id="name" name="name" class="custom-select">
+                          <option value="" disabled="" selected="">24</option>
+                          <option value="25">25</option>
+                          <option value="26">26</option>
+                        </select>
+                      </div>
+                      <p class="desc">If set to 0, there will be no limit.</p>
+                    </div>  
+                  </div>    
+                  <div class="rb_checkbox_label mb-20">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="invalidCheck11" checked required>
+                      <label class="form-check-label" for="invalidCheck11">
+                        Allow customers to change product quantity at the checkout page
+                      </label>
+                    </div>
+                    <p>When enabled, customers can modify the quantity of products directly on the checkout page without returning to the cart.</p>
+                  </div>                   
+                  <div class="rb_checkbox_label mb-0">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="invalidCheck111" required>
+                      <label class="form-check-label" for="invalidCheck111">
+                        Hide customer info at checkout
+                      </label>
+                    </div>
+                    <p>Hide the customer account information and logout button from the checkout page. When enabled, logged-in customers will not see their account details displayed.</p>
+                  </div>                   
+               </div>
             </div>
             <div class="btn_wrapper mt-20 mb-20">
               <a  href="#"><img src="./images/icon/save.png" alt=""> Save settings</a>

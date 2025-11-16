@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="./css/magnific-popup.min.css">
     <link rel="stylesheet" href="./css/animate.min.css">
     <link rel="stylesheet" href="./css/meanmenu.min.css">
-    <link rel="stylesheet" href="./css/nice-select.min.css">
+    <!-- <link rel="stylesheet" href="./css/nice-select.min.css"> -->
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
@@ -397,58 +397,153 @@
             <!-- Breadcrumb -->
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb mb-24">
-                <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                <li class="breadcrumb-item"><a href="#">Dashboard </a></li>
                 <li class="breadcrumb-item active" aria-current="page">
-                  / Settings
+                   Product settings
                 </li>
               </ol>
             </nav>
-            <div class="rb_social_login">
+            <div class="rb_ecommerce_area">
               <div class="rb_heading">
-                  <h3>Captcha</h3>
-                  <p>reCAPTCHA is a free service from Google that helps protect websites from spam and abuse.</p>
-                  <p>Math Captcha allows you to use simple math problems to test site users to prove their human identity.</p>
+                  <h3>Product settings</h3>
+                  <p>Configure rules for product</p>
               </div>
-              <!-- Enable Social login -->
-              <div class="rb_checkbox_label mb-24">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="enableSchema1" required>
-                  <label class="form-check-label" for="enableSchema1">
-                    Display product price including taxes
-                  </label>
-                </div>
-              </div>
-              <div class="rb_checkbox_label mb-24">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="enableSchema2" checked required>
-                  <label class="form-check-label" for="enableSchema2">
-                    Enable tax
-                  </label>
-                </div>
-              </div>
+              <!-- API Provider Section -->
+              <div class="rb_radio_label mb-20">
+                <label class="form-label mb-8">Rich Editor</label>
+                <div class="d-flex align-items-center gap-4">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="apiProvider" id="providerNone" value="none" checked>
+                    <label class="form-check-label" for="providerNone">CKEditor</label>
+                  </div>
 
-              <div class="rb_section_border">
-                <div class="rb_checkbox_label mb-24">
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="enableSchema3" required>
-                    <label class="form-check-label" for="enableSchema3">
-                      Enable reCAPTCHA
-                    </label>
+                    <input class="form-check-input" type="radio" name="apiProvider" id="providerApiLayer" value="apiLayer">
+                    <label class="form-check-label" for="providerApiLayer">TinyMCE</label>
                   </div>
                 </div>
-                <div class="rb_checkbox_label">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="enableSchema4" required>
-                    <label class="form-check-label" for="enableSchema4">
-                      Enable Math CAPTCHA
-                    </label>
-                  </div>
+                <p class="desc pt-15">When enabled, a sitemap.xml file will be automatically generated and accessible at <a href="#">https://</a> to help search engines better index your site.</p>
+              </div>  
+              <div class="rb_checkbox_label mb-20">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck" checked required>
+                  <label class="form-check-label" for="invalidCheck">
+                    Show number of products in the product single
+                  </label>
                 </div>
+                <p>Display the total number of products on the product detail page.</p>
+              </div>              
+              <div class="rb_checkbox_label mb-20">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" checked required>
+                  <label class="form-check-label" for="invalidCheck2">
+                    Show out of stock products
+                  </label>
+                </div>
+                <p>If enabled, out of stock products will be displayed on the product listing page.</p>
+              </div>              
+              <div class="rb_checkbox_label mb-20">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck3" checked required>
+                  <label class="form-check-label" for="invalidCheck3">
+                    Enable product options
+                  </label>
+                </div>
+                <p>Allow products to have customizable options like size, color, etc.</p>
+              </div>              
+              <div class="rb_checkbox_label mb-20">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck4" checked required>
+                  <label class="form-check-label" for="invalidCheck4">
+                    Enable cross sale products
+                  </label>
+                </div>
+                <p>Display cross-sale product suggestions to encourage additional purchases.</p>
+              </div>              
+              <div class="rb_checkbox_label mb-20">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck5" checked required>
+                  <label class="form-check-label" for="invalidCheck5">
+                    Enable related products
+                  </label>
+                </div>
+                <p>Show related products based on category, or selected by admin in product form.</p>
               </div>
+              <div class="rb_section_border mb-20">
+                <div class="rb_radio_label">
+                  <label class="form-label mb-8">Rich Editor</label>
+                  <div class="d-flex align-items-center gap-4">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="apiProvider" id="CKEditor" value="none" checked>
+                      <label class="form-check-label" for="CKEditor">CKEditor</label>
+                    </div>
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="apiProvider" id="TinyMCE" value="apiLayer">
+                      <label class="form-check-label" for="TinyMCE">TinyMCE</label>
+                    </div>
+                  </div>
+                  <p class="desc mt-10">When admin doesn't select related products in product form, show related products based on this source.</p>
+                </div>  
+              </div>     
+              <div class="common_input mb-20">
+                <div class="form-group">
+                  <label for="name">Sender name</label>
+                  <select id="name" name="name" class="custom-select">
+                    <option value="" disabled="" selected="">Name</option>
+                    <option value="department1">Warning</option>
+                    <option value="department2">Error</option>
+                  </select>
+                </div>
+                <p class="desc">The name that will appear in the From field of emails sent by the system</p>
+              </div>    
+              <div class="rb_checkbox_label mb-20">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck6" checked required>
+                  <label class="form-check-label" for="invalidCheck6">
+                    Enable product specification
+                  </label>
+                </div>
+                <p>If enabled, the product specification table will be displayed on the product detail page.</p>
+              </div>                 
+              <div class="rb_checkbox_label mb-20">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck7" checked required>
+                  <label class="form-check-label" for="invalidCheck7">
+                    Auto generate SKU when creating product
+                  </label>
+                </div>
+                <p>Automatically generate unique SKUs for new products based on the format below.</p>
+              </div>                 
+              
+
+              <div class="rb_section_border mb-20">
+                <div class="common_input">
+                  <div class="form-group">
+                    <label for="name">Sender name</label>
+                    <select id="name" name="name" class="custom-select">
+                      <option value="" disabled="" selected="">Name</option>
+                      <option value="department1">Warning</option>
+                      <option value="department2">Error</option>
+                    </select>
+                  </div>
+                  <p class="desc">The name that will appear in the From field of emails sent by the system</p>
+                </div>  
+              </div>  
+              <!-- Enable Social login -->
+              <div class="rb_checkbox_label mb-4">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck8" required>
+                  <label class="form-check-label" for="invalidCheck8">
+                    Enable Index Now?
+                  </label>
+                </div>
+                <p>Automatically notify search engines (Bing, Yandex, Seznam, Naver) when your content is updated using the modern IndexNow protocol for instant indexing.</p>
+              </div>  
             </div>
             <div class="btn_wrapper mt-20 mb-20">
               <a  href="#"><img src="./images/icon/save.png" alt=""> Save settings</a>
-            </div>            
+            </div>                           
           </div>
         </div>
       </div>
@@ -460,7 +555,7 @@
     <script src="./js/jquery.meanmenu.min.js"></script>
     <script src="./js/jquery.magnific-popup.min.js"></script>
     <script src="./js/slick.min.js"></script>
-    <script src="./js/jquery.nice-select.js"></script>
+    <!-- <script src="./js/jquery.nice-select.js"></script> -->
     <script src="./js/gsap.min.js"></script>
     <script src="./js/ScrollTrigger.min.js"></script>
     <script src="./js/ScrollSmoother.min.js"></script>
