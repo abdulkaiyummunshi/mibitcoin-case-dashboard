@@ -354,7 +354,7 @@
         height: 34px;
         @include flex(row, center, center);
     }
-    .price, .view, .like {
+    .price, .view, .like, .sale-text {
         color: #101010;
         font-family: Inter;
         font-weight: 400;

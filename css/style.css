@@ -32969,7 +32969,7 @@ p {
   justify-content: center;
   align-items: center;
 }
-.product_table .price, .product_table .view, .product_table .like {
+.product_table .price, .product_table .view, .product_table .like, .product_table .sale-text {
   color: #101010;
   font-family: Inter;
   font-weight: 400;
