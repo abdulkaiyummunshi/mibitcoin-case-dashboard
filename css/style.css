@@ -32876,6 +32876,11 @@ p {
   border-radius: 24px;
   margin-top: 15px;
 }
+@media only screen and (max-width: 1199px) {
+  .product_table .table-product {
+    width: 992px;
+  }
+}
 .product_table .table-product tr > th {
   color: #7B7B7B;
   font-family: Inter;

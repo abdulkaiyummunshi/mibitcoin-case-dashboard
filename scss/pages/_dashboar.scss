@@ -256,6 +256,9 @@
     margin-top: 15px;
 
     .table-product {
+        @include lg {
+            width: 992px;
+        }
         tr>th {
             color: #7B7B7B;
             font-family: Inter;
