@@ -229,78 +229,48 @@
 
 
         $(document).ready(function () {
-            // 1. ডামি কন্টেন্ট এরিয়া তৈরি করা (যদি আপনার HTML এ না থাকে)
-            // এটি শুধু দেখানোর জন্য যে কিভাবে কন্টেন্ট পরিবর্তন হবে।
-            // আপনার প্রধান কন্টেন্ট এরিয়াকে #main-content-area আইডি দিন।
-
-            // $('body').append('<div id="main-content-area" style="padding: 20px; border: 1px solid #ccc; margin-top: 20px;">Main Content Area: Dashboard</div>');
-
-
-            // টপ-লেভেল মেনু আইটেমগুলিতে ক্লিক হ্যান্ডলার
             $('.tk_dashboard_sidebar > ul > li > a:not(.menu-item-has-children)').on('click', function (e) {
-                e.preventDefault(); // লিংকের ডিফল্ট অ্যাকশন বন্ধ করা
-
-                // 2. টপ-লেভেল আইটেমের অ্যাক্টিভ ক্লাস ম্যানেজ করা
-                // অন্য টপ-লেভেল মেনু থেকে 'active' ক্লাস সরিয়ে দেওয়া
+                e.preventDefault(); 
                 $('.tk_dashboard_sidebar > ul > li > a').removeClass('active');
 
-                // বর্তমান আইটেমে 'active' ক্লাস যোগ করা
                 $(this).addClass('active');
 
-                // 3. ড্রপডাউন মেনু বন্ধ করা (যদি অন্য কোনো আইটেমে ক্লিক করা হয়)
                 $('.tk_side_dropdown').removeClass('active');
-                $('.menu-item-has-children').removeClass('rotated'); // ড্রপডাউনের আইকন রিসেট
-
-                // 4. কন্টেন্ট এরিয়া আপডেট করা
+                $('.menu-item-has-children').removeClass('rotated'); 
                 const contentText = $(this).text().trim();
                 $('#main-content-area').text('Main Content Area: ' + contentText);
             });
 
-
-            // E-commerce (ড্রপডাউন) মেনু আইটেমের জন্য ক্লিক হ্যান্ডলার
             $('.tk_dashboard_sidebar > ul > li > a.menu-item-has-children').on('click', function (e) {
                 e.preventDefault();
 
                 const $dropdown = $(this).next('.tk_side_dropdown');
                 const $link = $(this);
 
-                // 5. ড্রপডাউন টগল করা
                 $dropdown.toggleClass('active');
-                $link.toggleClass('active'); // E-commerce লিঙ্ক এ অ্যাক্টিভ ক্লাস যোগ করা 
+                $link.toggleClass('active'); 
 
-                // আইকন ঘোরানোর জন্য একটি ক্লাস টগল করা
                 $link.toggleClass('rotated');
 
-                // 6. অন্য সব ড্রপডাউন বন্ধ করা
                 $('.tk_side_dropdown').not($dropdown).removeClass('active');
                 $('.menu-item-has-children').not($link).removeClass('active rotated');
 
-                // 7. অন্য সব সিঙ্গেল মেনু আইটেম থেকে active ক্লাস সরিয়ে দেওয়া
                 $('.tk_dashboard_sidebar > ul > li > a:not(.menu-item-has-children)').removeClass('active');
 
-                // 8. কন্টেন্ট এরিয়া আপডেট করা
                 const contentText = $(this).text().trim();
                 $('#main-content-area').text('Main Content Area: ' + contentText);
             });
 
-            // ড্রপডাউনের সাব-আইটেমগুলিতে ক্লিক হ্যান্ডলার
             $('.tk_side_dropdown a').on('click', function (e) {
                 e.preventDefault();
 
-                // অন্য সব সাব-আইটেম থেকে 'active' ক্লাস সরিয়ে দেওয়া
                 $('.tk_side_dropdown a').removeClass('active');
 
-                // বর্তমান সাব-আইটেমে 'active' ক্লাস যোগ করা
                 $(this).addClass('active');
-
-                // টপ-লেভেল মেনুর Active ক্লাস ম্যানেজ করার দরকার নেই, কারণ E-commerce আইটেমটিতে already active ক্লাস যোগ করা আছে (উপরে দেখুন)
-
-                // কন্টেন্ট এরিয়া আপডেট করা
                 const contentText = $(this).text().trim();
                 $('#main-content-area').text('Main Content Area: E-commerce > ' + contentText);
             });
 
-            // প্রথম আইটেমটিকে ডিফল্টভাবে সক্রিয় করা
             $('.tk_dashboard_sidebar > ul > li:first-child > a').click();
         });
     });

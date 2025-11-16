@@ -1,0 +1,238 @@
+.tk_dashboard_overview_area{
+    .tk_dashboard_heading{
+        margin-top: 64px;
+        .tk_dashboard_title{
+            h2{
+                font-weight: 600;
+                font-size: 32px;
+                color: #101010;
+            }
+        }
+        .tk_dashboard_date{
+            @include flex(row, flex-end, center);
+            .tk_date{
+                span{
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 150%;
+                    letter-spacing: 0em;
+                    color: #7b7b7b;
+                    border-radius: 48px;
+                    padding: 12px 24px;
+                }
+                &.active{
+                    span{
+                        border: 1.50px solid #e2e2e2;
+                        background: #fff;
+                    }
+
+                }
+            }
+        }
+    }
+    .tk_counting_area{
+        margin-top: 20px;
+        padding: 32px;
+        @include border-radius(32px);
+        background-color: #fff;
+    }
+    .tk_overview_counting{
+        border-right: 1.50px solid rgba(123, 123, 123, 0.1);
+        &.tk_border_none{ 
+            border-right: none;
+        }
+        &.style_1{
+            padding-left: 32px;
+        }
+        .tk_icon{
+            width: 64px;
+            height: 64px;
+            line-height: 64px;
+            text-align: center;
+            @include border-radius(50%);
+            background: linear-gradient(180deg, #deb2ff 0%, #d49efc 100%);
+            &.style_1{
+                background: linear-gradient(180deg, #ffe4b1 0%, #ffcf75 100%);
+            }
+            &.style_2{
+                background: linear-gradient(180deg, #d0f2df 30.4%, #b5e4ca 100%);
+            }
+            &.style_3{
+                background: linear-gradient(180deg, #d2f4ff 0%, #a1e0f5 100%);
+            }
+        }
+        .tk_title{
+            margin-top: 40px;
+            h6{
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 22px;
+                color: #101010;
+            }
+            h2{
+                margin-top: 8px;
+                font-weight: 600;
+                font-size: 60px;
+                line-height: 125%;
+                letter-spacing: -0.01em;
+                color: #101010;
+            }
+        }
+        .tk_inc{
+            @include flex(row, flex-start, center);
+            gap: 8px;
+            margin-top: 12px;
+            &.tk_dic{
+                span{
+                    background: rgba(255, 106, 85, 0.05);
+                    border: 1.50px solid rgba(255, 106, 85, 0.15);
+                    color: #ff6a55;
+                }
+            }
+            span{
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 22px;
+                color: #00a656;
+                border: 1.50px solid rgba(0, 166, 86, 0.15);
+                background: rgba(0, 166, 86, 0.05);
+                border-radius: 8px;
+                padding: 6px 8px;
+                width: 85px;
+                height: 34px;
+                @include flex(row, center, center);
+                i{
+                    font-size: 8px;
+                    margin-right:8px;
+                }
+            }
+            p{
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 150%;
+                letter-spacing: 0em;
+                color: #7b7b7b;
+            }
+        }
+    }
+    .tk_stock_product{
+        border-radius: 24px;
+        width: 100%;
+        padding: 24px;
+        background-color: #fff;
+        .tk_stock_heading{
+            h3{
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 32px;
+                letter-spacing: -0.03em;
+                color: #192135;
+            }
+        }
+        .tk_stock_item{
+            @include flex(row, flex-start, center);
+            gap: 8px;
+            margin-top: 8px;
+            p{
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 150%;
+                letter-spacing: 0em;
+                color: #7b7b7b;
+            }
+            span{
+                border-radius: 4px;
+                padding: 5px 8px 5px 5px;
+                width: 70px;
+                height: 23px;
+                background: rgba(43, 127, 255, 0.1);
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 13px;
+                text-align: center;
+                @include flex(row, center, center);
+                color: #2b7fff;
+                i{
+                    font-size: 8px;
+                    margin-right: 8px;
+                }
+            }
+        }
+        .tk_stock_list{
+            margin-top: 34px;
+            position: relative;
+            ul{
+                li{
+                    @include flex(row, flex-start, center);
+                    margin-bottom: 20px;
+                    p{
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 150%;
+                        letter-spacing: 0em;
+                        color: #7b7b7b;
+                        width: 22%;
+                    }
+                    span{
+                        width: calc(100% - 22%);
+                        border-radius: 32px;
+                        padding: 5px 14px;
+                        font-weight: 500;
+                        font-size: 16px;
+                        color: #101010;
+                        display: block;
+                        background: linear-gradient(180deg, #deb2ff 0%, #d49efc 100%);
+                    }
+                    &:nth-child(2){
+                        span{
+                            max-width: calc(83.34% - 22%) !important;
+                            background: linear-gradient(180deg, #ffe4b1 0%, #ffcf75 100%);
+                        }
+                    }
+                    &:nth-child(3){
+                        span{
+                            max-width: calc(70% - 22%);
+                            background: linear-gradient(180deg, #d0f2df 30.4%, #b5e4ca 100%);
+                        }
+                    }
+                    &:nth-child(4){
+                        span{
+                            max-width: calc(58% - 22%);
+                            background: linear-gradient(180deg, #d2f4ff 0%, #a1e0f5 100%);
+                        }
+                    }
+                }
+            }
+        }
+        .tk_border{
+            width: 1px;
+            height: 100%;
+            position: absolute;
+            top: 0px;
+            left: 22%;
+            border-right: 1px dashed rgba(20, 33, 55, 0.1);
+            &.style_1{
+                left: 35%;
+            }
+            &.style_2{
+                left: 48%;
+            }
+            &.style_3{
+                left: 61%;
+            }
+            &.style_4{
+                left: 73.5%;
+            }
+            &.style_5{
+                left: 86%;
+            }
+            &.style_6{
+                left: 99%;
+            }
+        }
+        .tk_stock_day{
+            padding-left: 20.5%;
+            @include flex(row, space-between, center);
+        }
+    }
+}
