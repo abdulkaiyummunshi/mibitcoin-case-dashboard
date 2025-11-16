@@ -222,6 +222,9 @@
     border-radius: 10px;
     border: 1px solid #e5e7eb;
     overflow: hidden;
+    @include lg {
+        width: 992px;
+    }
   }
 
   .currency-header {

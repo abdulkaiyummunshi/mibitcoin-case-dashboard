@@ -33345,6 +33345,11 @@ p {
   border: 1px solid #e5e7eb;
   overflow: hidden;
 }
+@media only screen and (max-width: 1199px) {
+  .rb_table .currency-box {
+    width: 992px;
+  }
+}
 .rb_table .currency-header {
   background-color: #f3f4f6;
   padding: 12px 20px;
