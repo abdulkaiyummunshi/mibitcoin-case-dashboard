@@ -404,7 +404,73 @@
         }
     }
     
-}
+    
+    .pro_title {
+        color: #192135;
+        font-family: Inter;
+        font-weight: 600;
+        font-style: Semi Bold;
+        font-size: 20px;
+        line-height: 32px;
+        letter-spacing: -3%;
+    }
+    .search-box {
+        .custom-search-input {
+            width: 100%;
+            border: none;
+            background: #F3F4F7;
+            padding-left: 45px !important;
+            font-size: 14px;
+            width: 491px;
+            height: 48px;
+            opacity: 1;
+            gap: 6px;
+            padding-top: 12px;
+            padding-right: 20px;
+            padding-bottom: 12px;
+            padding-left: 20px;
+            border-radius: 90px;
+            color: #727272;
+            font-family: Inter;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 14px;
+            line-height: 22px;
+            letter-spacing: 0%;
+        }
+    
+        .custom-search-input:focus {
+            outline: none;
+            box-shadow: none;
+        }
+    }
+    
+    .tab-active {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1.5px solid var(--Stroke-Stroke2, #E2E2E2);
+        font-weight: 500;
+        color: #0D0D0D;
+        text-decoration: none;
+        width: 95px;
+        height: 48px;
+        border-radius: 48px;
+        gap: 10px;
+        opacity: 1;
+        border-width: 1.5px;
+    }
+    
+    .tab-link {
+        color: #7B7B7B;
+        font-family: Inter;
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 14px;
+        line-height: 150%;
+        letter-spacing: 0.25%;
 
+    }    
 
+}    
 
