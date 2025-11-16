@@ -358,7 +358,7 @@
 
     <div class="tk_dashboard_area">
       <div class="container-fluid">
-        <div class="row mt-0 g-3">
+        <div class="row mt-0 g-4">
           <div class="col-lg-2">
             <div class="tk_dashboard_sidebar">
               <ul>
@@ -423,8 +423,8 @@
                 </div>
               </div>
               <div class="tk_counting_area">
-                <div class="row">
-                  <div class="col-lg-3">
+                <div class="row g-4">
+                  <div class="col-md-6 col-xl-3">
                     <div class="tk_overview_counting">
                       <div class="tk_icon">
                         <img src="./images/overview/profile-2user.png" alt="">
@@ -438,7 +438,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-3">
+                  <div class="col-md-6 col-xl-3">
                     <div class="tk_overview_counting style_1">
                       <div class="tk_icon style_1">
                         <img src="./images/overview/shape.png" alt="">
@@ -452,7 +452,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-3">
+                  <div class="col-md-6 col-xl-3">
                     <div class="tk_overview_counting style_1">
                       <div class="tk_icon style_2">
                         <img src="./images/overview/shopping-bag.png" alt="">
@@ -466,7 +466,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-3">
+                  <div class="col-md-6 col-xl-3">
                     <div class="tk_overview_counting style_1 tk_border_none">
                       <div class="tk_icon style_2">
                         <img src="./images/overview/bag.png" alt="">
@@ -483,8 +483,8 @@
                 </div>
               </div>
               
-              <div class="row mt-4">
-                <div class="col-12 d-flex flex-wrap gap-4">
+              <div class="row mt-24">
+                <div class="col-12 d-flex flex-wrap gap-3">
                   <div class="tk_stock_product">
                     <div class="tk_stock_heading">
                       <h3>Stock Product</h3>
@@ -549,7 +549,7 @@
                       <h5 class="pro_title">Products</h5>
                 
                       <!-- Search Box -->
-                      <div class="search-box position-relative">
+                      <div class="d-none d-sm-flex search-box position-relative">
                         <span class="position-absolute top-50 translate-middle-y ms-3 text-muted">
                           <i class="fa-solid fa-magnifying-glass"></i>
                         </span>
@@ -559,10 +559,16 @@
                     </div>
                 
                     <!-- Right: Tabs -->
-                    <div class="d-flex align-items-center gap-4">
+                    <div class="d-none d-sm-flex align-items-center gap-4">
                       <a href="#" class="tab-active">Market</a>
                       <a href="#" class="tab-link">Traffic sources</a>
                       <a href="#" class="tab-link">Viewers</a>
+                    </div>
+
+                    <!-- Right: Tabs SM -->
+                    <div class="d-flex d-sm-none align-items-center gap-3">
+                      <div class="search_icon"><img src="images/icon/search-icon.png" alt="icon"></div>
+                      <div class="dot_icon"><img src="images/icon/three-dot.png" alt="icon"></div>
                     </div>
                 
                   </div>
