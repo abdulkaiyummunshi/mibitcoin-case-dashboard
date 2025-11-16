@@ -32742,6 +32742,8 @@ p {
 .tk_dashboard_overview_area .tk_stock_product {
   border-radius: 24px;
   width: 100%;
+  max-width: 446px;
+  height: 390px;
   padding: 24px;
   background-color: #fff;
 }
@@ -32860,6 +32862,12 @@ p {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+.tk_dashboard_overview_area .tk_sales_revenew img {
+  width: 100%;
+}
+.tk_dashboard_overview_area .tk_customers_statistics img {
+  width: 100%;
 }
 
 .rb_ecommerce_area {
