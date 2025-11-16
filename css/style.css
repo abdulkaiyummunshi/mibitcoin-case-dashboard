@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .mt-1 {
   margin-top: 1px;
 }
@@ -32875,6 +32876,8 @@ p {
   padding: 24px;
   border-radius: 24px;
   margin-top: 15px;
+  /* Checked State start*/
+  /* Checked State end*/
 }
 @media only screen and (max-width: 1199px) {
   .product_table .table-product {
@@ -32889,6 +32892,35 @@ p {
   font-size: 14px;
   line-height: 150%;
   letter-spacing: 0.25%;
+}
+.product_table .table-product tr > th, .product_table .table-product td {
+  padding: 1rem 0.5rem;
+}
+.product_table input[type=checkbox] {
+  width: 24px;
+  height: 24px;
+  border-radius: 8px;
+  border: 2px solid var(--Stroke-Stroke2, #E2E2E2);
+  opacity: 1;
+  appearance: none;
+  -webkit-appearance: none;
+  background: #ffffff;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+}
+.product_table input[type=checkbox]:checked {
+  background-color: rgb(0, 92, 200, var(--tw-bg-opacity, 1));
+}
+.product_table input[type=checkbox]:checked::after {
+  content: "✔";
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -55%);
 }
 .product_table .table-product img {
   width: 64px;

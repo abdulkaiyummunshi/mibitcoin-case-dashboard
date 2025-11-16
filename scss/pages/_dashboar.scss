@@ -268,7 +268,45 @@
             line-height: 150%;
             letter-spacing: 0.25%;
         }
+        tr>th, td {
+            padding: 1rem .5rem;
+        }
     }
+
+    /* Checked State start*/    
+    input[type="checkbox"] {
+        width: 24px;
+        height: 24px;
+        border-radius: 8px;
+        border: 2px solid var(--Stroke-Stroke2, #E2E2E2);
+        opacity: 1;
+
+        appearance: none;
+        -webkit-appearance: none;
+        background: #ffffff;
+        cursor: pointer;
+
+        position: relative; 
+        display: flex;
+    }
+
+
+    input[type="checkbox"]:checked {
+        background-color: rgb(0 92 200 / var(--tw-bg-opacity, 1));
+    }
+
+    input[type="checkbox"]:checked::after {
+        content: "✔";
+        font-size: 14px;
+        font-weight: bold;
+        color: #ffffff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -55%);
+    }
+    /* Checked State end*/    
+
     
     .table-product img {
         width: 64px;
