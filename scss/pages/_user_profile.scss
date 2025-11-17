@@ -254,3 +254,42 @@
 
   }
 }
+
+.rb_tap_button {
+  display: flex;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  @include sm {
+    flex-direction: column;
+    gap: 25px;
+    row-gap: 15px;
+  }
+  .rb_tab_btn {
+    height: 48px;
+    opacity: 1;
+    border-radius: 48px;
+    border-width: 1px;
+    padding-top: 12px;
+    padding-right: 24px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    gap: 6px;
+    display: flex;
+    border: none;
+    color: #7B7B7B;
+    background: transparent;
+    font-family: Inter;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.25%;
+
+    &.active {
+      border: 1px solid var(--Stroke-Stroke2, #E2E2E2);
+      background-color: #FFFFFF;
+
+    }
+
+  }
+}
