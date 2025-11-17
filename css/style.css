@@ -33796,4 +33796,261 @@ p {
 }
 .rb_setting_listing .setting_item:hover .setting_info p {
   color: rgba(255, 255, 255, 0.6980392157);
+}
+
+.rb_profile_area {
+  padding: 32px;
+  border: 1.5px solid #FDFDFD;
+  background: var(--Backgrounds-surface2, #FDFDFD);
+  border-radius: 24px;
+  box-shadow: 0px 6px 4px -4px rgba(8, 8, 8, 0.0509803922);
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .rb_profile_area {
+    padding: 20px;
+    border-radius: 20px;
+  }
+}
+.rb_profile_area .rb_heading {
+  padding-bottom: 20px;
+}
+.rb_profile_area .rb_heading h3 {
+  color: var(--Text-Primary, #101010);
+  font-family: Inter;
+  font-weight: 600;
+  font-style: Semi Bold;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  padding-bottom: 10px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .rb_profile_area .rb_heading h3 {
+    font-size: 20px;
+  }
+}
+.rb_profile_area .rb_heading p {
+  color: #7B7B7B;
+  font-family: Inter;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .rb_profile_area .rb_heading p {
+    font-size: 14px;
+  }
+}
+.rb_profile_area .rb_section_border {
+  background: #F3F4F7;
+  border: 1px solid #E2E2E2;
+  border-radius: 14px;
+  padding: 32px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .rb_profile_area .rb_section_border {
+    padding: 16px;
+  }
+}
+.rb_profile_area .rb_section_border.style_1 {
+  padding-bottom: 85px;
+}
+.rb_profile_area .rb_section_border .rb_title {
+  color: #101010;
+  font-family: Inter;
+  font-weight: 600;
+  font-style: Semi Bold;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  padding-bottom: 15px;
+}
+.rb_profile_area .rb_section_border .rb_title2 {
+  color: #101010;
+  font-family: Inter;
+  font-weight: 600;
+  font-style: Semi Bold;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  padding-bottom: 15px;
+}
+.rb_profile_area .rb_section_border .rb_desc {
+  color: #727272;
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0%;
+  padding-top: 10px;
+}
+.rb_profile_area .rb_section_border .rb_section_border2 {
+  border: 1px solid #E2E2E2;
+  border-radius: 14px;
+  padding: 20px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .rb_profile_area .rb_section_border .rb_section_border2 {
+    padding: 16px;
+  }
+}
+.rb_profile_area .rb_section_border .rb_section_border3 {
+  background: #FFFFFF;
+  border: 1px solid rgba(114, 117, 248, 0.3019607843);
+  border-radius: 14px;
+  padding: 20px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .rb_profile_area .rb_section_border .rb_section_border3 {
+    padding: 16px;
+  }
+}
+.rb_profile_area .rb_thumb img {
+  width: 100%;
+}
+.rb_profile_area .rb_para {
+  color: #7B7B7B;
+  font-family: Inter;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.rb_profile_area .rb_input_form {
+  background: #FFFFFF;
+  border: 1px solid rgba(114, 117, 248, 0.3019607843);
+  padding: 32px;
+  border-radius: 14px;
+}
+.rb_profile_area .alert_list {
+  display: flex;
+  align-items: start;
+  gap: 10px;
+  padding: 20px;
+  border-radius: 14px;
+  background: rgba(114, 117, 248, 0.0509803922);
+  border: 1px solid rgba(114, 117, 248, 0.3019607843);
+}
+.rb_profile_area .alert_list h5 {
+  color: #7B7B7B;
+  font-family: Inter;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+.rb_profile_area .alert_list h5 a {
+  color: #D71E1E;
+}
+.rb_profile_area .alert_list.style_1 {
+  padding: 12px 20px;
+  border-radius: 100px;
+}
+.rb_profile_area .alert_list.style_2 {
+  display: flex;
+  flex-direction: column;
+}
+.rb_profile_area .alert_list.style_2 h4 {
+  color: #192135;
+  font-family: Inter;
+  font-weight: 600;
+  font-style: Semi Bold;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 0%;
+}
+.rb_profile_area .alert_list.style_2 p {
+  color: #7B7B7B;
+  font-family: Inter;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.rb_profile_area .alert_list.style_2 h6 {
+  color: #192135;
+  font-family: Inter;
+  font-weight: 600;
+  font-style: Semi Bold;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+.rb_profile_area .alert_list.style_2 .rb_list ul {
+  list-style-type: disc;
+  padding-left: 22px;
+}
+.rb_profile_area .alert_list.style_2 .rb_list ul li {
+  color: #7B7B7B;
+  font-family: Inter;
+  font-weight: 600;
+  font-style: Semi Bold;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  padding-bottom: 10px;
+}
+.rb_profile_area .alert_list.style_2 .rb_list ul li span {
+  color: #192135;
+}
+.rb_profile_area .alert_list.style_2 .rb_list.style_1 ul {
+  list-style: none;
+  padding-left: 0;
+}
+.rb_profile_area .alert_list.style_2 .rb_para2 {
+  color: #7B7B7B;
+  font-family: Inter;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+
+.rb_content .rb_camera {
+  width: max-content;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rb_content .image-upload-circle {
+  background: #F3F4F7;
+  width: 240px;
+  height: 240px;
+  border-radius: 200px;
+  padding-top: 69px;
+  padding-right: 32px;
+  padding-bottom: 69px;
+  padding-left: 32px;
+  gap: 8px;
+  opacity: 1;
+  cursor: pointer;
+}
+.rb_content .image-upload-circle i {
+  font-size: 32px;
+  color: #727272;
+}
+.rb_content .choose-text {
+  font-size: 16px;
+  color: #7B7B7B;
+  font-family: Inter;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0%;
 }/*# sourceMappingURL=style.css.map */
