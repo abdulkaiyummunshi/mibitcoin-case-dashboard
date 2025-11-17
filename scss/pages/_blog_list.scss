@@ -77,7 +77,17 @@
         letter-spacing: 0%;
         vertical-align: middle;
     }
-    .table-desc {
+    .rb_share {
+        display: flex;
+        gap: 16px;
+        margin-top: 8px;
+        img {
+            width: 20px;
+            height: 20px;
+        }
+    }
+    
+    .categories, .author, .schedule, .status {
         color: #7B7B7B;
         font-family: Inter;
         font-weight: 500;
@@ -85,119 +95,9 @@
         font-size: 14px;
         line-height: 150%;
         letter-spacing: 0.25%;
-    }
-    
-    .status-badge {
-        padding: 4px 12px;
-        border-radius: 20px;
-        font-size: 13px;
-        font-weight: 500;
-    }
-    
-    .badge-active {
-        color: #00a656;
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 22px;
-        border: 1.50px solid rgba(0, 166, 86, 0.15);
-        background: rgba(0, 166, 86, 0.05);
-        border-radius: 8px;
-        padding: 6px 8px;
-        width: 85px;
-        height: 34px;
-        @include flex(row, center, center);
-    }
-    .price, .view, .like, .sale-text {
-        color: #101010;
-        font-family: Inter;
-        font-weight: 400;
-        font-style: Regular;
-        font-size: 16px;
-        line-height: 22px;
-        letter-spacing: 0%;
-        vertical-align: middle;
-    }
-    
-    .badge-offline {
-        background: rgba(255, 106, 85, 0.05);
-        border: 1.5px solid rgba(255, 106, 85, 0.15);
-        color: #ff6a55;
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 22px;
-        border-radius: 8px;
-        padding: 6px 8px;
-        width: 85px;
-        height: 34px;
-        @include flex(row, center, center);
-    }
-    
-    .sales-pill {
-        color: #00a656;
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 22px;
-        border: 1.50px solid rgba(0, 166, 86, 0.15);
-        background: rgba(0, 166, 86, 0.05);
-        border-radius: 8px;
-        padding: 6px 8px;
-        width: 85px;
-        height: 34px;
-        i {
-            font-size: 14px;
-        }
-    }
-    
-    .sales-pill-down {
-        background: rgba(255, 106, 85, 0.05);
-        border: 1.5px solid rgba(255, 106, 85, 0.15);
-        color: #ff6a55;
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 22px;
-        border-radius: 8px;
-        padding: 6px 8px;
-        width: 85px;
-        height: 34px;
-    }
-    
-    .view-bar {
-        display: flex;
-        margin-left: 6px;
-        background: #7B7B7B33;
-        width: 32px;
-        height: 6px;
-        opacity: 1;
-        border-radius: 2px;
 
-        .p_bar {
-            width: 4px;
-            height: 6px;
-            opacity: 1;
-            border-radius: 2px;
-            background: #00B512;
-            display: inline-block;
-        }
     }
-    .like-bar {
-        display: flex;
-        margin-left: 6px;
-        background: #7B7B7B33;
-        width: 32px;
-        height: 6px;
-        opacity: 1;
-        border-radius: 2px;
-
-        .p_bar {
-            width: 4px;
-            height: 6px;
-            opacity: 1;
-            border-radius: 2px;
-            background: #00B512;
-            display: inline-block;
-        }
-    }
-    
+       
     
     .pro_title {
         color: #192135;

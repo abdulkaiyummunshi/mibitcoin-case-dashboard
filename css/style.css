@@ -34163,7 +34163,16 @@ p {
   letter-spacing: 0%;
   vertical-align: middle;
 }
-.product_table_list .table-desc {
+.product_table_list .rb_share {
+  display: flex;
+  gap: 16px;
+  margin-top: 8px;
+}
+.product_table_list .rb_share img {
+  width: 20px;
+  height: 20px;
+}
+.product_table_list .categories, .product_table_list .author, .product_table_list .schedule, .product_table_list .status {
   color: #7B7B7B;
   font-family: Inter;
   font-weight: 500;
@@ -34171,115 +34180,6 @@ p {
   font-size: 14px;
   line-height: 150%;
   letter-spacing: 0.25%;
-}
-.product_table_list .status-badge {
-  padding: 4px 12px;
-  border-radius: 20px;
-  font-size: 13px;
-  font-weight: 500;
-}
-.product_table_list .badge-active {
-  color: #00a656;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 22px;
-  border: 1.5px solid rgba(0, 166, 86, 0.15);
-  background: rgba(0, 166, 86, 0.05);
-  border-radius: 8px;
-  padding: 6px 8px;
-  width: 85px;
-  height: 34px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.product_table_list .price, .product_table_list .view, .product_table_list .like, .product_table_list .sale-text {
-  color: #101010;
-  font-family: Inter;
-  font-weight: 400;
-  font-style: Regular;
-  font-size: 16px;
-  line-height: 22px;
-  letter-spacing: 0%;
-  vertical-align: middle;
-}
-.product_table_list .badge-offline {
-  background: rgba(255, 106, 85, 0.05);
-  border: 1.5px solid rgba(255, 106, 85, 0.15);
-  color: #ff6a55;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 22px;
-  border-radius: 8px;
-  padding: 6px 8px;
-  width: 85px;
-  height: 34px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.product_table_list .sales-pill {
-  color: #00a656;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 22px;
-  border: 1.5px solid rgba(0, 166, 86, 0.15);
-  background: rgba(0, 166, 86, 0.05);
-  border-radius: 8px;
-  padding: 6px 8px;
-  width: 85px;
-  height: 34px;
-}
-.product_table_list .sales-pill i {
-  font-size: 14px;
-}
-.product_table_list .sales-pill-down {
-  background: rgba(255, 106, 85, 0.05);
-  border: 1.5px solid rgba(255, 106, 85, 0.15);
-  color: #ff6a55;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 22px;
-  border-radius: 8px;
-  padding: 6px 8px;
-  width: 85px;
-  height: 34px;
-}
-.product_table_list .view-bar {
-  display: flex;
-  margin-left: 6px;
-  background: rgba(123, 123, 123, 0.2);
-  width: 32px;
-  height: 6px;
-  opacity: 1;
-  border-radius: 2px;
-}
-.product_table_list .view-bar .p_bar {
-  width: 4px;
-  height: 6px;
-  opacity: 1;
-  border-radius: 2px;
-  background: #00B512;
-  display: inline-block;
-}
-.product_table_list .like-bar {
-  display: flex;
-  margin-left: 6px;
-  background: rgba(123, 123, 123, 0.2);
-  width: 32px;
-  height: 6px;
-  opacity: 1;
-  border-radius: 2px;
-}
-.product_table_list .like-bar .p_bar {
-  width: 4px;
-  height: 6px;
-  opacity: 1;
-  border-radius: 2px;
-  background: #00B512;
-  display: inline-block;
 }
 .product_table_list .pro_title {
   color: #192135;
