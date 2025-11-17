@@ -6,6 +6,9 @@
     line-height: 48px;
     box-shadow: inset 2px 0 8px 2px rgba(248, 248, 248, 0.2);
     background: linear-gradient(180deg, #2c2c2c 0%, #282828 100%);
+    &.style1 {
+        background: linear-gradient(271.8deg, #43CBFF -99.63%, #9708CC 212.68%);
+    }
     a{
         font-weight: 600;
         font-size: 14px;
