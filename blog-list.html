@@ -398,10 +398,10 @@
               <ol class="breadcrumb mb-24 mt-40">
                 <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
                 <li class="breadcrumb-item active" aria-current="page">
-                   Administration
+                    Blog 
                 </li>
                 <li class="breadcrumb-item active" aria-current="page">
-                   Users
+                   Post
                 </li>
               </ol>
             </nav>            
@@ -409,40 +409,69 @@
               <div class="product_table_list mb-20">
                 <div class="mb-24">
 
+                  <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
 
-
-
-                  <div class="d-flex align-items-center justify-content-between flex-wrap gap-3">
-                
-                    <!-- Left: Title + Search -->
+                    <!-- Left Side Buttons -->
                     <div class="d-flex align-items-center gap-3 flex-wrap">
-                      <h5 class="pro_title">Products</h5>
-                
+
+                      <!-- Bulk Actions -->
+                      <div class="rb_select">
+                        <div class="form-group">
+                          <select id="id" name="id" class="custom-select rounded-pill">
+                            <option value="" disabled="" selected="">Bulk Actions</option>
+                            <option value="xgr">Bulk Actions 01</option>
+                            <option value="xgr">Bulk Actions 02</option>
+                          </select>
+                        </div>
+                      </div>  
+
+                      <!-- Filters -->
+                      <div class="rb_select">
+                        <div class="form-group">
+                          <select id="id" name="id" class="custom-select rounded-pill">
+                            <option value="" disabled="" selected="">Filters</option>
+                            <option value="xgr">Filters 01</option>
+                            <option value="xgr">Filters 02</option>
+                          </select>
+                        </div>
+                      </div>  
+
                       <!-- Search Box -->
-                      <div class="d-none d-sm-flex search-box position-relative">
+                      <div class="d-none d-sm-flex search-box position-relative" style="max-width: 340px;">
                         <span class="position-absolute top-50 translate-middle-y ms-3 text-muted">
                           <i class="fa-solid fa-magnifying-glass"></i>
                         </span>
-                        <input type="text" class="form-control custom-search-input ps-5"
-                               placeholder="Search products">
+                        <input type="text" class="form-control custom-search-input ps-5" placeholder="Search...">
                       </div>
                     </div>
-                
-                    <!-- Right: Tabs -->
-                    <div class="d-none d-sm-flex align-items-center gap-4">
-                      <a href="#" class="tab-active">Market</a>
-                      <a href="#" class="tab-link">Traffic sources</a>
-                      <a href="#" class="tab-link">Viewers</a>
+
+                    <!-- Right Side Buttons -->
+                    <div class="d-flex align-items-center gap-3 flex-wrap">
+
+                      <!-- Create Button -->
+                      <button class="create_btn">
+                        <img src="images/icon/ic_round-plus.svg" alt=""> Create
+                      </button>
+
+                      <!-- Language -->
+                      <div class="rb_select2">
+                        <div class="form-group">
+                          <select id="id" name="id" class="custom-select rounded-pill">
+                            <option value="" disabled="" selected="">Language</option>
+                            <option value="xgr">English</option>
+                            <option value="xgr">Arabic</option>
+                          </select>
+                        </div>
+                      </div>  
+
+                      <!-- Reload -->
+                      <button class="reload_btn">
+                        <img src="images/icon/refresh-2.svg" alt=""> Reload
+                      </button>
+
                     </div>
 
-                    <!-- Right: Tabs SM -->
-                    <div class="d-flex d-sm-none align-items-center gap-3">
-                      <div class="search_icon"><img src="images/icon/search-icon.png" alt="icon"></div>
-                      <div class="dot_icon"><img src="images/icon/three-dot.png" alt="icon"></div>
-                    </div>
-                
                   </div>
-
 
                 </div>
                 <div class="table-responsive">
@@ -491,61 +520,256 @@
                                   </div>
                                 </td>
                             </tr>
-  
-                            <!-- Row 2 -->
+
                             <tr>
                                 <td><span class="d-flex gap-2"><input type="checkbox"><span>02</span></span></td>
                                 <td>
                                     <div class="d-flex align-items-center gap-3">
                                         <img src="images/product-table/img12.png" alt="">
                                         <div>
-                                            <div class="fw-semibold">Clutches: How to Buy & Wear a Designer Clutch Bag</div>
-                                            <small class="text-muted">UI Design Kit</small>
+                                            <div class="table-title">Clutches: How to Buy & Wear a Designer Clutch Bag</div>
+                                            <div class="rb_share">
+                                              <a href="#"><img src="images/icon/x-twitter.svg" alt="svg"></a>
+                                              <a href="#"><img src="images/icon/facebook.svg" alt="svg"></a>
+                                              <a href="#"><img src="images/icon/instagram.svg" alt="svg"></a>
+                                              <a href="#"><img src="images/icon/threads.svg" alt="svg"></a>
+                                            </div>
                                         </div>
                                     </div>
                                 </td>
                                 
-                                <td>$98.00</td>
-                                <td><span class="sale-text me-2">$3,200</span></td>
+                                <td><span class="categories">Ecommerce, Electronic</span></td>
                                 <td>
-                                  <div class="d-flex align-items-center">
-                                    <span class="view">48m</span>  <div class="view-bar"><span class="p_bar"></span></div>
-                                  </div>
+                                    <span class="author">Ignatius Considine</span>
+                                </td>
+                                <td>
+                                  <span class="schedule">2025-07-26</span>
                                 </td>
                                 <td>
                                   <div class="d-flex align-items-center">
-                                    <span class="like">480</span>  <div class="like-bar"><span class="p_bar"></span></div>
+                                    <span class="status">Publish</span>
                                   </div>
                                 </td>
                             </tr>
-  
-                            <!-- Row 3 -->
+
                             <tr>
                                 <td><span class="d-flex gap-2"><input type="checkbox"><span>03</span></span></td>
                                 <td>
                                     <div class="d-flex align-items-center gap-3">
                                         <img src="images/product-table/img13.png" alt="">
                                         <div>
-                                            <div class="fw-semibold">The Top 2020 Handbag Trends to Know</div>
-                                            <small class="text-muted">UI Design Kit</small>
+                                            <div class="table-title">The Top 2020 Handbag Trends to Know</div>
+                                            <div class="rb_share">
+                                              <a href="#"><img src="images/icon/x-twitter.svg" alt="svg"></a>
+                                              <a href="#"><img src="images/icon/facebook.svg" alt="svg"></a>
+                                              <a href="#"><img src="images/icon/instagram.svg" alt="svg"></a>
+                                              <a href="#"><img src="images/icon/threads.svg" alt="svg"></a>
+                                            </div>
                                         </div>
                                     </div>
                                 </td>
-                                <td>$98.00</td>
-                                <td><span class="sale-text me-2">$3,200</span></td>
+                                
+                                <td><span class="categories">Ecommerce, Electronic</span></td>
                                 <td>
-                                  <div class="d-flex align-items-center">
-                                    <span class="view">48m</span>  <div class="view-bar"><span class="p_bar"></span></div>
-                                  </div>
+                                    <span class="author">Ignatius Considine</span>
+                                </td>
+                                <td>
+                                  <span class="schedule">2025-07-26</span>
                                 </td>
                                 <td>
                                   <div class="d-flex align-items-center">
-                                    <span class="like">480</span>  <div class="like-bar"><span class="p_bar"></span></div>
+                                    <span class="status">Publish</span>
+                                  </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><span class="d-flex gap-2"><input type="checkbox"><span>04</span></span></td>
+                                <td>
+                                    <div class="d-flex align-items-center gap-3">
+                                        <img src="images/product-table/img14.png" alt="">
+                                        <div>
+                                            <div class="table-title">How to Match the Color of Your Handbag With an Outfit</div>
+                                            <div class="rb_share">
+                                              <a href="#"><img src="images/icon/x-twitter.svg" alt="svg"></a>
+                                              <a href="#"><img src="images/icon/facebook.svg" alt="svg"></a>
+                                              <a href="#"><img src="images/icon/instagram.svg" alt="svg"></a>
+                                              <a href="#"><img src="images/icon/threads.svg" alt="svg"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                
+                                <td><span class="categories">Ecommerce, Electronic</span></td>
+                                <td>
+                                    <span class="author">Ignatius Considine</span>
+                                </td>
+                                <td>
+                                  <span class="schedule">2025-07-26</span>
+                                </td>
+                                <td>
+                                  <div class="d-flex align-items-center">
+                                    <span class="status">Publish</span>
+                                  </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><span class="d-flex gap-2"><input type="checkbox"><span>05</span></span></td>
+                                <td>
+                                    <div class="d-flex align-items-center gap-3">
+                                        <img src="images/product-table/img15.png" alt="">
+                                        <div>
+                                            <div class="table-title">How to Care for Leather Bags</div>
+                                            <div class="rb_share">
+                                              <a href="#"><img src="images/icon/x-twitter.svg" alt="svg"></a>
+                                              <a href="#"><img src="images/icon/facebook.svg" alt="svg"></a>
+                                              <a href="#"><img src="images/icon/instagram.svg" alt="svg"></a>
+                                              <a href="#"><img src="images/icon/threads.svg" alt="svg"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                
+                                <td><span class="categories">Ecommerce, Electronic</span></td>
+                                <td>
+                                    <span class="author">Ignatius Considine</span>
+                                </td>
+                                <td>
+                                  <span class="schedule">2025-07-26</span>
+                                </td>
+                                <td>
+                                  <div class="d-flex align-items-center">
+                                    <span class="status">Publish</span>
+                                  </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><span class="d-flex gap-2"><input type="checkbox"><span>06</span></span></td>
+                                <td>
+                                    <div class="d-flex align-items-center gap-3">
+                                        <img src="images/product-table/img16.png" alt="">
+                                        <div>
+                                            <div class="table-title">We're Crushing Hard on Summer's Bag Trends</div>
+                                            <div class="rb_share">
+                                              <a href="#"><img src="images/icon/x-twitter.svg" alt="svg"></a>
+                                              <a href="#"><img src="images/icon/facebook.svg" alt="svg"></a>
+                                              <a href="#"><img src="images/icon/instagram.svg" alt="svg"></a>
+                                              <a href="#"><img src="images/icon/threads.svg" alt="svg"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                
+                                <td><span class="categories">Ecommerce, Electronic</span></td>
+                                <td>
+                                    <span class="author">Ignatius Considine</span>
+                                </td>
+                                <td>
+                                  <span class="schedule">2025-07-26</span>
+                                </td>
+                                <td>
+                                  <div class="d-flex align-items-center">
+                                    <span class="status">Publish</span>
+                                  </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><span class="d-flex gap-2"><input type="checkbox"><span>07</span></span></td>
+                                <td>
+                                    <div class="d-flex align-items-center gap-3">
+                                        <img src="images/product-table/img17.png" alt="">
+                                        <div>
+                                            <div class="table-title">Essential Qualities of Highly Successful Music</div>
+                                            <div class="rb_share">
+                                              <a href="#"><img src="images/icon/x-twitter.svg" alt="svg"></a>
+                                              <a href="#"><img src="images/icon/facebook.svg" alt="svg"></a>
+                                              <a href="#"><img src="images/icon/instagram.svg" alt="svg"></a>
+                                              <a href="#"><img src="images/icon/threads.svg" alt="svg"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                
+                                <td><span class="categories">Ecommerce, Electronic</span></td>
+                                <td>
+                                    <span class="author">Ignatius Considine</span>
+                                </td>
+                                <td>
+                                  <span class="schedule">2025-07-26</span>
+                                </td>
+                                <td>
+                                  <div class="d-flex align-items-center">
+                                    <span class="status">Publish</span>
+                                  </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><span class="d-flex gap-2"><input type="checkbox"><span>08</span></span></td>
+                                <td>
+                                    <div class="d-flex align-items-center gap-3">
+                                        <img src="images/product-table/img18.png" alt="">
+                                        <div>
+                                            <div class="table-title">9 Things I Love About Shaving My Head</div>
+                                            <div class="rb_share">
+                                              <a href="#"><img src="images/icon/x-twitter.svg" alt="svg"></a>
+                                              <a href="#"><img src="images/icon/facebook.svg" alt="svg"></a>
+                                              <a href="#"><img src="images/icon/instagram.svg" alt="svg"></a>
+                                              <a href="#"><img src="images/icon/threads.svg" alt="svg"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                
+                                <td><span class="categories">Ecommerce, Electronic</span></td>
+                                <td>
+                                    <span class="author">Ignatius Considine</span>
+                                </td>
+                                <td>
+                                  <span class="schedule">2025-07-26</span>
+                                </td>
+                                <td>
+                                  <div class="d-flex align-items-center">
+                                    <span class="status">Publish</span>
+                                  </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><span class="d-flex gap-2"><input type="checkbox"><span>09</span></span></td>
+                                <td>
+                                    <div class="d-flex align-items-center gap-3">
+                                        <img src="images/product-table/img19.png" alt="">
+                                        <div>
+                                            <div class="table-title">Why Teamwork Really Makes The Dream Work</div>
+                                            <div class="rb_share">
+                                              <a href="#"><img src="images/icon/x-twitter.svg" alt="svg"></a>
+                                              <a href="#"><img src="images/icon/facebook.svg" alt="svg"></a>
+                                              <a href="#"><img src="images/icon/instagram.svg" alt="svg"></a>
+                                              <a href="#"><img src="images/icon/threads.svg" alt="svg"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                
+                                <td><span class="categories">Ecommerce, Electronic</span></td>
+                                <td>
+                                    <span class="author">Ignatius Considine</span>
+                                </td>
+                                <td>
+                                  <span class="schedule">2025-07-26</span>
+                                </td>
+                                <td>
+                                  <div class="d-flex align-items-center">
+                                    <span class="status">Publish</span>
                                   </div>
                                 </td>
                             </tr>
   
-                            <!-- Row 4 -->
+
   
                         </tbody>
                     </table>
