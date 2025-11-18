@@ -9,6 +9,13 @@
     &.style1 {
         background: linear-gradient(271.8deg, #43CBFF -99.63%, #9708CC 212.68%);
     }
+    &.style2 {
+        background: transparent;
+        border: 1px solid var(--Stroke-Stroke2, #E2E2E2);
+        a {
+            color: #101010;
+        }
+    }
     a{
         font-weight: 600;
         font-size: 14px;
@@ -18,4 +25,9 @@
             margin-right: 6px;
         }
     }
+}
+.rb_group_button {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
 }
