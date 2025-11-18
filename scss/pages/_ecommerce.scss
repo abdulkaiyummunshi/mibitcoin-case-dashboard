@@ -335,13 +335,16 @@
     border-radius: 12px;
     background-color: #f5f6fa;
     cursor: pointer;
-    .camera_icon {
-      i {
-        font-size: 24px;
-        color: #727272;
-      }
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.upload-box .camera_icon i {
+    font-size: 24px;
+    color: #727272;
+}
+
 
 .content_text {
   padding-bottom: 14px;

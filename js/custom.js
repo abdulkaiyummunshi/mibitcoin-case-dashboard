@@ -288,4 +288,7 @@
 
 })(jQuery);
 
-
+// File upload
+document.querySelector(".upload-box").addEventListener("click", function () {
+document.getElementById("uploadImage").click();
+});

@@ -33464,7 +33464,11 @@ p {
   border-radius: 12px;
   background-color: #f5f6fa;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .upload-box .camera_icon i {
   font-size: 24px;
   color: #727272;
