@@ -33805,6 +33805,26 @@ p {
   opacity: 0.9;
 }
 
+.rb_text_area .rb_title {
+  color: #101010;
+  font-family: Inter;
+  font-weight: 600;
+  font-style: Semi Bold;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  padding-bottom: 5px;
+}
+.rb_text_area .rb_desc {
+  color: #7B7B7B;
+  font-family: Inter;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0%;
+}
+
 .rb_social_login {
   max-width: 1008px;
   padding: 32px;
