@@ -596,8 +596,195 @@
                           </div>
                         </div>                                               
 
-                      </div>                
-                    </div>                     
+                      </div>    
+                      <div class="rb_checkbox_label mb-20">
+                        <p class="mb-16">Specify the media file types that vendors can upload. Select them in the above list.</p>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" checked required>
+                          <label class="form-check-label" for="invalidCheck">
+                            Enable vendor registration
+                          </label>
+                        </div>
+                        <p>If enabled, vendors can register an account on the site and post their products.</p>
+                      </div> 
+                      <div class="rb_section_border2">
+                        <div class="rb_checkbox_label mb-20">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck1" required>
+                            <label class="form-check-label" for="invalidCheck1">
+                              Hide become vendor menu in customer dashboard
+                            </label>
+                          </div>
+                          <p>If enabled, the "Become a vendor" menu will be hidden in the customer dashboard.</p>
+                        </div> 
+                        <div class="rb_checkbox_label mb-20">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" checked required>
+                            <label class="form-check-label" for="invalidCheck2">
+                              Show vendor registration form at registration page
+                            </label>
+                          </div>
+                          <p>If enabled, the vendor registration form will be displayed on the registration page.</p>
+                        </div>                    
+                        <div class="rb_checkbox_label mb-20">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" checked required>
+                            <label class="form-check-label" for="invalidCheck2">
+                              Vendor verification (Vendor just can post their product listing after getting verified)
+                            </label>
+                          </div>
+                          <p>If enabled, the admin must verify the vendor before they can post their product listing.</p>
+                        </div>                    
+                        <div class="rb_checkbox_label mb-0">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                            <label class="form-check-label" for="invalidCheck2">
+                              Requires vendor documentations verification
+                            </label>
+                          </div>
+                          <p>If enabled, vendors must upload their documentation files when applying to become a vendor.</p>
+                        </div>                    
+                      </div>                                  
+                    </div>  
+                    <div class="rb_checkbox_label mt-24 mb-20">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" checked required>
+                        <label class="form-check-label" for="invalidCheck2">
+                          Hide store phone number?
+                        </label>
+                      </div>
+                    </div>                                       
+                    <div class="rb_checkbox_label mt-24 mb-20">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" checked required>
+                        <label class="form-check-label" for="invalidCheck2">
+                          Hide store email?
+                        </label>
+                      </div>
+                    </div>                                       
+                    <div class="rb_checkbox_label mt-24 mb-20">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" checked required>
+                        <label class="form-check-label" for="invalidCheck2">
+                          Hide store address?
+                        </label>
+                      </div>
+                    </div>                                       
+                    <div class="rb_checkbox_label mt-24 mb-20">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" checked required>
+                        <label class="form-check-label" for="invalidCheck2">
+                          Hide store social links?
+                        </label>
+                      </div>
+                    </div>                                       
+                    <div class="rb_checkbox_label mt-24 mb-20">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" checked required>
+                        <label class="form-check-label" for="invalidCheck2">
+                          Enable vendor categories filter
+                        </label>
+                      </div>
+                      <p>Show categories filter on vendor store page. Only categories that have vendor products will be displayed.</p>
+                    </div>                                       
+                    <div class="rb_checkbox_label mt-24 mb-20">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" checked required>
+                        <label class="form-check-label" for="invalidCheck2">
+                          Allow vendor manage shipping?
+                        </label>
+                      </div>
+                      <p>If it is enabled, the vendor can change shipping status of order to "delivering", "delivered", ...</p>
+                    </div>                                       
+                    <div class="rb_checkbox_label mt-24 mb-20">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" checked required>
+                        <label class="form-check-label" for="invalidCheck2">
+                          Charge shipping per vendor?
+                        </label>
+                      </div>
+                      <p>If enabled, shipping will be charged separately for each vendor. If disabled, shipping will be charged once for the entire order.</p>
+                    </div>                                       
+                    <div class="rb_checkbox_label mt-24 mb-20">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" checked required>
+                        <label class="form-check-label" for="invalidCheck2">
+                          Enable messaging system
+                        </label>
+                      </div>
+                      <p>If enabled, vendors and customers can communicate with each other via the messaging system.</p>
+                    </div>
+                    <div class="rb_radio_label mb-20">
+                      <label class="form-label mb-8">Payout methods</label>
+                      <div class="d-flex align-items-center gap-2 gap-md-4 flex-wrap">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="apiProvider" id="providerNone" value="none" checked>
+                          <label class="form-check-label" for="providerNone">Bank Transfer</label>
+                        </div>
+
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="apiProvider" id="PayPal" value="apiLayer">
+                          <label class="form-check-label" for="PayPal">PayPal</label>
+                        </div>
+
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="apiProvider" id="Cash" value="apiLayer">
+                          <label class="form-check-label" for="Cash">Cash</label>
+                        </div>
+
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="apiProvider" id="Stripe" value="apiLayer">
+                          <label class="form-check-label" for="Stripe">Stripe</label>
+                        </div>
+                      </div>
+                    </div>                      
+                    <div class="mb-16">
+                      <div class="form-group">
+                        <label for="amount">Minimum withdrawal amount (Fixed)</label>
+                        <select id="amount" name="amount" class="custom-select rounded-pill">
+                          <option value="" disabled="" selected="">0</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                        </select>
+                      </div>
+                      <p class="desc">Specify the minimum amount a vendor can withdraw. Default is 0.</p>
+                    </div>                                                             
+                    <div class="rb_checkbox_label mt-24 mb-20">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" checked required>
+                        <label class="form-check-label" for="invalidCheck2">
+                          Allow vendors to delete their orders
+                        </label>
+                      </div>
+                      <p>When enabled, vendors can manage their order list by removing unwanted entries. Use with caution as deleted orders may impact transaction records.</p>
+                    </div>                                       
+                    <div class="rb_checkbox_label mt-24 mb-20">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2"  required>
+                        <label class="form-check-label" for="invalidCheck2">
+                          Limit to One Vendor per Order
+                        </label>
+                      </div>
+                      <p>If enabled, customers can only purchase products from one vendor per order.</p>
+                    </div>                                       
+                    <div class="rb_checkbox_label mt-24 mb-20">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2"  required>
+                        <label class="form-check-label" for="invalidCheck2">
+                          Display order total info for each store
+                        </label>
+                      </div>
+                      <p>If enabled, the order total information will be displayed for each store in the order summary.</p>
+                    </div>                                       
+                    <div class="rb_checkbox_label mt-24">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" checked required>
+                        <label class="form-check-label" for="invalidCheck2">
+                          Show vendor information at checkout
+                        </label>
+                      </div>
+                      <p>If enabled, vendor information (name, logo, reviews) will be displayed on the checkout page.</p>
+                    </div>                                       
                   </div>
                 </div>
               </div>              
