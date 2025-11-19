@@ -33671,6 +33671,62 @@ p {
   background-color: #cc0000;
 }
 
+.rb_simple_data .rb_title {
+  color: #101010;
+  font-family: Inter;
+  font-weight: 600;
+  font-style: Semi Bold;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  padding-bottom: 10px;
+}
+.rb_simple_data .sample-data-bar {
+  border-radius: 50px;
+  background: #fff;
+  width: 100%;
+  padding: 12px 20px;
+  height: 48px;
+  border: 1px solid var(--Stroke-Stroke2, #E2E2E2);
+  background: #fff;
+  color: #7275F8;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  cursor: pointer;
+}
+.rb_simple_data .sample-data-bar:hover {
+  background: #f8f9ff;
+}
+.rb_simple_data .sample-text {
+  font-size: 14px;
+  color: #5b63ff;
+  font-weight: 500;
+}
+.rb_simple_data .test-webhook-btn {
+  height: 46px;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(271.8deg, #43CBFF -99.63%, #9708CC 212.68%);
+  color: #FFFFFF;
+  font-family: Inter;
+  font-weight: 600;
+  font-style: Semi Bold;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+.rb_simple_data .test-webhook-btn:hover {
+  opacity: 0.9;
+}
+
 .rb_social_login {
   max-width: 1008px;
   padding: 32px;
