@@ -144,6 +144,9 @@
         &.style_1 {
           padding: 12px 20px;
           border-radius: 100px;
+          @include sm {
+            border-radius: 14px;
+          }
         }
         &.style_2 {
           display: flex;
@@ -213,6 +216,91 @@
             vertical-align: middle;
           }
         }
+        &.style_3 {
+          display: flex;
+          flex-direction: column;
+          background: #FFFFFF;
+
+          h4 {
+            color: #192135;
+            font-family: Inter;
+            font-weight: 600;
+            font-style: Semi Bold;
+            font-size: 16px;
+            line-height: 32px;
+            letter-spacing: 0%;
+          }
+          .rb_list {
+            ul {
+              list-style-type: disc;
+              padding-left: 22px;
+              li {
+                color: #7B7B7B;
+                font-family: Inter;
+                font-weight: 600;
+                font-style: Semi Bold;
+                font-size: 14px;
+                line-height: 22px;
+                letter-spacing: 0%;
+                vertical-align: middle;
+                padding-bottom: 10px;
+                span {
+                  color: #192135;
+                }
+              }
+            }
+            &.style_1 {
+              ul {
+                list-style: none;
+                padding-left: 0;
+              }
+            }
+          }
+
+        }
+        &.style_4 {
+          display: flex;
+          flex-direction: column;
+          background: #FFFAF3;
+          border: 1px solid #F59F004D;
+
+          h4 {
+            color: #192135;
+            font-family: Inter;
+            font-weight: 600;
+            font-style: Semi Bold;
+            font-size: 16px;
+            line-height: 32px;
+            letter-spacing: 0%;
+          }
+          .rb_list {
+            ul {
+              list-style-type: disc;
+              padding-left: 22px;
+              li {
+                color: #7B7B7B;
+                font-family: Inter;
+                font-weight: 600;
+                font-style: Semi Bold;
+                font-size: 14px;
+                line-height: 22px;
+                letter-spacing: 0%;
+                vertical-align: middle;
+                padding-bottom: 10px;
+                span {
+                  color: #192135;
+                }
+              }
+            }
+            &.style_1 {
+              ul {
+                list-style: none;
+                padding-left: 0;
+              }
+            }
+          }
+        }
+
     }
     .rb_shiping_container {
       .country_text {

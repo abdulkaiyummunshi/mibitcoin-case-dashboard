@@ -33290,6 +33290,11 @@ p {
   padding: 12px 20px;
   border-radius: 100px;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .rb_ecommerce_area .alert_list.style_1 {
+    border-radius: 14px;
+  }
+}
 .rb_ecommerce_area .alert_list.style_2 {
   display: flex;
   flex-direction: column;
@@ -33353,6 +33358,79 @@ p {
   line-height: 22px;
   letter-spacing: 0%;
   vertical-align: middle;
+}
+.rb_ecommerce_area .alert_list.style_3 {
+  display: flex;
+  flex-direction: column;
+  background: #FFFFFF;
+}
+.rb_ecommerce_area .alert_list.style_3 h4 {
+  color: #192135;
+  font-family: Inter;
+  font-weight: 600;
+  font-style: Semi Bold;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 0%;
+}
+.rb_ecommerce_area .alert_list.style_3 .rb_list ul {
+  list-style-type: disc;
+  padding-left: 22px;
+}
+.rb_ecommerce_area .alert_list.style_3 .rb_list ul li {
+  color: #7B7B7B;
+  font-family: Inter;
+  font-weight: 600;
+  font-style: Semi Bold;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  padding-bottom: 10px;
+}
+.rb_ecommerce_area .alert_list.style_3 .rb_list ul li span {
+  color: #192135;
+}
+.rb_ecommerce_area .alert_list.style_3 .rb_list.style_1 ul {
+  list-style: none;
+  padding-left: 0;
+}
+.rb_ecommerce_area .alert_list.style_4 {
+  display: flex;
+  flex-direction: column;
+  background: #FFFAF3;
+  border: 1px solid rgba(245, 159, 0, 0.3019607843);
+}
+.rb_ecommerce_area .alert_list.style_4 h4 {
+  color: #192135;
+  font-family: Inter;
+  font-weight: 600;
+  font-style: Semi Bold;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 0%;
+}
+.rb_ecommerce_area .alert_list.style_4 .rb_list ul {
+  list-style-type: disc;
+  padding-left: 22px;
+}
+.rb_ecommerce_area .alert_list.style_4 .rb_list ul li {
+  color: #7B7B7B;
+  font-family: Inter;
+  font-weight: 600;
+  font-style: Semi Bold;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  padding-bottom: 10px;
+}
+.rb_ecommerce_area .alert_list.style_4 .rb_list ul li span {
+  color: #192135;
+}
+.rb_ecommerce_area .alert_list.style_4 .rb_list.style_1 ul {
+  list-style: none;
+  padding-left: 0;
 }
 .rb_ecommerce_area .rb_shiping_container .country_text {
   color: #101010;
