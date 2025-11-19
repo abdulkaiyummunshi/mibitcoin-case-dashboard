@@ -33354,6 +33354,67 @@ p {
   letter-spacing: 0%;
   vertical-align: middle;
 }
+.rb_ecommerce_area .rb_shiping_container .country_text {
+  color: #101010;
+  font-family: Inter;
+  font-weight: 600;
+  font-style: Semi Bold;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+.rb_ecommerce_area .rb_shiping_container .add_rule {
+  color: #7275F8;
+  font-family: Inter;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+.rb_ecommerce_area .rb_shiping_container .delete_rule {
+  color: #FE0000;
+  font-family: Inter;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  text-decoration: underline;
+}
+.rb_ecommerce_area .rb_shiping_container .rb_shipping_card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #E2E2E2;
+  border-radius: 14px;
+  padding-top: 14px;
+  padding-right: 20px;
+  padding-bottom: 14px;
+  padding-left: 20px;
+  gap: 20px;
+  opacity: 1;
+  border-width: 1px;
+  color: #727272;
+  font-family: Inter;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0%;
+}
+.rb_ecommerce_area .rb_shiping_container .rb_shipping_card .title {
+  color: #101010;
+  font-family: Inter;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0.25%;
+}
 
 .rb_table .currency-box {
   background: #fff;

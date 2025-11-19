@@ -422,66 +422,41 @@
                 <h5>If you want to set shipping fee based on zip code, you need to enable "Enable zipcode" in Settings -> Checkout and set zip code for store address.</h5>
               </div>
 
+              <div class="rb_shiping_container mt-24">
+                  <!-- Header -->
+                  <div class="d-flex justify-content-between align-items-center mb-24">
+                      <h6 class="country_text">Country All</h6>
 
-
-              <!-- API Provider Section -->
-              <div class="rb_checkbox_label mb-20">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck" checked required>
-                  <label class="form-check-label" for="invalidCheck">
-                    Is it enabled to support digital products
-                  </label>
-                </div>
-              </div> 
-              <div class="rb_section_border">
-               <div class="rb_checkbox_label mb-20">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" checked required>
-                    <label class="form-check-label" for="invalidCheck">
-                      Allow guest checkout for digital products
-                    </label>
-                  </div>
-                  <p>When enabled, customers can purchase digital products without creating an account. They will receive download links via email.</p>
-                </div> 
-               <div class="rb_checkbox_label mb-20">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                    <label class="form-check-label" for="invalidCheck">
-                      Disable physical product
-                    </label>
-                  </div>
-                  <p>When enabled, the store will only sell digital products. Physical product options will be hidden from product forms and checkout.</p>
-                </div> 
-               <div class="rb_checkbox_label mb-20">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" checked required>
-                    <label class="form-check-label" for="invalidCheck">
-                      Enable license codes for digital products
-                    </label>
-                  </div>
-                  <p>When enabled, you can add license codes to digital products. When disabled, license code functionality will be hidden from product forms.</p>
-                </div> 
-                <div class="rb_section_border2 mb-16">
-                  <div class="rb_checkbox_label">
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                        <label class="form-check-label" for="invalidCheck">
-                        Hide used license codes in product form
-                        </label>
+                      <div class="d-flex gap-3">
+                          <a href="#" class="add_rule">Add shipping rule</a>
+                          <a href="#" class="delete_rule">Delete</a>
                       </div>
-                      <p>When enabled, used license codes will be hidden from the license codes table in the product edit form. This helps keep the interface clean when you have many used codes.</p>
-                    </div>                    
-                </div>
-               <div class="rb_checkbox_label">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" checked required>
-                    <label class="form-check-label" for="invalidCheck">
-                     Auto-complete digital orders after payment
-                    </label>
                   </div>
-                  <p>When enabled, orders containing only digital products will be automatically marked as completed once payment is received.</p>
-                </div>                
-              </div>                               
+
+                  <!-- Shipping Rule Card -->
+                  <div class="rb_shipping_card mb-24">
+                      <div>
+                          <div class="title">Free delivery</div>
+                          <div class="subtitle">$1,000.00</div>
+                      </div>
+                      <div class="price">$0.00</div>
+                  </div>
+                  <div class="rb_shipping_card mb-24">
+                      <div>
+                          <div class="title">Flat Rate</div>
+                          <div class="subtitle">Greater than $0.00</div>
+                      </div>
+                      <div class="price">$0.00</div>
+                  </div>
+                  <div class="rb_shipping_card">
+                      <div>
+                          <div class="title">Local Pickup</div>
+                          <div class="subtitle">Greater than $0.00</div>
+                      </div>
+                      <div class="price">$0.00</div>
+                  </div>
+              </div>
+
             </div>
             <div class="rb_ecommerce_area">
               <div class="rb_heading">
