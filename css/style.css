@@ -34011,6 +34011,39 @@ p {
   letter-spacing: 0%;
 }
 
+.rb_click_one {
+  padding: 20px;
+  border-radius: 14px;
+  background: #FFFAF3;
+  border: 1px solid rgba(245, 159, 0, 0.3019607843);
+}
+.rb_click_one h5 {
+  color: #7B7B7B;
+  font-family: Inter;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+.rb_click_one h5 a {
+  color: #D71E1E;
+}
+
+.rb_translation {
+  color: #7B7B7B;
+  font-family: Inter;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.rb_translation span {
+  color: #7275F8;
+}
+
 .rb_social_login {
   max-width: 1008px;
   padding: 32px;
