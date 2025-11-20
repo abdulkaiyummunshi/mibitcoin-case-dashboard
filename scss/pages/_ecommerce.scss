@@ -724,6 +724,14 @@
 }
 
 .rb_table4 {
+    padding: 20px;
+    border: 1px solid #E2E2E2;
+    border-radius: 10px;  
+    background-color: #F3F4F7; 
+    @include md {
+      padding: 10px;
+    }
+
   .tax-box {
     padding: 20px;
     background: #fff;
@@ -771,6 +779,16 @@
     font-size: 16px;
     line-height: 100%;
     letter-spacing: 0.25%;
+    .end_data {
+      color: #7275F8;
+    }
+  }
+  .tax-row:nth-child(odd) {
+    background-color: #F3F4F7; 
+  }
+
+  .tax-row:nth-child(even) {
+    background-color: #FFF;
   }
 
   .btn-edit {
