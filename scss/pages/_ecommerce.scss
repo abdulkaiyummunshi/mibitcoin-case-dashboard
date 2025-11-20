@@ -723,6 +723,83 @@
   }
 }
 
+.rb_table4 {
+  .tax-box {
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    overflow: hidden;
+    @include lg {
+        width: 992px;
+    }
+  }
+
+  .tax-header {
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    align-items: center;
+    background-color: #F3F4F7;
+    padding: 12px 20px;
+    height: 49px;
+    border-radius: 10px;
+    font-weight: 600;
+    color: #7B7B7B;
+    border: 1.5px solid #7B7B7B1A;
+    font-family: Inter;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.25%;
+    text-transform: uppercase;
+  }
+
+  .tax-row {
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    align-items: center;
+    margin: 12px 0;
+    padding: 14px 20px;
+    height: 49px;
+    border-radius: 10px;
+    color: #7B7B7B;
+    border: 1px solid #f0f0f0;
+    font-family: Inter;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0.25%;
+  }
+
+  .btn-edit {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    width: 34px;
+    height: 34px;
+    gap: 12px;
+    opacity: 1;
+    border-radius: 4px;
+    background: linear-gradient(271.8deg, #43CBFF -99.63%, #9708CC 212.68%);
+    border: none;
+  }
+  .btn-delete {
+    width: 34px;
+    height: 34px;
+    gap: 12px;
+    opacity: 1;
+    border-radius: 4px;
+    background: #FE0000;
+    border: none;
+  }
+
+  .btn-delete:hover {
+    background-color: #cc0000;
+  }
+}
+
 // Simple data
 .rb_simple_data {  
   .rb_title {
