@@ -33678,6 +33678,7 @@ p {
 }
 
 .rb_table2 .tax-box {
+  padding: 20px;
   background: #fff;
   border-radius: 10px;
   border: 1px solid #e5e7eb;
@@ -33695,9 +33696,10 @@ p {
   text-align: center;
   background-color: #F3F4F7;
   padding: 12px 20px;
+  border-radius: 10px;
   font-weight: 600;
   color: #7B7B7B;
-  border-bottom: 1.5px solid rgba(123, 123, 123, 0.1019607843);
+  border: 1.5px solid rgba(123, 123, 123, 0.1019607843);
   font-family: Inter;
   font-weight: 500;
   font-style: Medium;
@@ -33711,18 +33713,17 @@ p {
   grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr;
   align-items: center;
   text-align: center;
-  padding: 12px 20px;
+  margin: 12px 0;
+  padding: 8px 20px;
+  border-radius: 10px;
   color: #7B7B7B;
-  border-bottom: 1px solid #f0f0f0;
+  border: 1px solid #f0f0f0;
   font-family: Inter;
   font-weight: 500;
   font-style: Medium;
   font-size: 16px;
   line-height: 100%;
   letter-spacing: 0.25%;
-}
-.rb_table2 .tax-row:last-child {
-  border-bottom: none;
 }
 .rb_table2 .btn-edit {
   display: flex;
