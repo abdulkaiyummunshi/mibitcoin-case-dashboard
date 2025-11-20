@@ -33935,6 +33935,118 @@ p {
   background-color: #cc0000;
 }
 
+.rb_table5 {
+  padding: 20px;
+  border: 1px solid #E2E2E2;
+  border-radius: 10px;
+  background-color: #F3F4F7;
+  /* Truncate text with ellipsis */
+}
+@media only screen and (max-width: 991px) {
+  .rb_table5 {
+    padding: 10px;
+  }
+}
+.rb_table5 .tax-box {
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  overflow: hidden;
+}
+@media only screen and (max-width: 1199px) {
+  .rb_table5 .tax-box {
+    width: 992px;
+  }
+}
+.rb_table5 .tax-row .d-flex,
+.rb_table5 .tax-row .end_data {
+  max-width: 600px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .rb_table5 .tax-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  .rb_table5 .tax-row .d-flex,
+  .rb_table5 .tax-row .end_data {
+    white-space: nowrap;
+    width: 100%;
+  }
+}
+.rb_table5 .tax-header {
+  display: grid;
+  grid-template-columns: 2fr 6fr 4fr;
+  align-items: center;
+  background-color: #F3F4F7;
+  padding: 12px 20px;
+  height: 49px;
+  border-radius: 10px;
+  font-weight: 600;
+  color: #7B7B7B;
+  border: 1.5px solid rgba(123, 123, 123, 0.1019607843);
+  font-family: Inter;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.25%;
+  text-transform: uppercase;
+}
+.rb_table5 .tax-row {
+  display: grid;
+  grid-template-columns: 2fr 6fr 4fr;
+  align-items: center;
+  margin: 12px 0;
+  padding: 14px 20px;
+  height: 49px;
+  border-radius: 10px;
+  color: #7B7B7B;
+  border: 1px solid #f0f0f0;
+  font-family: Inter;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0.25%;
+}
+.rb_table5 .tax-row .end_data {
+  color: #7275F8;
+}
+.rb_table5 .tax-row:nth-child(odd) {
+  background-color: #F3F4F7;
+}
+.rb_table5 .tax-row:nth-child(even) {
+  background-color: #FFF;
+}
+.rb_table5 .btn-edit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  gap: 12px;
+  opacity: 1;
+  border-radius: 4px;
+  background: linear-gradient(271.8deg, #43CBFF -99.63%, #9708CC 212.68%);
+  border: none;
+}
+.rb_table5 .btn-delete {
+  width: 34px;
+  height: 34px;
+  gap: 12px;
+  opacity: 1;
+  border-radius: 4px;
+  background: #FE0000;
+  border: none;
+}
+.rb_table5 .btn-delete:hover {
+  background-color: #cc0000;
+}
+
 .rb_simple_data .rb_title {
   color: #101010;
   font-family: Inter;
