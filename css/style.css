@@ -34156,6 +34156,33 @@ p {
   color: #7275F8;
 }
 
+.rb_pagination h6 {
+  color: #7B7B7B;
+  font-family: Inter;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.rb_pagination .page-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #fff;
+  border: 1px solid rgba(20, 33, 55, 0.1019607843);
+  color: #7C8292;
+  font-size: 14px;
+}
+.rb_pagination .page-btn:hover {
+  background: #F3F4F6;
+}
+.rb_pagination .page-btn.active {
+  background: linear-gradient(271.8deg, #43CBFF -99.63%, #9708CC 212.68%);
+  color: #fff;
+  border: none;
+}
+
 .rb_social_login {
   max-width: 1008px;
   padding: 32px;

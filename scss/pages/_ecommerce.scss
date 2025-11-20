@@ -1071,3 +1071,36 @@
     color: #7275F8;
   }
 }
+
+// Pagination Start
+.rb_pagination {
+  h6 {
+    color: #7B7B7B;    
+    font-family: Inter;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+  }
+  .page-btn {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #fff;
+      border: 1px solid #1421371A;
+      color: #7C8292;
+      font-size: 14px;
+  }
+
+  .page-btn:hover {
+      background: #F3F4F6;
+  }
+
+  .page-btn.active {
+      background: linear-gradient(271.8deg, #43CBFF -99.63%, #9708CC 212.68%);
+      color: #fff;
+      border: none;
+  }
+}
+// Pagination End
