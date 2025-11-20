@@ -743,6 +743,26 @@
     }
   }
 
+  /* Truncate text with ellipsis */
+  .tax-row .d-flex,
+  .tax-row .end_data {
+      max-width: 600px; 
+      overflow: hidden;        
+      text-overflow: ellipsis;  
+    }
+  @include sm {
+    .tax-row {
+      flex-direction: column;       
+      align-items: flex-start;
+      gap: 5px;
+    }
+    .tax-row .d-flex,
+    .tax-row .end_data {
+      white-space: nowrap;     
+      width: 100%;                  
+    }
+  }
+  
   .tax-header {
     display: grid;
     grid-template-columns: 6fr 6fr;
