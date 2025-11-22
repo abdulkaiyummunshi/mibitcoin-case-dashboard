@@ -397,91 +397,88 @@
             <!-- Breadcrumb -->
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb mb-24">
-                <li class="breadcrumb-item"><a href="#">Settings</a></li>
+                <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
                 <li class="breadcrumb-item active" aria-current="page">
-                  Email
+                  Settings
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Email Template
                 </li>
               </ol>
             </nav>
-            <div class="rb_ecommerce_area mb-24">
+            <div class="rb_ecommerce_area">
               <div class="rb_heading">
-                  <h3>Email</h3>
-                  <p>View and update your email settings and email templates</p>
+                  <h3>Email Template Settings</h3>
+                  <p>View and update your email templates settings</p>
               </div>
-              <div class="common_input mb-0">
-                <div class="mb-24">
-                  <div class="form-group">
-                    <label for="mailer">Mailer</label>
-                    <select id="mailer" name="mailer" class="custom-select rounded-pill">
-                      <option value="" disabled="" selected="">Log (for testing only, will not send email)</option>
-                      <option value="mailgun">Mailgun</option>
-                      <option value="smtp">SMTP</option>
-                    </select>
+              <div class="common_input">
+                  <div class="mb-10">
+                      <label class="form-label fw-semibold">Logo</label>
+
+                      <div class="upload-box d-flex justify-content-center align-items-center">
+                          <div class="camera_icon">
+                            <i class="fa-solid fa-camera"></i>
+                          </div>
+                      </div>
+
+                      <div class="mt-2">
+                          <a href="#" class="text-primary small">Choose image</a>
+                          <span class="text-muted small"> or </span>
+                          <a href="#" class="text-primary small">Add from URL</a>
+                      </div>
+                  </div>   
+                  <p class="desc mb-24">If don't set, it will get from theme options logo in Admin -> Appearance -> Theme Options -> Logo. If don't set, it will get from admin logo in Admin -> Settings -> Admin Appearance -> Logo. Supports only PNG, JPG, JPEG, and GIF formats.</p>
+
+                  <div class="mb-24">
+                    <div class="form-group">
+                      <label for="address">Contact email address</label>
+                      <input type="text" class="rounded-pill" name="address" placeholder="example@gmail.com" required="">
+                    </div>
+                    <p class="desc">If don't set, it will get from sender email in Admin -> Settings -> Email</p>
+                  </div>  
+                  <div class="mb-24">
+                    <div class="form-group">
+                      <label for="address">Sender email</label>
+                      <input type="text" class="rounded-pill" name="address" placeholder="example@gmail.com" required="">
+                    </div>
+                    <p class="desc">The email address that will be used as the sender for all emails sent by the system</p>
+                  </div>  
+                  <div class="mb-24">
+                    <div class="form-group">
+                      <label for="address">Copyright</label>
+                      <input type="text" class="rounded-pill" name="address" placeholder="Copyright © 2025" required="">
+                    </div>
+                    <p class="desc">If don't set, it will get from theme options copyright in Admin -> Appearance -> Theme Options -> General -> Copyright.</p>
+                  </div>  
+
+                  <div class="mb-24 rb_text_area">
+                      <label class="rb_title mb-10">Email template custom CSS</label>
+                      <div class="custom-code-box">
+                          <span class="line-number">01</span>
+                          <textarea class="form-control custom-textarea"></textarea>
+                      </div>
                   </div>
-                </div>                  
-                <div class="mb-24">
-                  <div class="form-group">
-                    <label for="log">Log channel</label>
-                    <select id="log" name="log" class="custom-select rounded-pill">
-                      <option value="" disabled="" selected="">single</option>
-                      <option value="daily">Daily</option>
-                      <option value="stack">Stack</option>
-                    </select>
+
+                  <div class="content_text">
+                    <h4>Social Links</h4>
                   </div>
-                  <p class="desc">Select which logging channel to use for email logs</p>
-                </div>                  
-                <div class="mb-24">
-                  <div class="form-group">
-                    <label for="name">Sender name</label>
-                    <select id="name" name="name" class="custom-select rounded-pill">
-                      <option value="" disabled="" selected="">Name</option>
-                      <option value="jhon">Jhon</option>
-                      <option value="milton">Milton</option>
-                    </select>
-                  </div>
-                  <p class="desc">The name that will appear in the From field of emails sent by the system</p>
-                </div>                  
-                <div class="mb-0">
-                  <div class="form-group">
-                    <label for="email">Sender name</label>
-                    <select id="" name="email" class="custom-select rounded-pill">
-                      <option value="" disabled="" selected="">example@gmail.com</option>
-                      <option value="jhon">jhon@gmail.com</option>
-                      <option value="milton">milton@gamil.com</option>
-                    </select>
-                  </div>
-                  <p class="desc">The email address that will be used as the sender for all emails sent by the system</p>
-                </div>                  
-              </div>                 
+
+                  <div class="btn_wrapper">
+                    <a  href="#"> Add New</a>
+                  </div> 
+                                                       
+               </div>
             </div>
-            <div class="d-flex gap-2 mb-24">
+            <div class="d-flex gap-2 mb-24 mt-24">
               <div class="btn_wrapper style1">
                 <a  href="#"><img src="./images/icon/save.png" alt=""> Save settings</a>
               </div>              
-              <div class="btn_wrapper">
-                <a  href="#"><img src="./images/icon/save.png" alt=""> Send test email</a>
-              </div>              
             </div>
 
-            <div class="alert_list2 style_1 mb-24">
-              <div class="d-flex">
-                <h4><img src="images/icon/alert-circle-black.svg" alt=""> Email Setup Tips</h4>
-              </div>
-              <div class="rb_list ">
-                <ul>
-                  <li>For Gmail: Use smtp.gmail.com as host, port 587 with TLS or port 465 with SSL. Enable "Less secure app access" or use an App Password.</li>
-                  <li>Common ports: 25 (unencrypted), 587 (TLS/STARTTLS), 465 (SSL/TLS), 2525 (alternative).</li>
-                  <li>Use TLS for port 587 (recommended), SSL for port 465, or None for port 25 (not recommended for production).</li>
-                  <li>Always use "Send Test Email" button to verify your configuration before saving.</li>
-                  <li>For better deliverability, consider using email services like Mailgun, SendGrid, or Amazon SES instead of SMTP.</li>
-                </ul>
-              </div>
-            </div>  
-            
             <div class="rb_ecommerce_area mb-24">
               <div class="rb_heading">
-                  <h3>Email template status</h3>
-                  <p>Turn on/off email template</p>
+                  <h3>Email templates</h3>
+                  <p>Email templates using HTML & system variables.</p>
               </div> 
               <h5 class="table_title mt-20">Best Template</h5> 
               <div class="rb_table6 mt-10">
@@ -826,183 +823,6 @@
                           </button>
                         </div>
                     </div>
-                    <div class="tax-row">
-                        <div class="d-flex gap-2">Payment confirmation</div>
-                        <div class="text_ellip">Send to customer when their payment was confirmed</div>
-                        <div class="rb_custom_switch">
-                          <label class="custom-switch">
-                            <input type="checkbox" checked>
-                            <span class="slider">
-                              <span class="icon on">✔</span>
-                              <span class="icon off">✖</span>
-                            </span>
-                          </label>
-                          <button class="btn-edit">
-                            <img src="images/icon/edit.svg" alt="icon">
-                          </button>
-                        </div>
-                    </div>
-                    <div class="tax-row">
-                        <div class="d-flex gap-2">Incomplete order</div>
-                        <div class="text_ellip">Send to custom to remind them about incomplete orders</div>
-                        <div class="rb_custom_switch">
-                          <label class="custom-switch">
-                            <input type="checkbox" checked>
-                            <span class="slider">
-                              <span class="icon on">✔</span>
-                              <span class="icon off">✖</span>
-                            </span>
-                          </label>
-                          <button class="btn-edit">
-                            <img src="images/icon/edit.svg" alt="icon">
-                          </button>
-                        </div>
-                    </div>
-                    <div class="tax-row">
-                        <div class="d-flex gap-2">Order return request</div>
-                        <div class="text_ellip">Send to customer when they return order</div>
-                        <div class="rb_custom_switch">
-                          <label class="custom-switch">
-                            <input type="checkbox" checked>
-                            <span class="slider">
-                              <span class="icon on">✔</span>
-                              <span class="icon off">✖</span>
-                            </span>
-                          </label>
-                          <button class="btn-edit">
-                            <img src="images/icon/edit.svg" alt="icon">
-                          </button>
-                        </div>
-                    </div>
-                    <div class="tax-row">
-                        <div class="d-flex gap-2">Review Products</div>
-                        <div class="text_ellip">Send a notification to the customer to review the products when the order is completed</div>
-                        <div class="rb_custom_switch">
-                          <label class="custom-switch">
-                            <input type="checkbox" checked>
-                            <span class="slider">
-                              <span class="icon on">✔</span>
-                              <span class="icon off">✖</span>
-                            </span>
-                          </label>
-                          <button class="btn-edit">
-                            <img src="images/icon/edit.svg" alt="icon">
-                          </button>
-                        </div>
-                    </div>
-                    <div class="tax-row">
-                        <div class="d-flex gap-2">Download digital products</div>
-                        <div class="text_ellip">Send email digital product downloads when guest makes a purchase</div>
-                        <div class="rb_custom_switch">
-                          <label class="custom-switch">
-                            <input type="checkbox" checked>
-                            <span class="slider">
-                              <span class="icon on">✔</span>
-                              <span class="icon off">✖</span>
-                            </span>
-                          </label>
-                          <button class="btn-edit">
-                            <img src="images/icon/edit.svg" alt="icon">
-                          </button>
-                        </div>
-                    </div>
-                    <div class="tax-row">
-                        <div class="d-flex gap-2">Digital product license codes</div>
-                        <div class="text_ellip">Send email with license codes for digital products without downloadable files</div>
-                        <div class="rb_custom_switch">
-                          <label class="custom-switch">
-                            <input type="checkbox" checked>
-                            <span class="slider">
-                              <span class="icon on">✔</span>
-                              <span class="icon off">✖</span>
-                            </span>
-                          </label>
-                          <button class="btn-edit">
-                            <img src="images/icon/edit.svg" alt="icon">
-                          </button>
-                        </div>
-                    </div>
-                    <div class="tax-row">
-                        <div class="d-flex gap-2">Account deletion confirmation</div>
-                        <div class="text_ellip">Send confirmation email to user when they request to delete their account</div>
-                        <div class="rb_custom_switch">
-                          <label class="custom-switch">
-                            <input type="checkbox" checked>
-                            <span class="slider">
-                              <span class="icon on">✔</span>
-                              <span class="icon off">✖</span>
-                            </span>
-                          </label>
-                          <button class="btn-edit">
-                            <img src="images/icon/edit.svg" alt="icon">
-                          </button>
-                        </div>
-                    </div>
-                    <div class="tax-row">
-                        <div class="d-flex gap-2">Account deletion completed</div>
-                        <div class="text_ellip">Send email to user when their account was deleted</div>
-                        <div class="rb_custom_switch">
-                          <label class="custom-switch">
-                            <input type="checkbox" checked>
-                            <span class="slider">
-                              <span class="icon on">✔</span>
-                              <span class="icon off">✖</span>
-                            </span>
-                          </label>
-                          <button class="btn-edit">
-                            <img src="images/icon/edit.svg" alt="icon">
-                          </button>
-                        </div>
-                    </div>
-                    <div class="tax-row">
-                        <div class="d-flex gap-2">Order return request status updated</div>
-                        <div class="text_ellip">Send to customer when their order return request status was updated</div>
-                        <div class="rb_custom_switch">
-                          <label class="custom-switch">
-                            <input type="checkbox" checked>
-                            <span class="slider">
-                              <span class="icon on">✔</span>
-                              <span class="icon off">✖</span>
-                            </span>
-                          </label>
-                          <button class="btn-edit">
-                            <img src="images/icon/edit.svg" alt="icon">
-                          </button>
-                        </div>
-                    </div>
-                    <div class="tax-row">
-                        <div class="d-flex gap-2">Payment Proof Upload Notification</div>
-                        <div class="text_ellip">Notify customer when the product files are updated</div>
-                        <div class="rb_custom_switch">
-                          <label class="custom-switch">
-                            <input type="checkbox" checked>
-                            <span class="slider">
-                              <span class="icon on">✔</span>
-                              <span class="icon off">✖</span>
-                            </span>
-                          </label>
-                          <button class="btn-edit">
-                            <img src="images/icon/edit.svg" alt="icon">
-                          </button>
-                        </div>
-                    </div>
-                    <div class="tax-row">
-                        <div class="d-flex gap-2">Product File Updated</div>
-                        <div class="text_ellip">Notify customer when the product files are updated</div>
-                        <div class="rb_custom_switch">
-                          <label class="custom-switch">
-                            <input type="checkbox" checked>
-                            <span class="slider">
-                              <span class="icon on">✔</span>
-                              <span class="icon off">✖</span>
-                            </span>
-                          </label>
-                          <button class="btn-edit">
-                            <img src="images/icon/edit.svg" alt="icon">
-                          </button>
-                        </div>
-                    </div>
-
 
                   </div>
                 </div>
@@ -1057,182 +877,6 @@
                     <div class="tax-row">
                         <div class="d-flex gap-2">Vendor account approved</div>
                         <div class="text_ellip">Send email to vendor when their account approved</div>
-                        <div class="rb_custom_switch">
-                          <label class="custom-switch">
-                            <input type="checkbox" checked>
-                            <span class="slider">
-                              <span class="icon on">✔</span>
-                              <span class="icon off">✖</span>
-                            </span>
-                          </label>
-                          <button class="btn-edit">
-                            <img src="images/icon/edit.svg" alt="icon">
-                          </button>
-                        </div>
-                    </div>                    
-                    <div class="tax-row">
-                        <div class="d-flex gap-2">Vendor account rejected</div>
-                        <div class="text_ellip">Send email to vendor when their account rejected</div>
-                        <div class="rb_custom_switch">
-                          <label class="custom-switch">
-                            <input type="checkbox" checked>
-                            <span class="slider">
-                              <span class="icon on">✔</span>
-                              <span class="icon off">✖</span>
-                            </span>
-                          </label>
-                          <button class="btn-edit">
-                            <img src="images/icon/edit.svg" alt="icon">
-                          </button>
-                        </div>
-                    </div>                    
-                    <div class="tax-row">
-                        <div class="d-flex gap-2">Pending product approval</div>
-                        <div class="text_ellip">Send email to the admin when a vendor post their products</div>
-                        <div class="rb_custom_switch">
-                          <label class="custom-switch">
-                            <input type="checkbox" checked>
-                            <span class="slider">
-                              <span class="icon on">✔</span>
-                              <span class="icon off">✖</span>
-                            </span>
-                          </label>
-                          <button class="btn-edit">
-                            <img src="images/icon/edit.svg" alt="icon">
-                          </button>
-                        </div>
-                    </div>                    
-                    <div class="tax-row">
-                        <div class="d-flex gap-2">Product approved</div>
-                        <div class="text_ellip">Send email to vendor when their product approved</div>
-                        <div class="rb_custom_switch">
-                          <label class="custom-switch">
-                            <input type="checkbox" checked>
-                            <span class="slider">
-                              <span class="icon on">✔</span>
-                              <span class="icon off">✖</span>
-                            </span>
-                          </label>
-                          <button class="btn-edit">
-                            <img src="images/icon/edit.svg" alt="icon">
-                          </button>
-                        </div>
-                    </div>                    
-                    <div class="tax-row">
-                        <div class="d-flex gap-2">Withdrawal approved</div>
-                        <div class="text_ellip">Send to customer when order is delivering</div>
-                        <div class="rb_custom_switch">
-                          <label class="custom-switch">
-                            <input type="checkbox" checked>
-                            <span class="slider">
-                              <span class="icon on">✔</span>
-                              <span class="icon off">✖</span>
-                            </span>
-                          </label>
-                          <button class="btn-edit">
-                            <img src="images/icon/edit.svg" alt="icon">
-                          </button>
-                        </div>
-                    </div>                    
-                    <div class="tax-row">
-                        <div class="d-flex gap-2">Welcome vendor</div>
-                        <div class="text_ellip">Send email to vendor after registered</div>
-                        <div class="rb_custom_switch">
-                          <label class="custom-switch">
-                            <input type="checkbox" checked>
-                            <span class="slider">
-                              <span class="icon on">✔</span>
-                              <span class="icon off">✖</span>
-                            </span>
-                          </label>
-                          <button class="btn-edit">
-                            <img src="images/icon/edit.svg" alt="icon">
-                          </button>
-                        </div>
-                    </div>                    
-                    <div class="tax-row">
-                        <div class="d-flex gap-2">Contact Store</div>
-                        <div class="text_ellip">Send email to the store owner when a customer contacts the store</div>
-                        <div class="rb_custom_switch">
-                          <label class="custom-switch">
-                            <input type="checkbox" checked>
-                            <span class="slider">
-                              <span class="icon on">✔</span>
-                              <span class="icon off">✖</span>
-                            </span>
-                          </label>
-                          <button class="btn-edit">
-                            <img src="images/icon/edit.svg" alt="icon">
-                          </button>
-                        </div>
-                    </div>                    
-                    <div class="tax-row">
-                        <div class="d-flex gap-2">Vendor account blocked</div>
-                        <div class="text_ellip">Send email to vendor when their account blocked</div>
-                        <div class="rb_custom_switch">
-                          <label class="custom-switch">
-                            <input type="checkbox" checked>
-                            <span class="slider">
-                              <span class="icon on">✔</span>
-                              <span class="icon off">✖</span>
-                            </span>
-                          </label>
-                          <button class="btn-edit">
-                            <img src="images/icon/edit.svg" alt="icon">
-                          </button>
-                        </div>
-                    </div>                    
-                    <div class="tax-row">
-                        <div class="d-flex gap-2">Vendor account unblocked</div>
-                        <div class="text_ellip">Send email to vendor when their account unblocked</div>
-                        <div class="rb_custom_switch">
-                          <label class="custom-switch">
-                            <input type="checkbox" checked>
-                            <span class="slider">
-                              <span class="icon on">✔</span>
-                              <span class="icon off">✖</span>
-                            </span>
-                          </label>
-                          <button class="btn-edit">
-                            <img src="images/icon/edit.svg" alt="icon">
-                          </button>
-                        </div>
-                    </div>                    
-                    <div class="tax-row">
-                        <div class="d-flex gap-2">Order cancellation will be sent to seller (vendor)</div>
-                        <div class="text_ellip">Send to seller (vendor) when customer cancels an order</div>
-                        <div class="rb_custom_switch">
-                          <label class="custom-switch">
-                            <input type="checkbox" checked>
-                            <span class="slider">
-                              <span class="icon on">✔</span>
-                              <span class="icon off">✖</span>
-                            </span>
-                          </label>
-                          <button class="btn-edit">
-                            <img src="images/icon/edit.svg" alt="icon">
-                          </button>
-                        </div>
-                    </div>                    
-                    <div class="tax-row">
-                        <div class="d-flex gap-2">Store Verification Approved</div>
-                        <div class="text_ellip">Send notification when store is verified</div>
-                        <div class="rb_custom_switch">
-                          <label class="custom-switch">
-                            <input type="checkbox" checked>
-                            <span class="slider">
-                              <span class="icon on">✔</span>
-                              <span class="icon off">✖</span>
-                            </span>
-                          </label>
-                          <button class="btn-edit">
-                            <img src="images/icon/edit.svg" alt="icon">
-                          </button>
-                        </div>
-                    </div>                    
-                    <div class="tax-row">
-                        <div class="d-flex gap-2">Store Verification Removed</div>
-                        <div class="text_ellip">Send notification when store verification is removed</div>
                         <div class="rb_custom_switch">
                           <label class="custom-switch">
                             <input type="checkbox" checked>

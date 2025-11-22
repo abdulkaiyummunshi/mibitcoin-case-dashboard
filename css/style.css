@@ -34414,6 +34414,28 @@ p {
   padding-left: 0;
 }
 
+.custom-code-box {
+  position: relative;
+}
+.custom-code-box .line-number {
+  position: absolute;
+  top: 12px;
+  left: 18px;
+  color: #727272;
+  font-size: 14px;
+  font-weight: 400;
+  pointer-events: none;
+}
+.custom-code-box .custom-textarea {
+  width: 100%;
+  height: 258px;
+  padding: 12px 12px 12px 45px;
+  border-radius: 14px;
+  border: 1px solid #E2E2E2;
+  font-size: 14px;
+  resize: vertical;
+}
+
 .rb_pagination h6 {
   color: #7B7B7B;
   font-family: Inter;
