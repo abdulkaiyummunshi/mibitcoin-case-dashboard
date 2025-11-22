@@ -34152,10 +34152,11 @@ p {
   }
 }
 .rb_table6 .tax-row .d-flex,
-.rb_table6 .tax-row .end_data {
+.rb_table6 .tax-row .text_ellip {
   max-width: 600px;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .rb_table6 .tax-row {

@@ -976,10 +976,12 @@
 
   /* Truncate text with ellipsis */
   .tax-row .d-flex,
-  .tax-row .end_data {
+  .tax-row .text_ellip {
       max-width: 600px; 
       overflow: hidden;        
       text-overflow: ellipsis;  
+      white-space: nowrap;     
+
     }
   @include sm {
     .tax-row {
