@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="./css/magnific-popup.min.css">
     <link rel="stylesheet" href="./css/animate.min.css">
     <link rel="stylesheet" href="./css/meanmenu.min.css">
-    <link rel="stylesheet" href="./css/nice-select.min.css">
+    <!-- <link rel="stylesheet" href="./css/nice-select.min.css"> -->
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
@@ -396,137 +396,52 @@
             
             <!-- Breadcrumb -->
             <nav aria-label="breadcrumb">
-              <ol class="breadcrumb mb-24 mt-40">
-                <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+              <ol class="breadcrumb mb-24">
+                <li class="breadcrumb-item"><a href="#">Dashboard </a></li>
                 <li class="breadcrumb-item active" aria-current="page">
-                   Administration
+                   Setting
                 </li>
                 <li class="breadcrumb-item active" aria-current="page">
-                   Users
+                   General
                 </li>
               </ol>
             </nav>
-            <div class="rb_profile_area">
-              <div class="rb_tap_button">
-                  <button class="rb_tab_btn active" data-target="tab1"><img src="images/icon/user.svg" alt=""> User Profile</button>
-                  <button class="rb_tab_btn" data-target="tab2"><img src="images/icon/profile-circle.svg" alt=""> Avatar</button>
-                  <button class="rb_tab_btn" data-target="tab3"><img src="images/icon/unlock.svg" alt="">Change Password</button>
-                  <button class="rb_tab_btn" data-target="tab4"><img src="images/icon/setting-2.svg" alt=""> Preferences</button>
+            <div class="rb_ecommerce_area mb-20">
+              <div class="rb_heading">
+                  <h3>License</h3>
+                  <p>Setup license code</p>
+              </div>  
+              <div class="rb_license_text">Licensed to Botble Technologies. Activated since Sep 25 2025.</div>              
+              <div class="btn_wrapper">
+                <a href="#">Deactivate License</a>
+              </div>                        
+            </div>            
+            <div class="rb_ecommerce_area">
+              <div class="rb_heading">
+                  <h3>General Information</h3>
+                  <p>View and update site information</p>
               </div>
-
-              <div id="tab1" class="rb_content">
-                <div class="rb_form common_input">
-                  <div class="row g-4">
-                    <!-- Shop Name -->
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <label for="first_name">First Name <span><img src="images/icon/what-icon.svg" alt="icon"></span></label>
-                        <input type="text" class="form-control rounded-pill" id="first_name" name="first_name" placeholder="First Name" required>
-                      </div>
-                    </div>
-  
-                    <!-- Company -->
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <label for="Last Name">Last Name <span><img src="images/icon/what-icon.svg" alt="icon"></span></label>
-                        <input type="text" class="form-control rounded-pill" id="Last Name" name="Last Name" placeholder="Last Name" required>
-                      </div>
-                    </div>
-  
-                    <!-- Company -->
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <label for="Username">Username <span><img src="images/icon/what-icon.svg" alt="icon"></span></label>
-                        <input type="text" class="form-control rounded-pill" id="Username" name="Username" placeholder="Username" required>
-                      </div>
-                    </div>
-  
-                    <!-- Phone -->
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <label for="phone">Phone <span><img src="images/icon/what-icon.svg" alt="icon"></span></label>
-                        <input type="text" class="form-control rounded-pill" id="phone" name="phone" placeholder="(888) 5877-2655-025" required>
-                      </div>
-                    </div>
-  
-                    <!-- Email -->
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <label for="email">Email <span><img src="images/icon/what-icon.svg" alt="icon"></span></label>
-                        <input type="email" class="form-control rounded-pill" id="email" name="email" placeholder="softcrafty@gmail.com" required>
-                      </div>
-                    </div>
-                  </div> 
-                </div> 
-                <div class="btn_wrapper style1  mt-32">
-                  <a  href="#">Update</a>
-                </div>                           
-              </div>
-
-              <div id="tab2" class="rb_content d-none mt-30">
-                <div class="rb_camera">
-                  <label for="uploadImage" class="image-upload-circle d-flex flex-column justify-content-center align-items-center">
-                    <i class="fa-solid fa-camera"></i>
-                  </label>
-
-                  <input type="file" id="uploadImage" class="d-none">
-
-                  <p class="mt-3 choose-text">Choose Image</p>
-                  <div class="btn_wrapper style1 mt-32">
-                    <a  href="#">Update</a>
-                  </div>                           
-                </div>
-              </div>
-
-              <div id="tab3" class="rb_content d-none mt-30">
-                <div class="rb_form common_input">
-                  <div class="row g-4">
-                    <!-- Password -->
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <label for="current_password">Current Password</label>
-                        <input type="text" class="form-control rounded-pill" id="current_password" name="current_password" placeholder="Current Password" required>
-                      </div>
-                    </div>
-
-                    <!-- Password -->
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <label for="new_password">New password</label>
-                        <input type="password" class="form-control rounded-pill" id="new_password" name="new_password" placeholder="New Password" required>
-                      </div>
-                    </div>
-
-                    <!-- Password -->
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <label for="confirm_password">Confirm new password</label>
-                        <input type="text" class="form-control rounded-pill" id="confirm_password" name="confirm_password" placeholder="Confirm Password" required>
-                      </div>
-                    </div>
-  
-                  </div>
-                </div> 
-                <div class="btn_wrapper mt-32">
-                  <a  href="#">Update password</a>
-                </div>                           
-              </div>    
-
-              <div id="tab4" class="rb_content d-none mt-30">
-                <div class="rb_form common_input">
+              <div class="common_input">
                   <div class="mb-24">
                     <div class="form-group">
-                      <label for="id">Admin Panel language</label>
-                      <select id="id" name="id" class="custom-select rounded-pill">
-                        <option value="" disabled="" selected="">English - en</option>
-                        <option value="xgr">Bangla - bn</option>
-                        <option value="xgr">Arabic - ar</option>
+                      <label for="admin">Admin Email</label>
+                      <input type="text" class="rounded-pill" id="admin" name="admin" placeholder="admin@botble.com" required="">
+                    </div>
+                    <p class="desc">You can add maximum 4 emails</p>
+                  </div>                     
+                  <div class="mb-24">
+                    <div class="form-group">
+                      <label for="timezone">Timezone</label>
+                      <select id="timezone" name="timezone" class="custom-select rounded-pill">
+                        <option value="" disabled="" selected="">UTC</option>
+                        <option value="UTC-12:00">UTC -12:00</option>
+                        <option value="UTC-11:00">UTC -11:00</option>
+                        <option value="UTC-10:00">UTC -10:00</option>
                       </select>
                     </div>
-                  </div>  
-
+                  </div>
                   <div class="rb_radio_label mb-24">
-                    <label class="form-label mb-8">Add language support</label>
+                    <label class="form-label mb-8">Front site language direction</label>
                     <div class="d-flex align-items-center gap-2 gap-md-4 flex-wrap">
                       <div class="form-check">
                         <input class="form-check-input" type="radio" name="apiProvider" id="providerNone" value="left" checked>
@@ -534,37 +449,60 @@
                       </div>
                       <div class="form-check">
                         <input class="form-check-input" type="radio" name="apiProvider" id="providerApiLayer1" value="right">
-                        <label class="form-check-label" for="providerApiLayer1">Right To Left</label>
+                        <label class="form-check-label" for="providerApiLayer1">Right To Left </label>
                       </div>
                     </div>
-                  </div>  
-
+                    <p class="desc">To set up the site language, please go to <span>Languages</span>  page. Or go to <span>Appearance</span> to set up the admin language.</p>
+                  </div>                   
                   <div class="mb-24">
                     <div class="form-group">
-                      <label for="confirm_password">Confirm New Password</label>
-                      <input type="text" class="form-control rounded-pill" id="confirm_password" name="confirm_password" placeholder="1 2 3 4" required>
+                      <label for="language">Site language</label>
+                      <select id="language" name="language" class="custom-select rounded-pill">
+                        <option value="" disabled="" selected="">English - en</option>
+                        <option value="bn">Bangla – bn</option>
+                        <option value="ar">Arabic – ar</option>
+                        <option value="es">Spanish – es</option>
+                        <option value="fr">French – fr</option>
+                      </select>
                     </div>
-                  </div>  
-                  
-                  <div class="rb_radio_label mb-24">
-                    <label class="form-label mb-8">Theme mode</label>
-                    <div class="d-flex align-items-center gap-2 gap-md-4 flex-wrap">
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="apiProvider" id="providerNonee" value="left" checked>
-                        <label class="form-check-label" for="providerNonee">Light</label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="apiProvider" id="providerApiLayer2" value="right">
-                        <label class="form-check-label" for="providerApiLayer2">Dark</label>
-                      </div>
+                  </div>
+                  <div class="rb_checkbox_label mb-20">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="invalidCheck111" checked required>
+                      <label class="form-check-label" for="invalidCheck111">
+                        <span>Send error reporting via email</span> 
+                      </label>
                     </div>
-                  </div>                   
-                </div> 
-                <div class="btn_wrapper style1 mt-32">
-                  <a  href="#">Update</a>
-                </div>                           
-              </div>              
+                  </div>                    
+                  <div class="rb_checkbox_label mb-20">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="invalidCheck112" checked required>
+                      <label class="form-check-label" for="invalidCheck112">
+                        <span>Redirect all Not Found requests to homepage</span> 
+                      </label>
+                    </div>
+                  </div>                    
+                  <div class="mb-24">
+                    <div class="form-group">
+                      <label for="days">Clear old Audit Logs</label>
+                      <select id="days" name="days" class="custom-select rounded-pill">
+                        <option value="" disabled="" selected="">3 Days</option>
+                        <option value="1_day">1 Days</option>
+                        <option value="2_day">2 Days</option>
+                      </select>
+                    </div>
+                    <p class="desc">Automatically delete audit logs that are older than the selected period to keep your database clean and optimized.</p>
+                  </div>
+                  <div class="alert_list style_1">
+                    <img src="images/icon/alert-circle.svg" alt="icon">
+                    <h5>To add Google Analytics Tag ID to track your website traffic, visit Admin → Settings → Website Tracking.</h5>
+                  </div>   
+                  <div class="mb-10"></div>               
+               </div>
             </div>
+            <div class="btn_wrapper mt-20 mb-20">
+              <a  href="#"><img src="./images/icon/save.png" alt=""> Save settings</a>
+            </div>                           
           </div>
         </div>
       </div>
@@ -576,35 +514,12 @@
     <script src="./js/jquery.meanmenu.min.js"></script>
     <script src="./js/jquery.magnific-popup.min.js"></script>
     <script src="./js/slick.min.js"></script>
-    <script src="./js/jquery.nice-select.js"></script>
+    <!-- <script src="./js/jquery.nice-select.js"></script> -->
     <script src="./js/gsap.min.js"></script>
     <script src="./js/ScrollTrigger.min.js"></script>
     <script src="./js/ScrollSmoother.min.js"></script>
     <script src="./js/scrollreveal.min.js"></script>
     <script src="./js/SplitText.min.js"></script>
     <script src="./js/custom.js"></script>
-
-    <script>
-      const buttons = document.querySelectorAll('.rb_tab_btn');
-      const tabs = document.querySelectorAll('.rb_content');
-        buttons.forEach(btn => {
-            btn.addEventListener('click', function () {
-
-                // remove active from all buttons
-                buttons.forEach(b => b.classList.remove('active'));
-
-                // add active to current button
-                this.classList.add('active');
-
-                // hide all content
-                tabs.forEach(tab => tab.classList.add('d-none'));
-
-                // show selected tab
-                const target = this.getAttribute('data-target');
-                document.getElementById(target).classList.remove('d-none');
-            });
-        });
-    </script>
-
   </body>
 </html>

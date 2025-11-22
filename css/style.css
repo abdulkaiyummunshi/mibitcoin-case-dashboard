@@ -32329,6 +32329,10 @@ p {
   margin-top: 5px;
   cursor: pointer;
 }
+.rb_checkbox_label .form-check label span {
+  color: #7B7B7B;
+  font-size: 14px;
+}
 .rb_checkbox_label p {
   color: #7B7B7B;
   margin-top: 6px;
@@ -32460,6 +32464,9 @@ p {
   line-height: 22px;
   letter-spacing: 0%;
   padding-top: 10px;
+}
+.common_input .desc span {
+  color: #5F8AEE;
 }
 .common_input .form-group label {
   display: block;
@@ -34154,6 +34161,17 @@ p {
 }
 .rb_translation span {
   color: #7275F8;
+}
+
+.rb_license_text {
+  color: #5F8AEE;
+  font-family: Inter;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  padding: 12px 0 14px;
 }
 
 .rb_pagination h6 {

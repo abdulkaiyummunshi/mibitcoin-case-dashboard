@@ -48,6 +48,10 @@
       letter-spacing: 0.25%;
       margin-top: 5px;
       cursor: pointer;
+      span {
+        color: #7B7B7B;
+        font-size: 14px;
+      }
     }
   }
 
@@ -198,6 +202,9 @@
         line-height: 22px;
         letter-spacing: 0%;
         padding-top: 10px;
+        span {
+          color: #5F8AEE;
+        }
     }
     .form-group {
         label {
