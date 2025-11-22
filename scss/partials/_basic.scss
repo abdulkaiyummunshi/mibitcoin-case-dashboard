@@ -123,6 +123,91 @@
   }
 }
 
+.rb_custom_switch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  .custom-switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+  }
+  
+  .custom-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    background: #BFC4D3; /* OFF background */
+    border-radius: 50px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 0.4s;
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+    justify-content: space-between;
+  }
+  
+  .slider .icon {
+    font-size: 12px;
+    font-weight: 700;
+  }
+  
+  /* On icon hidden by default */
+  .slider .on {
+    color: #fff;
+    opacity: 0;
+    transition: 0.4s;
+  }
+  
+  /* Off icon */
+  .slider .off {
+    color: red;
+    opacity: 1;
+    transition: 0.4s;
+  }
+  
+  /* Circle button */
+  .slider::before {
+    content: "";
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    left: 2px;
+    bottom: 3px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: 0.4s;
+  }
+  
+  /* ========== ACTIVE STATE ========== */
+  .custom-switch input:checked + .slider {
+    background: linear-gradient(271.8deg, #43CBFF -99.63%, #9708CC 212.68%);
+  }
+  
+  .custom-switch input:checked + .slider::before {
+    transform: translateX(28px);
+  }
+  
+  .custom-switch input:checked + .slider .on {
+    opacity: 1;
+  }
+  
+  .custom-switch input:checked + .slider .off {
+    opacity: 0;
+  }
+}
+
+
 //Radio Label
 .rb_radio_label {
     .form-check-input {
