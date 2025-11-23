@@ -397,167 +397,119 @@
             <!-- Breadcrumb -->
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb mb-24">
-                <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                <li class="breadcrumb-item"><a href="#">Dashboard </a></li>
                 <li class="breadcrumb-item active" aria-current="page">
-                  Settings
-                </li>
-                <li class="breadcrumb-item active" aria-current="page">
-                  Media
+                   Permalink settings
                 </li>
               </ol>
             </nav>
             <div class="rb_ecommerce_area">
               <div class="rb_heading">
-                  <h3>Media</h3>
-                  <p>Settings for media</p>
+                  <h3>Permalink settings</h3>
+                  <p>Manage permalink for all modules.</p>
               </div>
+
               <div class="common_input">
-                  <div class="mb-20">
-                    <div class="form-group">
-                      <label for="driver">Driver</label>
-                      <input type="text" class="rounded-pill" name="driver" placeholder="Local disk" required="">
-                    </div>
-                  </div> 
-                  <div class="rb_checkbox_label mb-20">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="invalidCheck"  required>
-                      <label class="form-check-label" for="invalidCheck">
-                      <span> Use original name for file path</span>
-                      </label>
-                    </div>
-                  </div>                   
-                  <div class="rb_checkbox_label mb-20">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="invalidCheck1"  required>
-                      <label class="form-check-label" for="invalidCheck1">
-                       <span>Convert file name to UUID</span> 
-                      </label>
-                    </div>
-                    <p>When enabled, the system will convert the file name to UUID when uploading. It is useful to prevent duplicate file names and better security.</p>
-                  </div>                   
-                  <div class="rb_checkbox_label mb-20">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
-                      <label class="form-check-label" for="invalidCheck2">
-                        <span>Keep original file size and quality</span>  
-                      </label>
-                    </div>
-                  </div>                   
-                  <div class="rb_checkbox_label mb-20">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="invalidCheck3" required>
-                      <label class="form-check-label" for="invalidCheck3">
-                        <span>Turn off automatic URL translation into Latin</span>    
-                      </label>
-                    </div>
-                  </div>                   
-                  <div class="rb_checkbox_label mb-20">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="invalidCheck4" required>
-                      <label class="form-check-label" for="invalidCheck4">
-                        <span>Users can only view their own media</span>    
-                      </label>
-                    </div>
-                    <p>When enabled, users can only view their own media, while super admins can view all media.</p>
-                  </div>                   
-                  <div class="rb_checkbox_label mb-20">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="invalidCheck5" required>
-                      <label class="form-check-label" for="invalidCheck5">
-                        <span>Convert JPG, JPEG, PNG image to WebP</span>  
-                      </label>
-                    </div>
-                    <p>WebP is a modern image format that provides superior lossless and lossy compression for images on the web. It is supported in Chrome, Firefox, Edge, and Opera. Image will be converted to WebP format when uploading. It is just applied for JPG, JPEG, PNG images.</p>
-                  </div>                   
-                  
-                  <div class="mb-20">
-                      <label class="form-label fw-semibold">Default placeholder image</label>
-
-                      <div class="upload-box d-flex justify-content-center align-items-center">
-                          <div class="camera_icon">
-                            <i class="fa-solid fa-camera"></i>
-                          </div>
-                          <input type="file" id="uploadImage" class="d-none">
+                <div class="row g-4">
+                  <div class="col-12">
+                    <div class="mb-16">
+                      <div class="form-group">
+                        <label for="name">Prefix for Pages</label>
+                        <input type="text" class="rounded-pill" id="name" name="name" placeholder="" required="">
                       </div>
-
-                      <div class="mt-2">
-                          <a href="#" class="text-primary small">Choose image</a>
-                          <span class="text-muted small"> or </span>
-                          <a href="#" class="text-primary small">Add from URL</a>
+                      <p class="desc">Preview: <a href="#">https://Softcrafty.com</a></p>
+                    </div>
+                    <div class="mb-16">
+                      <div class="form-group">
+                        <label for="name">Prefix for Blog posts</label>
+                        <input type="text" class="rounded-pill" id="name" name="name" placeholder="Blog" required="">
                       </div>
-                  </div>   
-                  <div class="mb-20">
-                    <div class="form-group">
-                      <label for="file-size">Max upload filesize (MB)</label>
-                      <input type="text" class="rounded-pill" name="file-size" placeholder="2" required="">
+                      <p class="desc">Preview: <a href="#">https://Softcrafty.com</a></p>
                     </div>
-                    <p class="desc">Your server allows to upload files maximum 320,00 MB, you can change this value to limit upload filesize.</p>
-                  </div> 
-                  <div class="rb_checkbox_label mb-20">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="invalidCheck6" required>
-                      <label class="form-check-label" for="invalidCheck6">
-                        <span>Reduce large image size when uploading</span>  
-                      </label>
+                    <div class="mb-16">
+                      <div class="form-group">
+                        <label for="name">Prefix for Blog categories</label>
+                        <input type="text" class="rounded-pill" id="name" name="name" placeholder="Blog" required="">
+                      </div>
+                      <p class="desc">Preview: <a href="#">https://Softcrafty.com</a></p>
                     </div>
-                    <p>When enabled, the system will reduce the size of large images when uploading, applied for JPG, JPEG, PNG, WebP image. The maximum width and height of the image will be resized to the values you set below</p>
-                  </div>   
-                  <div class="rb_checkbox_label mb-20">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="invalidCheck7" required>
-                      <label class="form-check-label" for="invalidCheck7">
-                        <span>Customize upload path</span>  
-                      </label>
+                    <div class="mb-16">
+                      <div class="form-group">
+                        <label for="name">Prefix for Blog tags</label>
+                        <input type="text" class="rounded-pill" id="name" name="name" placeholder="Tag" required="">
+                      </div>
+                      <p class="desc">Preview: <a href="#">https://Softcrafty.com</a></p>
                     </div>
-                    <p>Customize the upload path for media files. By default, the system will upload files to the "/public/storage" folder.</p>
-                  </div>   
-                  <div class="rb_checkbox_label mb-20">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="invalidCheck8" required>
-                      <label class="form-check-label" for="invalidCheck8">
-                        <span>Enable the chunk upload</span>  
-                      </label>
+                    <div class="mb-16">
+                      <div class="form-group">
+                        <label for="name">Prefix for Blog Products</label>
+                        <input type="text" class="rounded-pill" id="name" name="name" placeholder="Products" required="">
+                      </div>
+                      <p class="desc">Preview: <a href="#">https://Softcrafty.com</a></p>
                     </div>
-                    <p>Customize the upload path for media files. By default, the system will upload files to the "/public/storage" folder.</p>
-                  </div>   
-                  <div class="rb_checkbox_label mb-20">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="invalidCheck9" required>
-                      <label class="form-check-label" for="invalidCheck9">
-                        <span>Enable the chunk upload</span>  
-                      </label>
+                    <div class="mb-16">
+                      <div class="form-group">
+                        <label for="name">Prefix for Brands</label>
+                        <input type="text" class="rounded-pill" id="name" name="name" placeholder="Brands" required="">
+                      </div>
+                      <p class="desc">Preview: <a href="#">https://Softcrafty.com</a></p>
                     </div>
-                    <p>Chunk size upload is used to upload large file size.</p>
-                  </div>  
-                  <div class="rb_radio_label mb-24">
-                    <label class="form-label mb-8">Image processing library</label>
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="apiProvider" id="providerNone" value="left" checked>
-                      <label class="form-check-label" for="providerNone">GD Library</label>
+                    <div class="mb-16">
+                      <div class="form-group">
+                        <label for="name">Prefix for Product categories</label>
+                        <input type="text" class="rounded-pill" id="name" name="name" placeholder="Product - categories" required="">
+                      </div>
+                      <p class="desc">Preview: <a href="#">https://Softcrafty.com</a></p>
                     </div>
-                    <p class="desc">To set up <span>color</span> description.</p>
-                  </div>                     
-                  <div class="rb_checkbox_label mb-20">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="invalidCheck11" required>
-                      <label class="form-check-label" for="invalidCheck11">
-                        <span>Enable thumbnail sizes</span>  
-                      </label>
+                    <div class="mb-16">
+                      <div class="form-group">
+                        <label for="name">Prefix for Product Tags</label>
+                        <input type="text" class="rounded-pill" id="name" name="name" placeholder="Product - tags" required="">
+                      </div>
+                      <p class="desc">Preview: <a href="#">https://Softcrafty.com</a></p>
                     </div>
-                    <p>Enable this option to generate thumbnails for images. If it is disabled, the system will not generate thumbnails for images and always use full size image.</p>
-                  </div>   
-
-               </div>
-            </div>
-
-            <div class="d-flex gap-2 mb-24 mt-24">
-              <div class="btn_wrapper">
-                <a href="#"><img src="./images/icon/save.png" alt=""> Save settings</a>
+                    <div class="mb-16">
+                      <div class="form-group">
+                        <label for="name">Prefix for Stores</label>
+                        <input type="text" class="rounded-pill" id="name" name="name" placeholder="Stores" required="">
+                      </div>
+                      <p class="desc">Preview: <a href="#">https://Softcrafty.com</a></p>
+                    </div>
+                    <div class="mb-16">
+                      <div class="form-group">
+                        <label for="name">Postfix for single page URL</label>
+                        <input type="text" class="rounded-pill" id="name" name="name" placeholder="" required="">
+                      </div>
+                      <p class="desc">Preview: <a href="#">https://Softcrafty.com</a></p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <div class="rb_switch_label d-flex">
+                        <div class="form-switch">
+                          <input class="form-switch-input" type="checkbox" id="enableWidgets" checked="">
+                          <label class="form-switch-label" for="enableWidgets">
+                            Turn off automatic URL translation into Latin?
+                          </label>
+                        </div>
+                      </div>
+                      
+                      <div>
+                        <div class="form-group">
+                          <select id="id" name="id" class="custom-select rounded-pill" style="height: 46px;">
+                            <option value="" disabled="" selected=""><img src="images/icon/arabia.svg" alt=""> Language</option>
+                            <option value="xgr">English</option>
+                            <option value="xgr">Arabic</option>
+                          </select>
+                        </div>
+                      </div> 
+                    </div>
+                  </div>
+                </div>
               </div>              
-              <div class="btn_wrapper style1">
-                <a href="#"> Generate thumbnails</a>
-              </div>              
+              
             </div>
+            <div class="btn_wrapper mt-20 mb-20">
+              <a  href="#"><img src="./images/icon/save.png" alt=""> Save settings</a>
+            </div>                           
           </div>
         </div>
       </div>
