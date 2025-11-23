@@ -32334,7 +32334,9 @@ p {
   font-size: 14px;
 }
 .rb_checkbox_label p {
-  color: #7B7B7B;
+  color: #727272;
+  font-size: 14px;
+  font-weight: 400;
   margin-top: 6px;
 }
 .rb_checkbox_label p a {
