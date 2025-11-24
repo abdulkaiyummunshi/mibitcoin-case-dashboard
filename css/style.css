@@ -34617,6 +34617,71 @@ p {
   border-left: 0.5em solid transparent;
 }
 
+.rb_sitemap_area {
+  display: flex;
+  gap: 20px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .rb_sitemap_area {
+    flex-direction: column;
+  }
+}
+.rb_sitemap_area .rb_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid rgba(25, 33, 53, 0.1019607843);
+  flex: none;
+}
+.rb_sitemap_area .rb_content .rb_maptitle {
+  color: #192135;
+  font-family: Inter;
+  font-weight: 600;
+  font-style: Semi Bold;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0%;
+}
+.rb_sitemap_area .rb_content p {
+  color: #7C8292;
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0%;
+}
+.rb_sitemap_area .rb_map_border {
+  width: 100%;
+  top: 518px;
+  left: 548px;
+  opacity: 1;
+  border-radius: 6px;
+  border-width: 1px;
+  padding: 14px;
+  background-color: #F3F4F7;
+  border: 1px solid #E2E2E2;
+}
+.rb_sitemap_area .rb_map_border .view_map {
+  background-color: #FFFFFF;
+  width: max-content;
+  padding: 4px 10px;
+  opacity: 1;
+  border-radius: 4px;
+}
+.rb_sitemap_area .rb_map_border .desc {
+  color: #7C8292;
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0%;
+}
+
 .rb_social_login {
   max-width: 1008px;
   padding: 32px;
