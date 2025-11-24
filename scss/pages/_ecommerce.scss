@@ -1319,3 +1319,37 @@
   }
 }
 // Pagination End
+
+.rb_color_picker {
+  .color-btn {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 6px 8px;
+  }
+  
+  .color-preview {
+      display: inline-block;
+      width: 54px;
+      height: 34px;
+      border-radius: 4px;
+  }
+  
+  .color-option {
+      display: block;
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      margin: 4px;
+      cursor: pointer;
+  }
+  .color-option:hover {
+      outline: 2px solid #000;
+  }
+  .dropdown-toggle::after {
+      border-top: .7em solid;
+      border-right: .5em solid transparent;
+      border-left: 0.5em solid transparent;
+  }
+
+}

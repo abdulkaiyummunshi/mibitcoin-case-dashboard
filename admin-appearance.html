@@ -472,17 +472,12 @@
                   <div class="mb-20">
                       <label class="form-label fw-semibold">Login screen backgrounds (~1366 x 768)</label>
 
-                      <div class="upload-box d-flex justify-content-center align-items-center">
+                      <div class="upload-box d-flex flex-column gap-2 justify-content-center align-items-center">
                           <div class="camera_icon">
-                            <i class="fa-solid fa-camera"></i>
+                            <img src="images/icon/file-upload.svg" alt="">
+                            <input type="file"  class="d-none uploadImage"> 
                           </div>
-                          <input type="file"  class="d-none uploadImage">
-                      </div>
-
-                      <div class="mt-2">
-                          <a href="#" class="text-primary small">Choose image</a>
-                          <span class="text-muted small"> or </span>
-                          <a href="#" class="text-primary small">Add from URL</a>
+                          <p>Click here to add more images.</p>
                       </div>
                   </div>   
                   <div class="mb-24">
@@ -500,7 +495,60 @@
                         <option value="option">Option</option>
                       </select>
                     </div>
-                  </div>                                                       
+                  </div>    
+
+                  <div class="rb_color_picker mb-24">
+
+                      <!-- Color Picker Item -->
+                      <div class="mb-4">
+                          <label class="form-label fw-semibold">Primary color</label>
+                          <div class="color-picker dropdown">
+                              <button class="btn color-btn dropdown-toggle" data-bs-toggle="dropdown">
+                                  <span class="color-preview" style="background: linear-gradient(271.8deg, #43CBFF -99.63%, #9708CC 212.68%);"></span>
+                              </button>
+                              <ul class="dropdown-menu p-2">
+                                  <li><span class="color-option" data-color="#a855f7"></span></li>
+                                  <li><span class="color-option" data-color="#38bdf8"></span></li>
+                                  <li><span class="color-option" data-color="#4ade80"></span></li>
+                                  <li><span class="color-option" data-color="#ef4444"></span></li>
+                              </ul>
+                          </div>
+                      </div>
+
+                      <!-- Secondary -->
+                      <div class="mb-4">
+                          <label class="form-label fw-semibold">Secondary color</label>
+                          <div class="color-picker dropdown">
+                              <button class="btn color-btn dropdown-toggle" data-bs-toggle="dropdown">
+                                  <span class="color-preview" style="background: #727272;"></span>
+                              </button>
+                              <ul class="dropdown-menu p-2">
+                                  <li><span class="color-option" data-color="#6b7280"></span></li>
+                                  <li><span class="color-option" data-color="#9ca3af"></span></li>
+                                  <li><span class="color-option" data-color="#d1d5db"></span></li>
+                                  <li><span class="color-option" data-color="#374151"></span></li>
+                              </ul>
+                          </div>
+                      </div>
+
+                      <!-- Text Color -->
+                      <div class="mb-4">
+                          <label class="form-label fw-semibold">Text color</label>
+                          <div class="color-picker dropdown">
+                              <button class="btn color-btn dropdown-toggle" data-bs-toggle="dropdown">
+                                  <span class="color-preview" style="background: #101010;"></span>
+                              </button>
+                              <ul class="dropdown-menu p-2">
+                                  <li><span class="color-option" data-color="#000000"></span></li>
+                                  <li><span class="color-option" data-color="#333333"></span></li>
+                                  <li><span class="color-option" data-color="#666666"></span></li>
+                                  <li><span class="color-option" data-color="#ffffff" style="border:1px solid #ccc;"></span></li>
+                              </ul>
+                          </div>
+                      </div>
+
+                  </div>
+
                   <div class="mb-24">
                     <div class="form-group">
                       <label for="language">Admin language</label>

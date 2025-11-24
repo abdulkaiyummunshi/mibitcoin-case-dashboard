@@ -295,3 +295,16 @@ document.querySelectorAll(".upload-box").forEach(function (box) {
         if (input) input.click();
     });
 });
+
+document.querySelectorAll(".color-option").forEach(function(option) {
+    option.addEventListener("click", function () {
+        let color = this.getAttribute("data-color");
+
+        // Find parent color picker
+        let picker = this.closest(".color-picker");
+
+        // Update preview box
+        picker.querySelector(".color-preview").style.background = color;
+    });
+});
+
