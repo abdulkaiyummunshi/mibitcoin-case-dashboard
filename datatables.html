@@ -399,145 +399,53 @@
               <ol class="breadcrumb mb-24">
                 <li class="breadcrumb-item"><a href="#">Settings</a></li>
                 <li class="breadcrumb-item active" aria-current="page">
-                  Cache
+                  Datatables
                 </li>
               </ol>
             </nav>
             <div class="rb_ecommerce_area">
               <div class="rb_heading">
-                  <h3>Cache</h3>
-                  <p>Configure caching for optimized speed</p>
+                  <h3>Datatables</h3>
+                  <p>Settings for datatables</p>
               </div>
+					  <div class="mb-24 common_input">
+              <div class="form-group">
+                <label for="language">Pagination type</label>
+                <select id="language" name="language" class="custom-select rounded-pill">
+                <option value="" disabled="" selected="">Default</option>
+                <option value="option">Option</option>
+                <option value="option">Option</option>
+                </select>
+              </div>
+              <p class="desc">Choose how pagination controls are displayed: Default shows page numbers, Dropdown shows a compact dropdown selector</p>
+					  </div>                
               <div class="rb_checkbox_label mb-24">
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck" checked required>
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck"  required>
                   <label class="form-check-label" for="invalidCheck">
-                  Cache admin menu
+                  Show column visibility by default
                   </label>
                 </div>
-                <p>Cache admin menu for optimized speed. This option should be disabled if you are developing or customizing the admin menu.</p>
+                <p>Enable the column visibility toggle button in data tables to allow users to show/hide columns</p>
               </div>                
               <div class="rb_checkbox_label mb-24">
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck1" checked required>
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck1"  required>
                   <label class="form-check-label" for="invalidCheck1">
-                  Cache front menu
+                  Show export button by default
                   </label>
                 </div>
-                <p>Cache front menu for optimized speed</p>
+                <p>Display export options (CSV, Excel, PDF) in data tables for downloading table data</p>
               </div>                
               <div class="rb_checkbox_label mb-24">
                 <div class="form-check">
                   <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" checked required>
                   <label class="form-check-label" for="invalidCheck2">
-                  Cache user avatar
+                  Enable table responsive
                   </label>
                 </div>
-                <p>For users without avatar, the system will generate avatars from their usernames. The avatars will be cached for optimized speed and will not be regenerated.</p>
+                <p>Automatically adjust table columns to fit different screen sizes for better mobile experience</p>
               </div>                
-              <div class="rb_checkbox_label mb-24">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck3" checked required>
-                  <label class="form-check-label" for="invalidCheck3">
-                  Cache shortcodes (UI blocks)
-                  </label>
-                </div>
-                <p>Enable caching for shortcodes to improve performance. When enabled, shortcodes will be cached to reduce rendering time</p>
-              </div>                
-              <div class="rb_section_border mb-20">
-                <div class="alert_list style_4 mb-24">
-                  <div class="d-flex align-items-center">
-                    <img src="images/icon/alert-circle-yellow.svg" alt="">
-                    <h4>⚠️ Important Notice:</h4>
-                  </div>
-                  <div class="rb_list">
-                    <ul>
-                      <li>Shortcodes containing forms (contact forms, newsletter subscriptions, etc.) will automatically bypass caching to preserve functionality.</li>
-                      <li>Shortcodes with dynamic JavaScript content should have caching disabled manually.</li>
-                      <li>To disable caching for specific widgets, set Enable caching: No in the widget configuration.</li>
-                      <li>Forms with CSRF tokens, reCAPTCHA, or other dynamic elements are automatically detected and excluded from caching.</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class=" common_input">
-                  <div class="form-group">
-                    <label for="language">Cache duration (seconds)</label>
-                    <select id="language" name="language" class="custom-select rounded-pill">
-                    <option value="" disabled="" selected="">1800</option>
-                    <option value="option">1700</option>
-                    <option value="option">1600</option>
-                    </select>
-                  </div>
-                  <p class="desc">The duration to cache all widgets. Default is 1800 seconds (30 minutes).</p>
-                </div>                 
-              </div>  
-              <div class="rb_checkbox_label mb-24">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck4" checked required>
-                  <label class="form-check-label" for="invalidCheck4">
-                  Cache admin menu
-                  </label>
-                </div>
-                <p>The duration to cache all shortcodes. Default is 1800 seconds (30 minutes).</p>
-              </div>                
-              <div class="rb_section_border mb-20">
-                <div class="alert_list style_4 mb-24">
-                  <div class="d-flex align-items-center">
-                    <img src="images/icon/alert-circle-yellow.svg" alt="">
-                    <h4>⚠️ Important Notice:</h4>
-                  </div>
-                  <div class="rb_list">
-                    <ul>
-                      <li>Widgets containing forms (contact forms, newsletter subscriptions, etc.) will automatically bypass caching to preserve functionality.</li>
-                      <li>Widgets with dynamic JavaScript content should have caching disabled manually.</li>
-                      <li>To disable caching for specific widgets, set Enable caching: No in the widget configuration.</li>
-                      <li>Forms with CSRF tokens, reCAPTCHA, or other dynamic elements are automatically detected and excluded from caching.</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class=" common_input">
-                  <div class="form-group">
-                    <label for="language">Cache duration (seconds)</label>
-                    <select id="language" name="language" class="custom-select rounded-pill">
-                    <option value="" disabled="" selected="">1800</option>
-                    <option value="option">1700</option>
-                    <option value="option">1600</option>
-                    </select>
-                  </div>
-                  <p class="desc">The duration to cache all widgets. Default is 1800 seconds (30 minutes).</p>
-                </div>                 
-              </div> 
-              <div class="rb_checkbox_label mb-24">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck5" checked required>
-                  <label class="form-check-label" for="invalidCheck5">
-                  Cache installed plugins
-                  </label>
-                </div>
-                <p>Cache the list of installed plugins for improved performance. When enabled, the system will cache the plugin list for 30 minutes to reduce file system scans.</p>
-              </div>                 
-              <div class="rb_checkbox_label mb-24">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck6" checked required>
-                  <label class="form-check-label" for="invalidCheck6">
-                  Cache sitemap
-                  </label>
-                </div>
-                <p>Sitemap https://nest.botble.com/sitemap.xml should be cached due to the large number of pages. If you have a small number of pages, you can disable this option</p>
-              </div>     
-              <div class="rb_section_border mb-0">
-                <div class=" common_input">
-                  <div class="form-group">
-                    <label for="language">Sitemap cache timeout (in minutes)</label>
-                    <select id="language" name="language" class="custom-select rounded-pill">
-                    <option value="" disabled="" selected="">60</option>
-                    <option value="option">70</option>
-                    <option value="option">80</option>
-                    </select>
-                  </div>
-                  <p class="desc">The duration to cache all widgets. Default is 1800 seconds (30 minutes).</p>
-                </div>                 
-              </div>                           
             </div>
             <div class="btn_wrapper mt-20 mb-20">
               <a  href="#"><img src="./images/icon/save.png" alt=""> Save settings</a>
