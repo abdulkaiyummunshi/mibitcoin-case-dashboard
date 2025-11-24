@@ -347,7 +347,7 @@
             }
         }
         textarea {
-            height: 166px;
+            height: 200px;
             resize: vertical;
             @include xxs {
                 height: 134px;
@@ -397,6 +397,14 @@
         select:focus {
             outline: none;
         }
+    }
+    &.style1 {
+      .form-group {
+        input[type="text"],
+        textarea { 
+          background-color: transparent;
+        }        
+      }
     }
 }
 
